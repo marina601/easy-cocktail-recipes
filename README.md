@@ -27,6 +27,8 @@ This website will enable adults to create simple cocktail recipes for special oc
 3 [**Technology Used**](#technology-used)
    - [**Languages Used**](#language-used)
    - [**Frameworks Libraries and Programs Used**](#frameworks-libraries-and-programs-used)
+   - [**Logic Walkthrough**](#logic-walkthrough)
+   - [**Problems During Development**](#problems-during-development)   
 
 4 [**Testing**](#testing)
    - [**Testing User Stories**](#testing-user-stories)
@@ -48,7 +50,6 @@ This website will enable adults to create simple cocktail recipes for special oc
 6 [**Credits**](#credits)
  - [**Code**](#code)
  - [**Media**](#media)
- - [**Video**](#video)
  - [**Acknowledgment**](#acknowledgment)
 
 ## UX
@@ -148,7 +149,152 @@ Considering the above user stories, I have decided upon the following UI Structu
 
 For wireframes I have used [Balsamiq](https://balsamiq.com/)
 
-Please view my [Wireframes](assets/wireframes/easy-cocktail-recipe(wireframes).pdf)
+Please view my [Wireframes](https://browser-aquamarine-carp-v2i7swjo.ws-eu03.gitpod.io/workspace/easy-cocktail-recipes/assets/wireframes/easy-cocktail-recipe%28wireframes%29.pdf)
 
+
+##### back to [content](#table-of-content)
+
+## Features 
+
+### Features implemented 
+
+- Logo is linked to the home page.
+- Dynamic navigation menu collapses on the mobile screen view.
+- Three initial messages will show up to the user on a scroll.
+- Recipe cards that get their input from an API.
+- Star recipe rating records the total rating.
+- Recipe card shows up as a main feature on the page once it is clicked on and the background fades.
+- The user can exit the recipe card in 3 ways, clicking on the x button, clicking on the main window, or pressing the Escape key on the keyboard.
+- The website has a responsive design based on the screen view.
+- Contact form uses the “POST” method to send information from the user to the owner powered by JSmail API
+
+### Features Left to Implements
+
+- Subscription form to the blog
+- Print Button to the recipe card
+
+##### back to [content](#table-of-content)
+
+## Technology Used
+
+### Language Used
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+##### back to [content](#table-of-content)
+
+### Frameworks Libraries and Programs Used 
+
+1. [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+ - mainly for responsive grid system and used components to assist styling of the elements.
+also used Java Script components for responsive navigation bar and toggler class to create a humburger button on the mobile device. 
+Bootstrap css library has been used to help with additional styling on the webpage.
+
+
+2. [CSS tricks](https://css-tricks.com/perfect-full-page-background-image/) 
+- used to create a full background image which will be recognised by all 
+browsers.
+
+3. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Montseratt and Releway' fonts into the style.css file which is used on all pages throughout the project.
+
+4. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+
+5. [jQuery](https://api.jquery.com/)    
+
+6. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+7. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+
+8. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
+
+9. [TinyPng:](https://tinypng.com/)
+   - TinyPng was used to compress the size of the images and improve loading time.
+
+10. [TheCocktailDB](https://www.thecocktaildb.com/api.php)
+   - API used to get cocktail recipes into recipe cards 
+
+11. [Email-JS](https://www.emailjs.com/)
+   - API used to submit contact form and send automated emails to the user.
+
+12. [Grammarly](https://www.grammarly.com/)
+    - Used to fix the thousands of grammar errors across the project.
+
+13. [Gitpod](https://www.gitpod.io/)
+    - Used as the development enviroment.
+
+14. [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project
+
+##### back to [content](#table-of-content)
+
+## Logic Walkthrough
+
+##### back to [content](#table-of-content)
+
+## Problems During Development 
+
+##### back to [content](#table-of-content)
+
+## Testing
+
+##### back to [content](#table-of-content)
+
+## Deployment
+
+## GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/marina601/iFitness)
+2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
+    - Alternatively, click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "root" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://marina601.github.io/iFitness/) in the "GitHub Pages" section.
+
+##### back to [content](#table-of-content)
+
+
+### Forking to GitHub Respiratories
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub 
+account to view and/or make changes without affecting the original repository by using the following step:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/marina601/iFitness)
+2. At the top of the Repository (not top of page) just above the "Settings" on the menu, locate the "Fork" button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+##### back to [content](#table-of-content)
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/marina601/iFitness)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone` and then paste the URL you copied in Step 3.
+
+##### back to [content](#table-of-content)
+
+## Credits
+
+### Code
+
+##### back to [content](#table-of-content)
+
+### Media
+
+##### back to [content](#table-of-content)
+ 
+### Acknowledgment
 
 ##### back to [content](#table-of-content)
