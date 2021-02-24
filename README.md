@@ -1,45 +1,154 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Easy Cocktail Recipes 
 
-Welcome USER_NAME,
+![Easy Cocktail Recipes] (image) 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+[View the website on GitHub Pages] (link to the live site)
 
-## Gitpod Reminders
+I have created this site as part of my Milestone 2 project for Code Institute, 
+focusing on Interactive Frontend Website development and design.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This blog is for adults, where they can browse through popular cocktail recipes and re-create them at home with minimal
+effort. 
+Due to the pandemic and the hospitality industry having one of the worst effects, people have missed going out and socializing. 
+This website will enable adults to create simple cocktail recipes for special occasions or weekends for their friends and family to enjoy!
 
-`python3 -m http.server`
+---
 
-A blue button should appear to click: *Make Public*,
+# Table of Content
 
-Another blue button should appear to click: *Open Browser*.
+1 [**UX**](#ux)
+   - [**User Stories**](#user-stories)
+   - [**UI Structure**](#ui-structure)
+   - [**Design**](#design)
+   - [**Wireframes**](#wireframes)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+2 [**Features**](#features)
 
-A blue button should appear to click: *Make Public*,
+3 [**Technology Used**](#technology-used)
+   - [**Languages Used**](#language-used)
+   - [**Frameworks Libraries and Programs Used**](#frameworks-libraries-and-programs-used)
 
-Another blue button should appear to click: *Open Browser*.
+4 [**Testing**](#testing)
+   - [**Testing User Stories**](#testing-user-stories)
+   - [**Further Testing**](#further-testing)
+      - [**Navigation Testing**](#navigation-testing)
+      - [**Social Links**](#social-links)
+      - [**Video**](#video)
+      - [**Sign Up Form**](#sign-up-form)
+      - [**Services**](#services)
+      - [**Team**](#team)
+      - [**Footer**](#footer)
+   - [**Bugs**](#bugs)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+5 [**Deployment**](#deployment)
+  - [**GitHub Pages**](#github-pages)
+  - [**Forking to GitHub Respiratories**](#forking-to-github-respiratories)
+  - [**Making a local clone**](#making-a-local-clone)
 
-## Updates Since The Instructional Video
+6 [**Credits**](#credits)
+ - [**Code**](#code)
+ - [**Media**](#media)
+ - [**Video**](#video)
+ - [**Acknowledgment**](#acknowledgment)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## UX
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Easy Cocktail Recipes is a blog where the user can browse through the selection of cocktails recipes. The user can choose to make the cocktails at home following instructions.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The main objective of this website is to provide the user with some of the most popular cocktail recipes, which are easy and quick to re-create at home.
+Therefore, once the user selects their cocktail recipe, the instructions and method will be displayed, providing the user with an option to rate the recipe they have made.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The user can navigate back easily to the recipe page and browse through the cocktail selection.
+The user can easily navigate to the About page, where they can learn more about a blog.
+The user can contact the site owner by completing a contact form, once the form is submitted, they will receive a friendly email acknowledging their message.
+The user can click on the social icons located at the bottom of the page and follow the blog on social media!
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+##### back to [content](#table-of-content)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## User Stories
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The blog has been identified for users over 18 years old, who enjoy going out and drinking cocktails at the bar, following the pandemic, I wanted to give them the tools required to create a happy hour at home.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The following user stories have been identified:
 
---------
+### First Time User:
 
-Happy coding!
+1. As a first-time user,  I want to understand what this site is about and what to expect.
+2. As a first-time user, I want to see a selection of cocktail recipes available.
+3. As a first-time user, I want to know how long will it take to make the cocktail recipe.
+4. As a first-time user, I want to check out the social media links of the blog.
+
+### Returning user:
+
+1. As a returning user, I want to make a cocktail and follow the instructions.
+2. As a returning user, I want to navigate back to the recipe page for more cocktail recipes.
+3. As a returning user, I want to learn more about the blog.
+4. As a returning user, I want to rate the recipes I have tried to make.
+
+### Frequent user:
+1. As a frequent-user, I want to contact the blogger and ask a question.
+2. As a frequent-user, I want to follow the blog on social media.
+
+### Business Goals:
+
+1. As a business-owner, I want to build an interactive website for viewers to explore popular recipes.
+2. As a business-owner, I want to increase the site traffic and get more views.
+3. As a business-owner, I want to build my social network following.
+3. As a business-owner, I want to interact with users on a personal level.
+
+##### back to [content](#table-of-content)
+
+## UI Structure
+ 
+Considering the above user stories, I have decided upon the following UI Structure and styling:
+
+### Home Page: 
+
+- A clear and simple landing page with a big hero image where the user will have a clear understanding of the website.
+- A simple navigation menu will outline the content of the blog.
+- Three statements will appear on scroll explaining to the user what to expect.
+- An anchor link from the menu to recipes will display a selection of cocktail recipes with a star rating and prep time.  
+- Once the user selects the recipe by clicking on the image the recipe card will be displayed allowing the user to rate the recipe
+ 
+### About Page:
+
+- A brief introduction about how the site has been created.
+- Pictures and bio about the site owners are displayed.
+
+### Contact Page:
+
+- Contact form is available for users to submit their queries. 
+- Once the contact form has been submitted, an automated email will be sent to the user. 
+
+### Common:
+
+- A site logo will have a link to the home page
+- Menu will be responsive on mobile and desktop view 
+-  Hero Image will remain the same throughout the pages 
+-  Minimal footer with social links 
+
+##### back to [content](#table-of-content)
+
+
+## Design
+
+ ### Color Scheme 
+        
+
+ ### Typorgaphy
+        - Used Mon
+        
+        - 
+
+### Imagery
+        - All the imagery is imported from 
+##### back to [content](#table-of-content)
+
+## Wireframes
+
+For wireframes I have used [Balsamiq](https://balsamiq.com/)
+
+Please view my [Wireframes](assets/wireframes/easy-cocktail-recipe(wireframes).pdf)
+
+
+##### back to [content](#table-of-content)
