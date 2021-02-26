@@ -4,9 +4,17 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+.row {
+    margin: 0px;
+}
 /**Additional Classes**/
 .text-center {
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
 /**Main Heading Logo**/
@@ -57,9 +65,14 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   margin: 5px;
+  transition: all 0.35 ease-in-out;
+    -moz-transition: all 0.35 ease-in-out;
+    -webkit-transition: all 0.35 ease-in-out;
+    -o-transition: all 0.35 ease-in-out;
 }
 
 .navItem a:hover,
+.active
 .navItem a:active {
     color: #ba9fd6;
     background-color: #6f5f80;
@@ -75,4 +88,19 @@ h1 {
   background-size: cover;
   width: 100%;
   height: 1200px;
+}
+
+.call-out {
+    background-color: #e3d8ee;
+    margin: 12rem auto;
+    padding: 15px;
+    width: 360px;
+    max-height: 170px;
+    min-height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(111, 95, 128, 0.7),
+            20px 20px 30px rgba(111, 95, 128, 0.7),
+            -1px -1px 30px rgba(111, 95, 128, 0.5);
 }
