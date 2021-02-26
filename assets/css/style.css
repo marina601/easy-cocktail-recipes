@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Prata&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+/**Additional Classes**/
+.text-center {
+    text-align: center;
+}
+
+/**Main Heading Logo**/
+header {
+    background-color: #e3d8ee ;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 50px;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    color: #6f5f80;
+}
+
+/**Navigation**/
+
+.navigation {
+    width: 100%
+}
+
+.navMenu {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  text-align: center;
+}
+
+.navItem {
+    display: inline;
+    margin: 5px auto;
+    text-decoration: none;
+}
+
+.navItem a {
+  display: inline-block;
+  color:  #6f5f80;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  margin: 10px auto;
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.navItem a:hover,
+.navItem a:active {
+    color: #ba9fd6;
+    background-color: #6f5f80;
+    border-radius: 10%;
+}
+
