@@ -19,7 +19,7 @@ body {
 
 /**Main Heading Logo**/
 header {
-    background-color: #e3d8ee;
+    background-color: #be6851;
     margin: 0px;
     padding: 0px;
 }
@@ -30,7 +30,7 @@ h1 {
     font-size: 50px;
     padding: 10px 0px;
     margin: 5px 0px;
-    color:#41384a;
+    color:#0d0709;
 }
 
 /**Navigation**/
@@ -40,7 +40,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #e3d8ee;
+    background-color: #0d0709;
     margin-top: 5rem;
     scroll-margin-top: 0;
     z-index: 1;
@@ -62,7 +62,7 @@ h1 {
 
 .navItem a {
   display: inline-block;
-  color:  #41384a;
+  color:  #d6cdd2;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -80,8 +80,8 @@ h1 {
 .navItem a:hover,
 .active
 .navItem a:active {
-    color: #ba9fd6;
-    background-color: #6f5f80;
+    color: #b00f16;
+    background-color: #d6cdd2;
     border-radius: 10%;
 }
 
@@ -98,7 +98,7 @@ h1 {
 }
 
 .call-out {
-    background-color: #e3d8ee;
+    background-color: #d6cdd2;
     margin: 9rem auto;
     padding: 15px;
     width: 350px;
@@ -115,11 +115,11 @@ h1 {
     font-size: 40px;
     padding: 10px 5px;
     margin: 5px 2px;
-    color:#41384a;
+    color:#0d0709;
 }
 
 .call-out p {
-  color:  #41384a;
+  color:  #0d0709;
   padding: 12px;
   font-family: 'Prata', serif;
   font-size: 18px;
@@ -152,7 +152,7 @@ footer {
     position: relative;
     padding: 20px;
     margin: 5px;
-    color:  #e3d8ee;
+    color:  #d6cdd2;
     font-size: 40px;
     box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
 }
@@ -166,8 +166,8 @@ footer {
 }
 
 .social-icons li a:hover {
-    color: #ba9fd6;
-    background-color: #6f5f80;
+    color: #b00f16;
+    background-color: #d6cdd2;
     border-radius: 10%;
     padding: 10px;
 }
