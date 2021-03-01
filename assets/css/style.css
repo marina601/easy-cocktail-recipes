@@ -5,9 +5,10 @@ body {
     padding: 0px;
 }
 
-.container-fluid {
-    padding: 0;
+.row {
+    margin: 0px;
 }
+
 
 
 /**Additional Classes**/
@@ -38,14 +39,13 @@ h1 {
 /**Navigation**/
 
 .navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: #0d0709;
-    margin-top: 5rem;
-    scroll-margin-top: 0;
-    z-index: 1;
+    margin-top: 4.8rem;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0px;
+    position: absolute;
 }
 
 .navMenu {
@@ -101,12 +101,11 @@ h1 {
 
 .call-out {
     background-color: #d6cdd2;
-    margin: 9rem auto;
-    padding: 15px;
-    width: 35%;
+    width: 25%;
     max-height: 380px;
-    position: relative;
-    border-radius: 10px;
+    padding: 10px;
+    margin: 140px auto;
+    padding: 10px;
     border-radius: 10px;
     box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
 }
@@ -180,13 +179,31 @@ footer {
     .social-icons li {
         padding: 5px;
     }
+
+      .call-out {
+          margin-top: 180px;
+          margin-bottom: 10px;
+          box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .navigation {
+        margin-top: 4rem;
+    }
+
 }
 
 @media screen and (max-width: 991.98px) {
-    .call-out {
-    margin: 140px 5px;
-    padding: 0px;
+   .call-out {
     width: 30%;
+    height: 300px;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    border: 2px solid transparent; 
+    padding: 2px;
     }
 }
 
