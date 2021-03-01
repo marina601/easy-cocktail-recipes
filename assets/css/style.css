@@ -9,9 +9,7 @@ body {
     padding: 0;
 }
 
-.row {
-    margin: 0px;
-}
+
 /**Additional Classes**/
 .text-center {
     text-align: center;
@@ -105,7 +103,7 @@ h1 {
     background-color: #d6cdd2;
     margin: 9rem auto;
     padding: 15px;
-    width: 350px;
+    width: 35%;
     max-height: 380px;
     position: relative;
     border-radius: 10px;
@@ -175,3 +173,20 @@ footer {
     border-radius: 10%;
     padding: 10px;
 }
+
+/*******Media Queries*****/
+
+@media screen and (max-width: 575.98px) {
+    .social-icons li {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .call-out {
+    margin: 140px 5px;
+    padding: 0px;
+    width: 30%;
+    }
+}
+
