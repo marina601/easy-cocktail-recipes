@@ -19,7 +19,7 @@ body {
 
 /**Main Heading Logo**/
 header {
-    background-color: #e3d8ee ;
+    background-color: #e3d8ee;
     margin: 0px;
     padding: 0px;
 }
@@ -36,7 +36,13 @@ h1 {
 /**Navigation**/
 
 .navigation {
-    width: 100%
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e3d8ee;
+    margin-top: 5rem;
+    scroll-margin-top: 0;
 }
 
 .navMenu {
@@ -44,7 +50,6 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: sticky;
   text-align: center;
 }
 
@@ -92,15 +97,14 @@ h1 {
 
 .call-out {
     background-color: #e3d8ee;
-    margin: 12rem auto;
+    margin: 10rem 1rem;
     padding: 15px;
     width: 360px;
     max-height: 170px;
     min-height: fit-content;
-    text-align: center;
+    position: relative;
+    
     border-radius: 10px;
     border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(111, 95, 128, 0.7),
-            20px 20px 30px rgba(111, 95, 128, 0.7),
-            -1px -1px 30px rgba(111, 95, 128, 0.5);
+    box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
 }
