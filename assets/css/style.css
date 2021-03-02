@@ -88,6 +88,13 @@ h1 {
 }
 
 /*Hero Image*/
+
+#main {
+    width: 100%;
+    min-height: fit-content;
+    height: 1200px;
+}
+
 .hero-img {
   background: url("../images/bar-hero-img.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -180,7 +187,7 @@ footer {
         padding: 5px;
     }
 
-      .call-out {
+    .call-out {
           margin-top: 180px;
           margin-bottom: 10px;
           box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
@@ -206,4 +213,3 @@ footer {
     padding: 2px;
     }
 }
-
