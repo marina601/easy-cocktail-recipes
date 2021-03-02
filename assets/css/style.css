@@ -92,7 +92,7 @@ h1 {
 #main {
     width: 100%;
     min-height: fit-content;
-    height: 1200px;
+    height: 700px;
 }
 
 .hero-img {
@@ -201,6 +201,10 @@ footer {
         margin-top: 4rem;
     }
 
+    #main {
+        height: 1800px;
+    }
+
 }
 
 @media screen and (max-width: 991.98px) {
@@ -211,5 +215,9 @@ footer {
     margin-bottom: 20px;
     border: 2px solid transparent; 
     padding: 2px;
+    }
+
+    #main {
+        height: 1800px;
     }
 }
