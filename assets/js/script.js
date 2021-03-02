@@ -1,14 +1,16 @@
-
-
-//hide the elements with class "call-out"
-
 $(document).ready(function(){
    $("#call-out-1").toggle("slow");
+//display the first element with class call-out 
+ $(document).scroll(function(){
+   $("#call-out-2").delay(500).fadeIn("slow");
+   $("#call-out-3").delay(1000).fadeIn("slow");
+    });
+
+//display the other two elements on scroll with a little delay
+
+
+$(".toggle-btn").click(function() {
+    $(".navItem").addClass("active").toggle("slow");
 });
-
-$(document).scroll(function(){
-   $("#call-out-2").show("slow");
-   $("#call-out-3").fadeIn("slow");
-})
-
-
+//toggle button to display menu items at mobile screen view 
+});
