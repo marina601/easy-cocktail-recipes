@@ -13,4 +13,13 @@ $(".toggle-btn").click(function() {
     $(".navItem").addClass("active").toggle("slow");
 });
 //toggle button to display menu items at mobile screen view 
+
+
+$(".img-bartender").click(function() {
+    $("#bio").addClass("bio-height");
+    $(".bio").delay(1000).toggle("medium");
+});
+
+//click event added to the bartender image to show bio info
+
 });
