@@ -64,6 +64,7 @@ h1 {
 
 .navItem a {
   display: inline-block;
+  text-transform: uppercase;
   color:  #d6cdd2;
   text-align: center;
   padding: 12px;
@@ -111,10 +112,12 @@ h1 {
 #main {
     width: 100%;
     min-height: fit-content;
-    height: 700px;
+    /*height: 700px;*/
+    height: 80vh;
 }
 
-.hero-img {
+.hero-img,
+.about {
   background: url("../images/bar-hero-img.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -133,7 +136,7 @@ h1 {
     margin: 140px auto;
     padding: 10px;
     border-radius: 10px;
-    box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
+    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
 }
 
 .sub-heading {
@@ -151,6 +154,64 @@ h1 {
   font-family: 'Prata', serif;
   font-size: 18px;
   font-weight: 600;
+}
+
+/*******About*****/
+
+.about-box {
+    width: 60%;
+    height: fit-content;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: 10px;
+    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.bio {
+    
+    width: 220px;
+    height: auto;
+    background-color: #d6cdd2;
+    display: inline-block;
+}
+
+.about-box {
+    width: 60%;
+    height: fit-content;
+    background-color: white;
+    margin-top: 5rem;
+    border-radius: 10px;
+    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
+}
+.about-box h1 {
+    color: #be6851;
+}
+
+.about-box p {
+  color:  #0d0709;
+  padding: 12px;
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bio {
+    display: inline-block;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    /* display: block; */
+    padding: 20px;
+    margin: 20px;
+    align-content: center;
+}
+
+.img-bartender {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 /*****Footer*****/
@@ -181,7 +242,7 @@ footer {
     margin: 5px;
     color:  #d6cdd2;
     font-size: 40px;
-    box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
+    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
 }
 
 .social-icons li a {
@@ -198,6 +259,8 @@ footer {
     border-radius: 10%;
     padding: 10px;
 }
+
+
 
 /*******Media Queries*****/
 
