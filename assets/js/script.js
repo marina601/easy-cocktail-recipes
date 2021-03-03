@@ -15,11 +15,21 @@ $(".toggle-btn").click(function() {
 //toggle button to display menu items at mobile screen view 
 
 
-$(".img-bartender").click(function() {
-    $("#bio").addClass("bio-height");
+$(".img-bartender-1").click(function() {
+    
+//on click expand the div 
+    $("#bio-1").height(1100);
+// on click show the text content for Olivia
     $(".bio").delay(1000).toggle("medium");
 });
 
-//click event added to the bartender image to show bio info
+$(".img-bartender-2").click(function() {
+    
+//on click expand the div 
+    $("#bio-2").height(1000);
+// on click show the text content for martin
+    $(".bio-2").delay(1000).toggle("medium");
+});
+
 
 });
