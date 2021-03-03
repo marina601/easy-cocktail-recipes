@@ -188,7 +188,8 @@ h1 {
   font-weight: 500;
 }
 
-#bio {
+#bio-1,
+#bio-2 {
     width: 350px;
     height: 23rem;
     background-color: #be6851;
@@ -201,11 +202,11 @@ h1 {
 }
 
 .bio-height {
-    min-height: fit-content;
-    max-height: 80rem;
+    max-height: 80rem;  
 }
 
-.img-bartender {
+.img-bartender-1,
+.img-bartender-2 {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -213,7 +214,8 @@ h1 {
     cursor: pointer;
 }
 
-#bio h2 {
+#bio-1 h2,
+#bio-2 h2 {
    text-align: center;
     font-family: 'Akaya Telivigala', cursive;
     font-size: 40px;
@@ -222,7 +224,8 @@ h1 {
     color: #d6cdd2;
 }
 
-#bio h3 {
+#bio-1 h3,
+#bio-2 h3 {
     text-align: center;
     font-family: 'Akaya Telivigala', cursive;
     font-size: 35px;
@@ -232,7 +235,8 @@ h1 {
 
 }
 
-#bio p {
+#bio-1 p,
+#bio-2 p {
   color:  #0d0709;
   padding: 12px;
   font-family: 'Prata', serif;
