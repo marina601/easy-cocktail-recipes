@@ -170,7 +170,7 @@ h1 {
 
 
 .about-box {
-    width: 60%;
+    max-width: 70%;
     height: fit-content;
     background-color: white;
     margin-top: 5rem;
