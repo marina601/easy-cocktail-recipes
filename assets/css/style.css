@@ -117,7 +117,8 @@ h1 {
 }
 
 .hero-img,
-.about {
+.about,
+.contact-form {
   background: url("../images/bar-hero-img.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -266,6 +267,39 @@ h1 {
 .close-btn:hover {
     background-color: #b00f16;
 }
+/*****contact*****/
+
+.contact-form {
+    margin-top: 3rem;
+}
+
+.form {
+    max-width: 70%;
+    height: auto;
+    align-self: center;
+    background-color: #d6cdd2;
+    padding: 20px 60px;
+    margin: 10px auto;
+    border: solid 2px;
+    border-radius: 5px;
+    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
+.contact-form h1 {
+    color: #b00f16;
+    font-weight: bolder;
+
+}
+
+
+.contact-form p {
+    color: #be6851;
+    padding: 12px;
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 
 /*****Footer*****/
 
