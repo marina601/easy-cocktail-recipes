@@ -263,6 +263,13 @@ h1 {
     margin-top: 3rem;
 }
 
+.contact-heading {
+    max-width: 80%;
+    height: auto;
+    background-color:  rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+}
+
 .form {
     max-width: 70%;
     height: auto;
@@ -288,6 +295,16 @@ h1 {
     font-family: 'Prata', serif;
     font-size: 20px;
     font-weight: bolder;
+}
+
+input,
+textarea {
+    display: block;
+    margin: 5px auto;
+    width: 70%;
+    height: auto;
+    border: solid 3px #0d0709;
+    border-radius: 5px;
 }
 
 
