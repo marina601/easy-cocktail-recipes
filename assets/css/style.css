@@ -201,9 +201,7 @@ h1 {
     box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
 }
 
-.bio-height {
-    max-height: 80rem;  
-}
+
 
 .img-bartender-1,
 .img-bartender-2 {
@@ -243,6 +241,30 @@ h1 {
   font-size: 18px;
   font-weight: 400;
 
+}
+
+.close-btn {
+    size: 20px;
+    background-color:  rgba(13, 7, 9, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 80%;
+    position: relative;
+    bottom: 50px;
+    transition: all 0.35 ease-in-out;
+    -moz-transition: all 0.35 ease-in-out;
+    -webkit-transition: all 0.35 ease-in-out;
+    -o-transition: all 0.35 ease-in-out;
+}
+
+.close-btn i {
+  color: #d6cdd2;
+  font-size: 25px;
+}
+
+.close-btn:hover {
+    background-color: #b00f16;
 }
 
 /*****Footer*****/
