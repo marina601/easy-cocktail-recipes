@@ -259,15 +259,14 @@ h1 {
 }
 /*****contact*****/
 
-.contact-form {
-    margin-top: 3rem;
-}
+
 
 .contact-heading {
+    padding: 20px 10px;
+    margin: 4rem auto;
     max-width: 80%;
     height: auto;
     background-color:  rgba(0, 0, 0, 0.8);
-    margin: 20px auto;
 }
 
 .form {
@@ -277,9 +276,10 @@ h1 {
     background-color: #d6cdd2;
     padding: 20px 60px;
     margin: 10px auto;
+    margin-bottom: 3rem;
     border: solid 2px;
     border-radius: 5px;
-    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
+    box-shadow:  15px 10px 8px rgba(0, 0, 0, 0.8);
 }
 
 .contact-form h1 {
@@ -297,16 +297,44 @@ h1 {
     font-weight: bolder;
 }
 
+label {
+    color: #0d0709;
+    padding: 12px;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+}
+
 input,
 textarea {
     display: block;
     margin: 5px auto;
-    width: 70%;
+    width: 90%;
     height: auto;
     border: solid 3px #0d0709;
     border-radius: 5px;
 }
 
+
+
+input[type="submit"] {
+    background-color: #be6851;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 35px;
+    padding: 10px;
+    color: #0d0709;
+    transition: all 0.35 ease-in-out;
+    -moz-transition: all 0.35 ease-in-out;
+    -webkit-transition: all 0.35 ease-in-out;
+    -o-transition: all 0.35 ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d0709;
+    color: #d6cdd2;
+}
 
 /*****Footer*****/
 
@@ -381,6 +409,8 @@ footer {
         height: 1800px;
     }
 
+   
+
 }
 
 @media screen and (max-width: 991.98px) {
@@ -445,5 +475,10 @@ footer {
     .navigation {
         z-index: 1;
         background-color: rgba(13, 7, 9, 0.5);
+    }
+
+    .form {
+        width: 90%;
+        padding: 10px;
     }
 }
