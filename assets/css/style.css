@@ -163,7 +163,7 @@ h1 {
     max-width: 70%;
     height: fit-content;
     background-color: white;
-    margin-top: 5rem;
+    margin: 5rem auto;
     border-radius: 10px;
     box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
 }
