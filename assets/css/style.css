@@ -320,6 +320,7 @@ textarea {
 
 
 input[type="submit"] {
+    width: 30%;
     background-color: #be6851;
     font-family: 'Akaya Telivigala', cursive;
     font-size: 35px;
