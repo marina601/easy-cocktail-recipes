@@ -1,3 +1,5 @@
+//Navigation code to collapse the menu on mobile view
+
 $(document).ready(function(){
    $("#call-out-1").toggle("slow");
 //display the first element with class call-out 
@@ -5,10 +7,11 @@ $(document).ready(function(){
    $("#call-out-2").delay(500).fadeIn("slow");
    $("#call-out-3").delay(1000).fadeIn("slow");
     });
-
 //display the other two elements on scroll with a little delay
 
 
+
+// About Page code to expand the bio on click
 $(".toggle-btn").click(function() {
     $(".navItem").addClass("active").toggle("slow");
 });
@@ -38,7 +41,7 @@ $("#closeO").on("click", function(){
 $(".img-bartender-2").on("click", function() {
     
 //on click expand the div 
-   $("#bio-2").height(1000);
+   $("#bio-2").height(1020);
 // on click show the text content for martin and button
    $(".bio-2").delay(1000).show("medium");
    $("#closeM").delay(2000).slideDown("medium");
