@@ -118,6 +118,7 @@ h1 {
 
 .hero-img,
 .about,
+.recipe-page,
 .contact-form {
   background: url("../images/bar-hero-img.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -336,6 +337,34 @@ input[type="submit"]:hover {
     background-color: #0d0709;
     color: #d6cdd2;
 }
+
+/*****Recipes*****/
+
+.recipe-page {
+    padding-top: 3rem;
+}
+
+.recipe-page h2 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    padding: 5px;
+    margin: 3px auto;
+    color: #d6cdd2;
+    font-weight: 500;
+    background-color: #0d0709;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow:  15px 10px 8px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    
+    background-color: #d6cdd2;
+    padding: 10px;
+    margin: 20px;
+    box-shadow:  15px 10px 8px rgba(0, 0, 0, 0.8);
+}
+
 
 /*****Footer*****/
 
