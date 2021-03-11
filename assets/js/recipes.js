@@ -58,6 +58,48 @@ getRandomCocktail();
 
 
 function displayRandomCocktail(cocktail){
- console.log(cocktail.drinks[0]);
- //getting the cocktail we want
+
+    let margarita = cocktail.drinks[0];
+    console.log(margarita);
+ //created a variable for margarita cocktail
+
+let margaritaTitle = document.querySelector("#margaritaHeading");
+//console.log(margaritaTitle);
+margaritaTitle.innerHTML = margarita.strDrink;
+// getting the title to display 
+
+let margaritaImg = document.getElementById("img-margharita");
+console.log(margaritaImg);
+margaritaImg.src = margarita.strDrinkThumb;
+//getting an image to display in the recipe card 
+ 
+ for(let i = 1; i < 16; i++) {
+ console.log(i);
+
+//if statement to check for null and empty strings, then not to display empty spaces
+ if(margarita[`strIngredient${i}`] == null || margarita[`strIngredient${i}`] == "" ) {
+   break;
+ }
+ 
+ //create an element 
+ let ingedientMargarita = document.getElementsByClassName("ing-margarita");
+ for (let x = 0; x <= ingedientMargarita.length; x++) {
+     console.log(x);
+    ingedientMargarita[x] = margarita[`strIngredient${i}`];
+ }
+
+
+
+// console.log(ingedientMargarita);
+ //console.log(margarita[`strIngredient${i}`]);
+ //ingedientMargarita.innerHTML = margarita[`strIngredient${i}`];
+ //+ ': ' + margarita[`strIngredient${i}`];
+ //add inner html using template literal 
+ //ingedient.innerHTML = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
+//add to html
+ //drinkSection.appendChild(ingedient);
+ }
+
+
+
 }
