@@ -63,43 +63,54 @@ function displayRandomCocktail(cocktail){
     console.log(margarita);
  //created a variable for margarita cocktail
 
-let margaritaTitle = document.querySelector("#margaritaHeading");
+    let margaritaTitle = document.querySelector("#margaritaHeading");
 //console.log(margaritaTitle);
-margaritaTitle.innerHTML = margarita.strDrink;
+    margaritaTitle.innerHTML = margarita.strDrink;
 // getting the title to display 
 
-let margaritaImg = document.getElementById("img-margharita");
-console.log(margaritaImg);
-margaritaImg.src = margarita.strDrinkThumb;
-//getting an image to display in the recipe card 
+   let margaritaImg = document.getElementById("img-margharita");
+   //console.log(margaritaImg);
+   margaritaImg.src = margarita.strDrinkThumb;
+   //getting an image to display in the recipe card 
  
- for(let i = 1; i < 16; i++) {
- console.log(i);
+    for(let i = 1; i < 16; i++) {
+    //console.log(i);
 
-//if statement to check for null and empty strings, then not to display empty spaces
- if(margarita[`strIngredient${i}`] == null || margarita[`strIngredient${i}`] == "" ) {
-   break;
- }
+     //if statement to check for null and empty strings, then not to display empty spaces
+     if(margarita[`strIngredient${i}`] == null || margarita[`strIngredient${i}`] == "" ) {
+      break;
+        }
+     if (margarita[`strMeasure${i}`] == null || margarita[`strMeasure${i}`] == "" ) {
+         break;
+         }
+    }
  
- //create an element 
- let ingedientMargarita = document.getElementsByClassName("ing-margarita");
- for (let x = 0; x <= ingedientMargarita.length; x++) {
-     console.log(x);
-    ingedientMargarita[x] = margarita[`strIngredient${i}`];
- }
+ //get ul element 
+     let ul = document.getElementById("ing-margarita");
+ //console.log(ul);
+ // get il element 
+     let allIngredients = ul.children;
+     //console.log(allIngredients);
+// loop through the li elements and display text content 
+     for(let i = 1; i < allIngredients.length; i++) {
+         //checking if anything is null or undefined and clearing the empty space
+         if(allIngredients == null && allIngredients[i] == undefined || allIngredients[i] == "" ) {
+             break;
+         }
+        
+        allIngredients[i].textContent = `${margarita[`strMeasure${i}`]} : ${margarita[`strIngredient${i}`]}`;
+        };
+    
+    // getting the method
 
-
-
-// console.log(ingedientMargarita);
- //console.log(margarita[`strIngredient${i}`]);
- //ingedientMargarita.innerHTML = margarita[`strIngredient${i}`];
- //+ ': ' + margarita[`strIngredient${i}`];
- //add inner html using template literal 
- //ingedient.innerHTML = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
-//add to html
- //drinkSection.appendChild(ingedient);
- }
-
-
-
+    let margaritaMethod = document.querySelector("#margarita-method");
+    console.log(margaritaMethod);
+    margaritaMethod.innerHTML = margarita.strInstructions;
 }
+
+
+//adding event listener 
+
+document.getElementsByTagName("img").click(function () {
+    
+})
