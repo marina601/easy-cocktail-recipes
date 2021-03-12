@@ -58,7 +58,40 @@ $("#closeM").on("click", function(){
 });
 
 // Recipe Cards
-$(".card-img-top").on("click", function(){
+$("#img-margaritta").on("click", function(){
+     $(".hidden").toggle();
+});
+
+
+
+$("#img-negroni").on("click", function(){
+     $(".hidden").toggle();
+});
+
+$("#img-aperol").on("click", function(){
+     $(".hidden").toggle();
+});
+
+$("#img-mojito").on("click", function(){
+     $(".hidden").toggle();
+});
+
+$("#img-snowday").on("click", function(){
+     $(".hidden").toggle();
+});
+
+$("#img-gimlet").on("click", function(){
+     $(".hidden").toggle();
+});
+
+$("#img-manhattan").on("click", function(){
+     $(".hidden").toggle();
+});
+
+$("#img-pina").on("click", function(){
+     $(".hidden").toggle();
+});
+$("#img-sangria").on("click", function(){
      $(".hidden").toggle();
 });
 
