@@ -57,12 +57,11 @@ $("#closeM").on("click", function(){
    $("#bio-2").delay(3000).height(330);
 });
 
+// Recipe Cards
+$(".card-img-top").on("click", function(){
+     $(".hidden").toggle();
+});
 
-
-
-
-
-
-//$(".img-bartender-2").off();
 
 });
+
