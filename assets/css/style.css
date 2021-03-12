@@ -365,6 +365,47 @@ input[type="submit"]:hover {
     box-shadow:  15px 10px 8px rgba(0, 0, 0, 0.8);
 }
 
+.card-body h3 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 35px;
+    padding: 5px;
+    margin: 3px auto;
+    color: #b00f16;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.card-body h4 {
+     font-family: 'Akaya Telivigala', cursive;
+    font-size: 25px;
+    padding: 5px;
+    margin: 3px auto;
+    color: #0d0709;
+    font-weight: 400;
+}
+
+.list-group-item {
+   background-color: #be6851;
+   border: solid 3px #0d0709;
+   color: #0d0709;
+   padding: 5px;
+   font-family: 'Prata', serif;
+   font-size: 18px;
+   margin: 3px;
+}
+
+.card-text {
+   color: #0d0709;
+   padding: 5px;
+   font-family: 'Prata', serif;
+   font-size: 18px;
+   margin: 3px;
+}
+
+.card-img-top {
+    cursor: pointer;
+}
 
 /*****Footer*****/
 
