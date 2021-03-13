@@ -58,18 +58,17 @@ $("#closeM").on("click", function(){
 });
 
 // Recipe Cards
-$("#img-margaritta").on("click", function(){
-     $(".hidden").toggle();
+$("#img-margharita").on("click", function(){ 
+    $(".margarita").toggle();
 });
-
 
 
 $("#img-negroni").on("click", function(){
-     $(".hidden").toggle();
+    $("#sub-heading-negroni, #ing-negroni, #sub-heading2-negroni, #negroni-method").toggle();
 });
 
 $("#img-aperol").on("click", function(){
-     $(".hidden").toggle();
+     $(".aperol").toggle();
 });
 
 $("#img-mojito").on("click", function(){
