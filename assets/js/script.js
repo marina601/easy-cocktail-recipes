@@ -57,43 +57,5 @@ $("#closeM").on("click", function(){
    $("#bio-2").delay(3000).height(330);
 });
 
-// Recipe Cards
-$("#img-margharita").on("click", function(){ 
-    $(".margarita").toggle();
-});
-
-
-$("#img-negroni").on("click", function(){
-    $("#sub-heading-negroni, #ing-negroni, #sub-heading2-negroni, #negroni-method").toggle();
-});
-
-$("#img-aperol").on("click", function(){
-     $(".aperol").toggle();
-});
-
-$("#img-mojito").on("click", function(){
-     $(".hidden").toggle();
-});
-
-$("#img-snowday").on("click", function(){
-     $(".hidden").toggle();
-});
-
-$("#img-gimlet").on("click", function(){
-     $(".hidden").toggle();
-});
-
-$("#img-manhattan").on("click", function(){
-     $(".hidden").toggle();
-});
-
-$("#img-pina").on("click", function(){
-     $(".hidden").toggle();
-});
-$("#img-sangria").on("click", function(){
-     $(".hidden").toggle();
-});
-
 
 });
-
