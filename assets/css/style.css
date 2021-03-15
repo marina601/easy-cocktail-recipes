@@ -9,6 +9,9 @@ body {
     margin: 0px;
 }
 
+.container-fluid {
+    padding: 0px;
+}
 
 
 /**Additional Classes**/
@@ -25,6 +28,9 @@ header {
     background-color: #be6851;
     margin: 0px;
     padding: 0px;
+    position: fixed;
+    z-index: 2;
+    height: 15vh;
 }
 
 h1 {
@@ -41,12 +47,8 @@ h1 {
 .navigation {
     width: 100%;
     background-color: #0d0709;
-    margin-top: 4.8rem;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-top: -5px;
     padding: 0px;
-    /*position: absolute;*/
-    position: fixed
 }
 
 .navMenu {
@@ -90,11 +92,11 @@ h1 {
 }
 .toggle-btn {
     position: relative;
-    top: -3.5rem;
+    top: -3.2rem;
     left: 20.3rem;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
+    width: 32px;
     height: 21px;
     display: none;
     padding: 5px;
@@ -112,13 +114,13 @@ h1 {
 
 
 .quote {
-    padding: 3rem;
-    margin: 10px;
+    padding: 10rem 1rem 2rem 10rem;
+    margin: 10px 7px 5px 5px;
 }
 
 
 .quote h2 {
-   color: #b00f16;
+   color: #d6cdd2;
    font-family: 'Akaya Telivigala', cursive;
    font-weight: 500;
    text-align: end;
@@ -144,6 +146,8 @@ h1 {
   height: 100%;
 
 }
+
+
 
 .call-out {
     background-color: #d6cdd2;
@@ -174,11 +178,13 @@ h1 {
 
 /*******About*****/
 
+
+
 .about-box {
     max-width: 70%;
     height: fit-content;
     background-color: white;
-    margin: 5rem auto;
+    margin: 10rem auto 3rem auto;
     border-radius: 10px;
     box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
 }
@@ -278,7 +284,7 @@ h1 {
 
 .contact-heading {
     padding: 20px 10px;
-    margin: 4rem auto;
+    margin: 10rem auto 4rem auto;
     max-width: 80%;
     height: auto;
     background-color:  rgba(0, 0, 0, 0.8);
@@ -355,7 +361,7 @@ input[type="submit"]:hover {
 /*****Recipes*****/
 
 .recipe-page {
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
 
 .recipe-page h2 {
@@ -476,9 +482,15 @@ footer {
         padding: 5px;
     }
 
+    .call-outs {
+        width: 100%;
+        padding: 10px;
+    }
+
     .call-out {
           margin-top: 160px;
           margin-bottom: 10px;
+          height: 250px;
 
     }
 
@@ -486,13 +498,11 @@ footer {
         font-size: 35px;
     }
 
-    .navigation {
-        margin-top: 4rem;
-    }
+   
 
     .quote {
         width: 100%;
-        margin: 40px auto;
+        margin: 10rem auto 3rem auto;
         padding: 5px;
         border: solid 5px #0d0709;
     }
@@ -509,16 +519,26 @@ footer {
 }
 
 @media screen and (max-width: 991.98px) {
+    header {
+        height: 10vh;
+    }
+
    .call-out {
     width: 30%;
     height: 320px;
     margin-top: 10rem;
-   /* margin-bottom: 20px;*/
+    margin-bottom: 20px;
     border: 2px solid transparent; 
     padding: 2px;
     }
 
   
+}
+
+@media screen and (max-width: 1025px) {
+    header {
+        height: 10vh;
+    }
 }
 
 @media screen and (max-width: 765px) {
@@ -567,7 +587,7 @@ footer {
 
     .navigation {
         z-index: 1;
-        background-color: rgba(13, 7, 9, 0.5);
+       background-color: transparent;
     }
 
     .form {
