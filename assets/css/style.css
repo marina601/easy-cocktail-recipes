@@ -45,7 +45,8 @@ h1 {
     margin-right: -15px;
     margin-left: -15px;
     padding: 0px;
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed
 }
 
 .navMenu {
@@ -90,7 +91,7 @@ h1 {
 .toggle-btn {
     position: relative;
     top: -3.5rem;
-    left: 20rem;
+    left: 20.3rem;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -109,12 +110,26 @@ h1 {
 
 /*Hero Image*/
 
-#main {
-    width: 100%;
-    min-height: fit-content;
-    /*height: 700px;*/
-    height: 80vh;
+
+.quote {
+    padding: 3rem;
+    margin: 10px;
 }
+
+
+.quote h2 {
+   color: #b00f16;
+   font-family: 'Akaya Telivigala', cursive;
+   font-weight: 500;
+   text-align: end;
+   padding: 20px;
+   margin: 5px;
+  /* background-color: rgba(176, 15, 22, 0.8); */
+   background-color: rgba(13, 7, 9, 0.9); 
+   border-radius: 5px;
+   box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
+}
+
 
 .hero-img,
 .about,
@@ -134,8 +149,7 @@ h1 {
     background-color: #d6cdd2;
     width: 25%;
     max-height: 380px;
-    padding: 10px;
-    margin: 140px auto;
+    margin: 30px auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
@@ -463,9 +477,9 @@ footer {
     }
 
     .call-out {
-          margin-top: 180px;
+          margin-top: 160px;
           margin-bottom: 10px;
-          box-shadow:  25px 15px 8px rgb(0 0 0 / 80%);
+
     }
 
     h1 {
@@ -476,9 +490,19 @@ footer {
         margin-top: 4rem;
     }
 
-    #main {
-        height: 1800px;
+    .quote {
+        width: 100%;
+        margin: 40px auto;
+        padding: 5px;
+        border: solid 5px #0d0709;
     }
+
+    .quote h2 {
+        font-size: 21px;
+        text-align: center;
+    }
+
+   
 
    
 
@@ -487,16 +511,14 @@ footer {
 @media screen and (max-width: 991.98px) {
    .call-out {
     width: 30%;
-    height: 300px;
-    margin-top: 180px;
-    margin-bottom: 20px;
+    height: 320px;
+    margin-top: 10rem;
+   /* margin-bottom: 20px;*/
     border: 2px solid transparent; 
     padding: 2px;
     }
 
-    #main {
-        height: 1800px;
-    }
+  
 }
 
 @media screen and (max-width: 765px) {
