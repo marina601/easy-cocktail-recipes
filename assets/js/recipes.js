@@ -63,14 +63,25 @@ function displayCocktail(data){
       </div>
     `
   });
-  $('#cocktail-list').empty().append(cocktailElems)
+  $('#cocktail-list').empty().append(cocktailElems);
   
-   const cocktailImg = document.querySelector("#cocktail-list img");
+
+  //Adding event listener 
+   let cocktailImg = document.querySelectorAll("#cocktail-list img");
    console.log(cocktailImg);
 
-   $(cocktailImg).on("click", function(){ 
-       $(".hidden").toggle();
+   for (let i = 0; i < cocktailImg.length; i ++) {
+      console.log(cocktailImg[i]);
+     $(cocktailImg[i]).on("click", function(){ 
+
+          $(".hidden").toggle();
+       
     }); 
+    
+    
+   }
+
+  
 
 
 }
