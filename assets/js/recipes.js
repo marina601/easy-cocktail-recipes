@@ -43,10 +43,10 @@ function displayCocktail(data){
           <div class="col-12 col-md-6 col-lg-4">
           <div class="card" id="margharita">
             <img src="${cocktail.strDrinkThumb}" class="card-img-top" id="img-margharita" alt="margarita cocktail">
-            <div class="card-body">
-            <h3 class="card-title" id="margaritaHeading">${cocktail.strDrink}</h3>
-            <h4 class="card-title hidden">Ingredients</h4>
-            <ul class="list-group list-group-flush ingredients hidden">
+                <div class="card-body">
+                <h3 class="card-title" id="margaritaHeading">${cocktail.strDrink}</h3>
+                <h4 class="card-title hidden">Ingredients</h4>
+                <ul class="list-group list-group-flush ingredients hidden">
                 ${cocktail.strIngredient1 ? `<li class="list-group-item">${cocktail.strIngredient1} ${cocktail.strMeasure1 ? ` : ${cocktail.strMeasure1}` : ""} </li>` : ""}
                 ${cocktail.strIngredient2 ? `<li class="list-group-item">${cocktail.strIngredient2} ${cocktail.strMeasure2 ? ` : ${cocktail.strMeasure2}` : ""} </li>` : ""}
                 ${cocktail.strIngredient3 ? `<li class="list-group-item">${cocktail.strIngredient3} ${cocktail.strMeasure3 ? ` : ${cocktail.strMeasure3}` : ""} </li>` : ""}
@@ -54,11 +54,11 @@ function displayCocktail(data){
                 ${cocktail.strIngredient5 ? `<li class="list-group-item">${cocktail.strIngredient5} ${cocktail.strMeasure5 ? ` : ${cocktail.strMeasure5}` : ""} </li>` : ""}
                 ${cocktail.strIngredient6 ? `<li class="list-group-item">${cocktail.strIngredient6} ${cocktail.strMeasure6 ? ` : ${cocktail.strMeasure6}` : ""} </li>` : ""}
                 ${cocktail.strIngredient7 ? `<li class="list-group-item">${cocktail.strIngredient7} ${cocktail.strMeasure7 ? ` : ${cocktail.strMeasure7}` : ""} </li>` : ""}
-            </ul>
-            <h4 class="card-title hidden">Method</h4>
-            <p class="card-text hidden" id="margarita-method">${cocktail.strInstructions}</p>
-            <p class="card-text hidden"><strong>Category : </strong>${cocktail.strAlcoholic}</p>
-            </div>
+                </ul>
+                <h4 class="card-title hidden">Method</h4>
+                <p class="card-text hidden" id="margarita-method">${cocktail.strInstructions}</p>
+                <p class="card-text hidden"><strong>Category : </strong>${cocktail.strAlcoholic}</p>
+                </div>
           </div>
       </div>
     `
@@ -67,32 +67,20 @@ function displayCocktail(data){
   
 
   //Adding event listener 
-   let cocktailImg = document.querySelectorAll("#cocktail-list img");
-   console.log(cocktailImg);
+ //  let cocktailImg = document.querySelectorAll("#cocktail-list img");
+   let card = document.querySelectorAll(".card-body");
+      
+   
 
-   for (let i = 0; i < cocktailImg.length; i ++) {
-      console.log(cocktailImg[i]);
-     $(cocktailImg[i]).on("click", function(){ 
 
-          $(".hidden").toggle();
-       
-    }); 
-    
-    
-   }
-
+       for (let i = 0; i < card.length; i ++) {
+            $(card[i]).on("click", function(){ 
+                 $(this).children(".hidden").toggle();  
+            });
+       }
   
 
 
 }
 
 getCocktail();
-
-
-//Adding event listener 
-
-
-
-
-
-
