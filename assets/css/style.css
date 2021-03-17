@@ -393,6 +393,7 @@ input[type="submit"]:hover {
     color: #b00f16;
     font-weight: 400;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -423,9 +424,6 @@ input[type="submit"]:hover {
    margin: 3px;
 }
 
-.card-img-top {
-    cursor: pointer;
-}
 
 /*****Footer*****/
 
