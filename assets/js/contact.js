@@ -1,3 +1,4 @@
+//jshint esversion: 6
 // Sending the form 
 
 const btn = document.getElementById('submit');

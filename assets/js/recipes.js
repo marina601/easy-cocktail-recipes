@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 const URL = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
 
 /**const searchForm = document.querySelector("form");
