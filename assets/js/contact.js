@@ -9,8 +9,7 @@ const emailV = document.getElementById("from_email").value.trim();
 contactForm.addEventListener('submit', function(event) {
    event.preventDefault(); //preventing default submit 
 
-   //checkInputs(); //calling the functiontion to validate input fields
-   checkInputs();
+  
    btn.value = 'Sending...'; //displayin new message when sending 
 
    const serviceID = 'default_service';
@@ -38,26 +37,7 @@ contactForm.addEventListener('submit', function(event) {
     
 });
 
-// function to check inputs 
-function checkInputs() {
 
-//validating email address https://www.w3resource.com/javascript/form/email-validation.php
-  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailV))
-  {
-   console.log("email is valid");
-   return (true)
-  } else {
-    alert("You have entered an invalid email address!")
-   return (false)
-  } 
-  //validating enquire message 
-  if (message.length <= 10) {
-        alert(`Your message is too short!`);
-    return (false)
-  } else {
-      return (true)
-  }
-}
 
 
 
