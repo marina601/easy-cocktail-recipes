@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Prata', serif;
     color: #0d0709;
    /* overflow: auto; */
@@ -407,7 +407,7 @@ input[type="submit"]:hover {
 
 .card-body h3 {
    /* font-family: 'Akaya Telivigala', cursive; */
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 5px;
     margin: 3px auto;
     color: #b00f16;
@@ -419,7 +419,7 @@ input[type="submit"]:hover {
 
 .card-body h4 {
    /*  font-family: 'Akaya Telivigala', cursive; */
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     padding: 5px;
     margin: 3px auto;
     color: #0d0709;
