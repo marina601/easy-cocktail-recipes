@@ -217,6 +217,13 @@ h1 {
   font-weight: 500;
 }
 
+.bio-2 a,
+.bio a {
+    color: #0d0709;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 #bio-1,
 #bio-2 {
     width: 350px;
