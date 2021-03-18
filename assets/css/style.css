@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Prata&display=swap');
 
+/*******General Styling********/
+html {
+    font-size: 62.5%;
+    position: relative; 
+    min-height: 100vh; 
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-family: 'Prata', serif;
+    color: #0d0709;
+    overflow: auto;
 }
 
 .row {
-    margin: 0px;
+    margin: 0;
 }
 
 .container-fluid {
-    padding: 0px;
+    padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Akaya Telivigala', cursive;
+}
 
 /**Additional Classes**/
 .text-center {
@@ -25,21 +40,22 @@ body {
 
 /**Main Heading Logo**/
 header {
-    background-color: #be6851;
-    margin: 0px;
-    padding: 0px;
+   /** background-color: #be6851;**/
+    margin: 0;
+    padding: 0;
     position: fixed;
     z-index: 2;
-    height: 15vh;
+    height: 10vh;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: 50px;
+   /** font-family: 'Akaya Telivigala', cursive; **/
+    font-size: 4rem;
     padding: 10px 0px;
-    margin: 5px 0px;
+   /** margin: 5px 0px; **/
     color:#0d0709;
+    background-color: #be6851;
 }
 
 /**Navigation**/
@@ -73,7 +89,7 @@ h1 {
   padding: 12px;
   text-decoration: none;
   margin: 10px auto;
-  font-family: 'Prata', serif;
+ /* font-family: 'Prata', serif; */
   font-size: 20px;
   font-weight: 700;
   margin: 5px;
@@ -92,8 +108,8 @@ h1 {
 }
 .toggle-btn {
     position: relative;
-    top: -3.2rem;
-    left: 20.3rem;
+    top: -5.2rem;
+   /* left: 20.3rem; */
     flex-direction: column;
     justify-content: space-between;
     width: 32px;
@@ -492,9 +508,9 @@ footer {
 
     }
 
-    h1 {
-        font-size: 35px;
-    }
+   /* h1 {
+       /* font-size: 35px; 
+    }  */
 
    
 
@@ -517,9 +533,9 @@ footer {
 }
 
 @media screen and (max-width: 991.98px) {
-    header {
+   /* header {
         height: 10vh;
-    }
+    } */
 
    .call-out {
     width: 30%;
@@ -534,9 +550,9 @@ footer {
 }
 
 @media screen and (max-width: 1025px) {
-    header {
+   /* header {
         height: 10vh;
-    }
+    } */
 }
 
 @media screen and (max-width: 765px) {
@@ -557,6 +573,7 @@ footer {
      .navMenu {
          width: 100%;
          flex-direction: column;
+         margin-top: -5rem;
      }
 
      .navItem {
