@@ -1,21 +1,6 @@
 //jshint esversion: 6
-
+$(document).ready(function(){
 const URL = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
-
-/**const searchForm = document.querySelector("form");
-const searchResultDiv = document.querySelector(".search-result");
-const container = document.querySelector(".cocktail-list");
-let searchQuery = "";
-
-
-searchForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  searchQuery = e.target.querySelector("input").value; 
-  console.log(searchQuery);//check that the query is working
-  getCocktail();
-});*/
-
-
 
 function getCocktail(){
   fetch(URL)
@@ -38,15 +23,16 @@ function getCocktail(){
     console.log('Fetch Error :-S', err);
   });
 }
+//Code has been refactored with help of my mentor Medale Oluwfemi
 function displayCocktail(data){
   let cocktailElems = ''
   data.drinks.forEach(cocktail => {
     cocktailElems += `
           <div class="col-12 col-md-6 col-lg-4">
           <div class="card" id="margharita">
-            <img src="${cocktail.strDrinkThumb}" class="card-img-top" id="img-margharita" alt="margarita cocktail">
+            <img src="${cocktail.strDrinkThumb}" class="card-img-top" alt="${cocktail.strDrinkThumb}">
                 <div class="card-body">
-                <h3 class="card-title" id="margaritaHeading">${cocktail.strDrink}</h3>
+                <h3 class="card-title">${cocktail.strDrink}</h3>
                 <h4 class="card-title hidden">Ingredients</h4>
                 <ul class="list-group list-group-flush ingredients hidden">
                 ${cocktail.strIngredient1 ? `<li class="list-group-item">${cocktail.strIngredient1} ${cocktail.strMeasure1 ? ` : ${cocktail.strMeasure1}` : ""} </li>` : ""}
@@ -59,6 +45,7 @@ function displayCocktail(data){
                 </ul>
                 <h4 class="card-title hidden">Method</h4>
                 <p class="card-text hidden" id="margarita-method">${cocktail.strInstructions}</p>
+                <p class="card-text hidden"><strong>Glass Type : </strong>${cocktail.strGlass}</p>
                 <p class="card-text hidden"><strong>Category : </strong>${cocktail.strAlcoholic}</p>
                 </div>
           </div>
@@ -69,20 +56,16 @@ function displayCocktail(data){
   
 
   //Adding event listener 
- //  let cocktailImg = document.querySelectorAll("#cocktail-list img");
    let card = document.querySelectorAll(".card-body");
-      
-   
-
-
        for (let i = 0; i < card.length; i ++) {
             $(card[i]).on("click", function(){ 
-                 $(this).children(".hidden").toggle();  
+             $(this).children(".hidden").toggle(); 
             });
-       }
-  
-
-
+       
+    }
+       
 }
 
 getCocktail();
+
+});
