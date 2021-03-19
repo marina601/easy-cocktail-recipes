@@ -428,7 +428,6 @@ input[type="submit"]:hover {
 }
 
 .card-body h3 {
-   /* font-family: 'Akaya Telivigala', cursive; */
     font-size: 2.5rem;
     padding: 5px;
     margin: 3px auto;
@@ -440,7 +439,6 @@ input[type="submit"]:hover {
 }
 
 .card-body h4 {
-   /*  font-family: 'Akaya Telivigala', cursive; */
     font-size: 2.2rem;
     padding: 5px;
     margin: 3px auto;
@@ -453,16 +451,12 @@ input[type="submit"]:hover {
    border: solid 3px #0d0709;
    color: #0d0709;
    padding: 5px;
-  /* font-family: 'Prata', serif;
-   font-size: 18px; */
    margin: 3px;
 }
 
 .card-text {
    color: #0d0709;
    padding: 5px;
-  /* font-family: 'Prata', serif;
-   font-size: 18px; */
    margin: 3px;
 }
 
@@ -534,12 +528,6 @@ footer {
 
     }
 
-   /* h1 {
-       /* font-size: 35px; 
-    }  */
-
-   
-
     .quote {
         width: 100%;
         margin: 10rem auto 3rem auto;
@@ -552,16 +540,9 @@ footer {
         text-align: center;
     }
 
-   
-
-   
-
 }
 
 @media screen and (max-width: 991.98px) {
-   /* header {
-        height: 10vh;
-    } */
 
    .call-out {
     width: 30%;
@@ -571,15 +552,9 @@ footer {
     border: 2px solid transparent; 
     padding: 2px;
     }
-
-  
 }
 
-@media screen and (max-width: 1025px) {
-   /* header {
-        height: 10vh;
-    } */
-}
+
 
 @media screen and (max-width: 765px) {
      .toggle-btn {
