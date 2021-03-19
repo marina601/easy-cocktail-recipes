@@ -11,42 +11,48 @@ $(".toggle-btn").click(function() {
 
 //About Page:
 
-$(".img-bartender-1").on("click", function() {
+$(".img-bartender-1, #headingOlivia").on("click", function() {
     
 //on click expand the div 
     $("#bio-1").height(1000);
 // on click show the text content for Olivia
-    $(".bio").show("medium");
-    $("#closeO").slideDown("medium");
+    $(".bio").show(450);
+    $("#solialLinks1").show(470);
+    $("#closeO").slideDown(500);
 });
+
+
+    
+// on click hide all the elements
+ 
 
 $("#closeO").on("click", function(){
     
 // on click hide all the elements 
-   $(".bio").slideUp("fast");
-   $(this).slideUp("fast");
-  
-   $("#bio-1").delay(3500).height(330);
+   $(".bio, #solialLinks1").slideUp(100);
+   $(this).slideUp(100);
+   $("#bio-1").delay(2000).height(330);
 });
 
 
-$(".img-bartender-2").on("click", function() {
+$(".img-bartender-2, #headingMartin").on("click", function() {
     
 //on click expand the div 
    $("#bio-2").height(1000);
 // on click show the text content for martin and button
-   $(".bio-2").show("medium");
-   $("#closeM").slideDown("medium");
+   $(".bio-2").show(450);
+   $("#socialLinks2").show(470);
+   $("#closeM").slideDown(500);
 
 });
 
 $("#closeM").on("click", function(){
     
 // on click hide all the elements 
-   $(".bio-2").slideUp("fast");
-   $(this).slideUp("fast");
+   $(".bio-2, #socialLinks2").slideUp(100);
+   $(this).slideUp(100);
   
-   $("#bio-2").delay(3500).height(330);
+   $("#bio-2").delay(2000).height(330);
 });
 
 
