@@ -251,17 +251,16 @@ h1 {
 #bio-1 h3,
 #bio-2 h3 {
    text-align: center;
-   /* font-family: 'Akaya Telivigala', cursive; */
     font-size: 3.5rem;
     padding: 5px 0px;
     margin: 1px 0px;
     color: #d6cdd2;
+    cursor: pointer;
 }
 
 #bio-1 h4,
 #bio-2 h4 {
     text-align: center;
-   /* font-family: 'Akaya Telivigala', cursive; */
     font-size: 3rem;
     padding: 10px 0px;
     margin: 5px 0px;
@@ -269,14 +268,6 @@ h1 {
 
 }
 
-/*#bio-1 p,
-#bio-2 p {
-  /*color:  #0d0709;
-   font-family: 'Prata', serif;
-  font-size: 18px;*/
- /* padding: 12px;/
-
-}*/
 .bio-social {
     padding: 1rem;
     margin: 0.5rem auto;
@@ -343,6 +334,13 @@ h1 {
     background-color:  rgba(0, 0, 0, 0.8);
 }
 
+.contact-heading h2 {
+    color: #d6cdd2;
+    font-size: 3.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
 .form {
     max-width: 70%;
     height: auto;
@@ -356,19 +354,10 @@ h1 {
     box-shadow:  15px 10px 8px rgba(0, 0, 0, 0.8);
 }
 
-.contact-form h1 {
-    color: #b00f16;
-    font-weight: bolder;
-
-}
-
-
 .contact-form p {
-    color: #be6851;
+    color: #d6cdd2;
     padding: 12px;
-  /*  font-family: 'Prata', serif;
-    font-size: 20px; */
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 label {
