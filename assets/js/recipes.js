@@ -57,7 +57,7 @@ function displayCocktail(data){
   $('#cocktail-list').empty().append(cocktailElems);
   
 
-  //Adding event listener 
+  //Adding event listener on click 
    let card = document.querySelectorAll(".card-body");
        for (let i = 0; i < card.length; i ++) {
          $(card[i]).click(function(){
@@ -65,7 +65,7 @@ function displayCocktail(data){
            $(this).children(".recipe").toggleClass("hidden");
          }
          });
-
+  //Adding event listener on mouseleave 
          $(card[i]).mouseleave(function(){
            $(this).children(".recipe").toggleClass("hidden");
          });
