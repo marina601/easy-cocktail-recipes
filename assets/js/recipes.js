@@ -62,12 +62,12 @@ function displayCocktail(data){
        for (let i = 0; i < card.length; i ++) {
          $(card[i]).click(function(){
            if($(this).children(".recipe").hasClass("hidden")){
-           $(this).children(".recipe").toggleClass("hidden");
+           $(this).children(".recipe").toggle();
          }
          });
   //Adding event listener on mouseleave 
          $(card[i]).mouseleave(function(){
-           $(this).children(".recipe").toggleClass("hidden");
+           $(this).children(".recipe").toggle();
          });
        } 
 
