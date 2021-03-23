@@ -130,14 +130,14 @@ h1 {
 
 
 .quote {
-    padding: 14rem 1rem 2rem 10rem;
-    margin: 0.6rem 0.4rem 0.3rem 0.3rem;
+    padding: 8rem 1rem 2rem 10rem;
+    margin: 8rem 0.4rem 0.3rem 0.3rem;
 }
 
 
 .quote h2 {
    color: #d6cdd2;
-   /*font-family: 'Akaya Telivigala', cursive; */
+   font-size: 3.6rem;
    font-weight: 500;
    text-align: end;
    padding: 20px;
@@ -158,12 +158,20 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+ /* width: 100%; */
+ /* height: 100%; */
 
 }
 
+#main {
+    min-height: 90vh;
+    max-height: fit-content;
+}
 
+.call-outs {
+    margin-top: 7.8rem;
+    margin-bottom: 3rem;
+}
 
 .call-out {
     background-color: #d6cdd2;
@@ -177,8 +185,7 @@ h1 {
 
 .sub-heading {
     text-align: center;
-    /*font-family: 'Akaya Telivigala', cursive;*/
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     padding: 10px 5px;
     margin: 5px 2px;
     color:#0d0709;
@@ -465,8 +472,11 @@ input[type="submit"]:hover {
 
 footer {
     height: fit-content;
+    min-height: 10vh;
     width: 100%;
     background: #0d0709;
+    padding: 5rem;
+    
 }
 
 .floating-footer {
@@ -530,7 +540,7 @@ footer {
     }
 
     .quote h2 {
-        font-size: 21px;
+        font-size: 2.5rem;
         text-align: center;
     }
 
@@ -548,6 +558,10 @@ footer {
 
     .call-outs {
         margin-top: 7rem;
+    }
+
+    .quote h2 {
+        font-size: 3.2rem;
     }
 }
 
@@ -606,5 +620,10 @@ footer {
     .form {
         width: 90%;
         padding: 10px;
+    }
+
+    .quote h2 {
+        font-size: 2.5rem;
+        text-align: center;
     }
 }
