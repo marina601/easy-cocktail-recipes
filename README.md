@@ -156,11 +156,11 @@ Sometimes the colours have been converted to the rgba values to create transpare
 Color palette has been picked from [colorpalettes.net](https://colorpalettes.net/color-palette-738/)
         
 
- ### Typorgaphy
+ ### Typography
       
  [Google Fonts](https://fonts.google.com/) have been used on this page 
         - To gie consistency to the users, consistant font have been used throughout he site:
-           
+
         - All the headings are displayed in font-family:'Akaya Telivigala', cursive;
         - All other elements are displayed in font-family: 'Prata', serif;
 
