@@ -168,7 +168,7 @@ h1 {
 .call-out {
     background-color: #d6cdd2;
     width: 25%;
-    max-height: 380px;
+   /* max-height: 380px; */
     margin: 30px auto;
     padding: 10px;
     border-radius: 10px;
@@ -519,13 +519,7 @@ footer {
     .call-outs {
         width: 100%;
         padding: 10px;
-    }
-
-    .call-out {
-          margin-top: 160px;
-          margin-bottom: 10px;
-          height: 250px;
-
+        margin-top: 5rem;
     }
 
     .quote {
@@ -546,11 +540,14 @@ footer {
 
    .call-out {
     width: 30%;
-    height: 320px;
     margin-top: 10rem;
     margin-bottom: 20px;
     border: 2px solid transparent; 
     padding: 2px;
+    }
+
+    .call-outs {
+        margin-top: 7rem;
     }
 }
 
