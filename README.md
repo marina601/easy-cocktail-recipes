@@ -75,7 +75,7 @@ The following user stories have been identified:
 ### First Time User:
 
 1. As a first-time user, I want to understand what this site is about and what to expect.
-2. As a first-time user, I want to see a selection of cocktail recipes available.
+2. As a first-time user, I want to view a selection of cocktail recipes available.
 3. As a first-time user, I want to be able to see the ingredieants and method for each cocktail.
 4. As a first-time user, I want to check out the social media links of the blog.
 
@@ -84,10 +84,11 @@ The following user stories have been identified:
 1. As a returning user, I want to make a cocktail and follow the instructions.
 2. As a returning user, I want to navigate back to the recipe page for more cocktail recipes.
 3. As a returning user, I want to learn more about the blog.
+4. As a returning user, I want to learn more about the blog creater and check out their social media accounts.
 
 
 ### Frequent user:
-1. As a frequent-user, I want to contact the blogger and ask a question.
+1. As a frequent-user, I want to be able to contact the blog creators and ask a question.
 2. As a frequent-user, I want to follow the blog on social media.
 
 ### Business Goals:
@@ -107,24 +108,35 @@ Considering the above user stories, I have decided upon the following UI Structu
 
 - A clear and simple landing page with a big hero image where the user will have a clear understanding of the website.
 - A simple navigation menu will outline the content of the blog.
-- Three statements will appear on scroll explaining to the user what to expect.
-- Once the user selects the recipe by clicking on the image the recipe card will be displayed allowing the user to view the recipe.
+- Navigation is sticky throughout the site giving user an easy navigation options at any time.
+- The user is presented with a famous quote by Luis Bunuel on loading of the page, which tells the user what this blog is about.
+- Three call-out statements will are displayed to explain to the user what to expect from the blog.
+
+### Recipe Page:
+
+- Cocktail recipes displayed on the page.
+- Once the user clicks on the name of the cocktail the information will expand.
+- Once the user leaves a particular recipe, the information will collapse.
  
 ### About Page:
 
 - A brief introduction about how the site has been created.
-- Pictures and bio about the site owners are displayed.
+- Pictures of the two site owners are displayed with their names.
+- Once the user clicks on the image or the name of the site owners more information is displayed, which includes their social media accounts.
+- At the botton of the bio information there is a button and on click the information slides up.
 
 ### Contact Page:
 
 - Contact form is available for users to submit their queries. 
-- Once the contact form has been submitted, an automated email will be sent to the user. 
+- Once the contact form has been submitted, an aler will be displayed, thanking the user for getting in touch.
+- An automated email will be sent to the user once the contact form has been submitted.
 
 ### Common:
 
-- Menu will be responsive on mobile and desktop view 
--  Hero Image will remain the same throughout the pages 
--  Minimal footer with social links 
+-  Navigation menu will be sticky and  responsive.
+-  Navigation will collapse on the mobile view 
+-  Hero-background image will remain the same throughout all the pages, to give consistency to the design and cocktail-bar feel. 
+-  The footer will be minimal with only social media icons to the blog.
 
 ##### back to [content](#table-of-content)
 
@@ -132,15 +144,26 @@ Considering the above user stories, I have decided upon the following UI Structu
 ## Design
 
  ### Color Scheme 
-![Color Palette](/assets/images/color-palette.jpg)
 
+![Color Palette](/assets/images/color-palette.jpg)
+- #ffffff
+- #d6css2
+- #be6851
+- #b00f16
+- #0d0709
+
+Sometimes the colours have been converted to the rgba values to create transparency.
 Color palette has been picked from [colorpalettes.net](https://colorpalettes.net/color-palette-738/)
         
 
  ### Typorgaphy
-        - Used Mon
-        
-        - 
+      
+ [Google Fonts](https://fonts.google.com/) have been used on this page 
+        - To gie consistency to the users, consistant font have been used throughout he site:
+           
+        - All the headings are displayed in font-family:'Akaya Telivigala', cursive;
+        - All other elements are displayed in font-family: 'Prata', serif;
+
 
 ### Imagery
         - All the imagery is imported from 
