@@ -22,11 +22,13 @@
     <header class="container-fluid">
         <div class="row">
             <h1 class="col-12">
-                Easy <i class="fas fa-cocktail"></i><span class="sr-only">Cocktail</span> Recipes
+                Easy <i class="fas fa-cocktail" aria-hidden="true"></i><span class="sr-only">Cocktail</span> Recipes
             </h1>
               <!--Navigation-->
             <div class="navigation">
-                <button class="toggle-btn ml-auto"><i class="fas fa-bars"></i></button>
+                <button class="toggle-btn ml-auto" aria-hidden="true"><i class="fas fa-bars"></i>
+                    <span class="sr-only">Navigation Button</span>
+                </button>
                 <nav class="col-12">
                    <ul class="navMenu">
                        <li class="navItem">
@@ -61,76 +63,82 @@
        <!---Individual Information-->
        <div class="row">
           <div clss="col-12 col-md-6 col-lg-6 hidden" id="bio-1">
-              <img src="./assets/images/olivia.jpg" class="img-bartender-1" alt="a women bartender making a cocktail">
-              <h3 class="text-center" id="headingOlivia">Olivia Newman</h3>
-              <h4 class="hidden bio">Work Experience:</h4>
-              <p class="hidden bio">
-                Head bartender at <a href="https://barnightjar.com/" target="_blank" rel="external">Nightjar cocktail-bar</a> in London, I have also worked for 3 years in 
+              <!--Olivia Newman Bio-->
+                <img src="./assets/images/olivia.jpg" class="img-bartender-1" alt="a women bartender making a cocktail">
+                <h3 class="text-center" id="headingOlivia">Olivia Newman</h3>
+                <h4 class="hidden bio">Work Experience:</h4>
+                <p class="hidden bio">
+                  Head bartender at <a href="https://barnightjar.com/" target="_blank" rel="external">Nightjar cocktail-bar</a> in London, I have also worked for 3 years in 
                 <a href="http://www.thehansonbuilding.com/hansons-shoe-repair/" target="_blank" rel="external">Hanson’s Shoe Repair </a>
-                cocktail bar in Orlando where I grew up before immigrating to London. Whilst traveling, I have gained a 
-              fantastic knowledge of international cocktail recipes and spirits. I love blind cocktail tasting!
-              </p>
-              <h4 class="hidden bio">When I am not mixing:</h4>
-              <p class="hidden bio">I love exploring new places. Most of the time when I am not working you can find me in the
-               Caribbean exploring different cultures, sun-bedding and trying local cocktails!  
-               </p>
-               <div class="bio-social hidden" id="solialLinks1">
-                <a href="https://www.pinterest.co.uk/" target="_blank" rel="noreferrer" class="socialLink">
-                    <i class="fab fa-pinterest-square" aria-hidden="true"></i>
-                    <span class="sr-only">Pintrest</span>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="socialLink">
-                    <i class="fab fa-linkedin" aria-hidden="true"></i> 
-                    <span class="sr-only">Linked In</span>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="socialLink">
-                    <i class="fab fa-instagram-square" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                </a> 
-              </div>
-               <button id="closeO" class="close-btn hidden"><i class="fas fa-angle-double-up"></i></button>
+                  cocktail bar in Orlando where I grew up before immigrating to London. Whilst traveling, I have gained a 
+                 fantastic knowledge of international cocktail recipes and spirits. I love blind cocktail tasting!
+                </p>
+                <h4 class="hidden bio">When I am not mixing:</h4>
+                <p class="hidden bio">I love exploring new places. Most of the time when I am not working you can find me in the
+                   Caribbean exploring different cultures, sun-bedding and trying local cocktails!  
+                </p>
+                <div class="bio-social hidden" id="solialLinks1">
+                   <a href="https://www.pinterest.co.uk/" target="_blank" rel="noreferrer" class="socialLink">
+                      <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+                      <span class="sr-only">Pintrest</span>
+                   </a>
+                   <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="socialLink">
+                      <i class="fab fa-linkedin" aria-hidden="true"></i> 
+                      <span class="sr-only">Linked In</span>
+                   </a>
+                   <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="socialLink">
+                      <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                      <span class="sr-only">Instagram</span>
+                   </a> 
+                </div>
+                <button id="closeO" class="close-btn hidden"><i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Button to close current section</span>
+                </button>
           </div>
           <div clss="col-12 col-md-6 col-lg-6" id="bio-2">
-              <img src="./assets/images/martin.jpg" class="img-bartender-2" alt="a men bartender pouring a cocktail">
-              <h3 class="text-center" id="headingMartin">Martin Huntsman</h3>
-              <h4 class="hidden bio-2">Work Experience:</h4>
-              <p class="hidden bio-2">Professional bartender with 5+ years of experience at some of the best bars in London 
-                  <a href="https://www.oriolebar.com/" target="_blank" rel="external">Oriole Bar</a> and 
-                  <a href="https://www.thecocktailtradingco.co.uk/" target="_blank" rel="external">The Cocktail Trading Co.</a>. Knowledge of over 100 cocktail recipes and invented 3 new mixed beverage recipes 
-                  which increased bar revenue by 5% combined. I love experimenting and inventing new cocktail recipes!
-              </p>
-              <h4 class="hidden bio-2">When I am not mixing:</h4>
-              <p class="hidden bio-2">I love the great outdoors and usually take my annual 
-                 vacation in Canada, where I explore the Rocky Mountains and take canoe trips up the Keele River.  
-              </p>
-              <div class="bio-social hidden" id="socialLinks2">
-                <a href="https://www.pinterest.co.uk/" target="_blank" rel="noreferrer" class="socialLink">
-                    <i class="fab fa-pinterest-square" aria-hidden="true"></i>
-                    <span class="sr-only">Pintrest</span>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="socialLink">
-                    <i class="fab fa-linkedin" aria-hidden="true"></i> 
-                    <span class="sr-only">Linked In</span>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="socialLink">
-                    <i class="fab fa-instagram-square" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                </a> 
-              </div>
-              <button id="closeM" class="close-btn hidden"><i class="fas fa-angle-double-up"></i></button>
-          </div>
-       </div>
+              <!--Martin Huntsman Bio-->
+                <img src="./assets/images/martin.jpg" class="img-bartender-2" alt="a men bartender pouring a cocktail">
+                <h3 class="text-center" id="headingMartin">Martin Huntsman</h3>
+                <h4 class="hidden bio-2">Work Experience:</h4>
+                <p class="hidden bio-2">Professional bartender with 5+ years of experience at some of the best bars in London 
+                   <a href="https://www.oriolebar.com/" target="_blank" rel="external">Oriole Bar</a> and 
+                   <a href="https://www.thecocktailtradingco.co.uk/" target="_blank" rel="external">The Cocktail Trading Co.</a>. Knowledge of over 100 cocktail recipes and invented 3 new mixed beverage recipes 
+                      which increased bar revenue by 5% combined. I love experimenting and inventing new cocktail recipes!
+                </p>
+                <h4 class="hidden bio-2">When I am not mixing:</h4>
+                <p class="hidden bio-2">I love the great outdoors and usually take my annual 
+                   vacation in Canada, where I explore the Rocky Mountains and take canoe trips up the Keele River.  
+                </p>
+                <div class="bio-social hidden" id="socialLinks2">
+                    <a href="https://www.pinterest.co.uk/" target="_blank" rel="noreferrer" class="socialLink">
+                       <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+                       <span class="sr-only">Pintrest</span>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="socialLink">
+                       <i class="fab fa-linkedin" aria-hidden="true"></i> 
+                       <span class="sr-only">Linked In</span>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="socialLink">
+                       <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                       <span class="sr-only">Instagram</span>
+                    </a> 
+                </div>
+                <button id="closeM" class="close-btn hidden"><i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                    <span class="sr-only">Button to close current section</span>
+                </button>
+            </div>
+         </div>
     </section>
-    
+    <!--Footer-->
     <footer class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <ul class="social-icons">
-                   <li>
+                    <li>
                         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
-                  </li>
-                   <li>
+                    </li>
+                    <li>
                        <a href="https:////www.instagram.com/" target="_blank" rel="noreferrer">
                        <i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
                     </li>
