@@ -27,7 +27,6 @@ This website will enable adults to create simple cocktail recipes for special oc
 3 [**Technology Used**](#technology-used)
    - [**Languages Used**](#language-used)
    - [**Frameworks Libraries and Programs Used**](#frameworks-libraries-and-programs-used)
-   - [**Logic Walkthrough**](#logic-walkthrough)
    - [**Problems During Development**](#problems-during-development)   
 
 4 [**Testing**](#testing)
@@ -76,7 +75,7 @@ The following user stories have been identified:
 
 1. As a first-time user, I want to understand what this site is about and what to expect.
 2. As a first-time user, I want to view a selection of cocktail recipes available.
-3. As a first-time user, I want to be able to see the ingredieants and method for each cocktail.
+3. As a first-time user, I want to be able to see the ingredients and method for each cocktail.
 4. As a first-time user, I want to check out the social media links of the blog.
 
 ### Returning user:
@@ -84,7 +83,7 @@ The following user stories have been identified:
 1. As a returning user, I want to make a cocktail and follow the instructions.
 2. As a returning user, I want to navigate back to the recipe page for more cocktail recipes.
 3. As a returning user, I want to learn more about the blog.
-4. As a returning user, I want to learn more about the blog creater and check out their social media accounts.
+4. As a returning user, I want to learn more about the blog creator and check out their social media accounts.
 
 
 ### Frequent user:
@@ -93,10 +92,10 @@ The following user stories have been identified:
 
 ### Business Goals:
 
-1. As a business-owner, I want to build an interactive website for viewers to explore popular recipes.
-2. As a business-owner, I want to increase the site traffic and get more views.
-3. As a business-owner, I want to build my social network following.
-3. As a business-owner, I want to interact with users on a personal level.
+1. As a business owner, I want to build an interactive website for viewers to explore popular recipes.
+2. As a business owner, I want to increase the site traffic and get more views.
+3. As a business owner, I want to build my social network following.
+3. As a business owner, I want to interact with users on a personal level.
 
 ##### back to [content](#table-of-content)
 
@@ -108,13 +107,13 @@ Considering the above user stories, I have decided upon the following UI Structu
 
 - A clear and simple landing page with a big hero image where the user will have a clear understanding of the website.
 - A simple navigation menu will outline the content of the blog.
-- Navigation is sticky throughout the site giving user an easy navigation options at any time.
+- Navigation is sticky throughout the site giving the user easy navigation options at any time.
 - The user is presented with a famous quote by Luis Bunuel on loading of the page, which tells the user what this blog is about.
 - Three call-out statements will are displayed to explain to the user what to expect from the blog.
 
 ### Recipe Page:
 
-- Cocktail recipes displayed on the page.
+- Cocktail recipes are displayed on the page.
 - Once the user clicks on the name of the cocktail the information will expand.
 - Once the user leaves a particular recipe, the information will collapse.
  
@@ -123,17 +122,17 @@ Considering the above user stories, I have decided upon the following UI Structu
 - A brief introduction about how the site has been created.
 - Pictures of the two site owners are displayed with their names.
 - Once the user clicks on the image or the name of the site owners more information is displayed, which includes their social media accounts.
-- At the botton of the bio information there is a button and on click the information slides up.
+- At the bottom of the bio-information there is a button and on click, the information slides up.
 
 ### Contact Page:
 
 - Contact form is available for users to submit their queries. 
-- Once the contact form has been submitted, an aler will be displayed, thanking the user for getting in touch.
+- Once the contact form has been submitted, an alert will be displayed, thanking the user for getting in touch.
 - An automated email will be sent to the user once the contact form has been submitted.
 
 ### Common:
 
--  Navigation menu will be sticky and  responsive.
+-  Navigation menu is sticky and responsive.
 -  Navigation will collapse on the mobile view 
 -  Hero-background image will remain the same throughout all the pages, to give consistency to the design and cocktail-bar feel. 
 -  The footer will be minimal with only social media icons to the blog.
@@ -143,37 +142,53 @@ Considering the above user stories, I have decided upon the following UI Structu
 
 ## Design
 
- ### Color Scheme 
+ ### Colour Scheme 
 
 ![Color Palette](/assets/images/color-palette.jpg)
-- #ffffff
-- #d6css2
-- #be6851
-- #b00f16
-- #0d0709
+ -  | #ffffff |  #d6css2  |  #be685  |  #b00f16  | #0d0709
 
 Sometimes the colours have been converted to the rgba values to create transparency.
-Color palette has been picked from [colorpalettes.net](https://colorpalettes.net/color-palette-738/)
+The colour palette has been picked from [colorpalettes.net](https://colorpalettes.net/color-palette-738/)
         
 
  ### Typography
       
  [Google Fonts](https://fonts.google.com/) have been used on this page 
-        - To gie consistency to the users, consistant font have been used throughout he site:
+        - To give consistency to the users, the consistent font has been used throughout the site:
 
         - All the headings are displayed in font-family:'Akaya Telivigala', cursive;
         - All other elements are displayed in font-family: 'Prata', serif;
 
 
 ### Imagery
-        - All the imagery is imported from 
+
+- All the imagery is imported from 
+[Pixabay](https://pixabay.com/)
+    
+- Black and White background image is by 
+[picturexphotobnb](https://pixabay.com/photos/bar-drinks-alcohol-restaurant-wine-5121407/)
+
+- Barlady image 
+[paolodepascale](https://pixabay.com/photos/barlady-bartender-bar-cocktail-5130092/)
+
+- Barman image 
+[paolodepascale](https://pixabay.com/photos/bartender-mixologist-bar-cocktail-5130099/)
+
+- All the cocktail images are provided by API
+[TheCocktailDB](https://www.thecocktaildb.com/api.php)
+
+- Favicon icon has been sourced from 
+[icons8](https://icons8.com/icons/set/cocktail)
+    
+
 ##### back to [content](#table-of-content)
 
 ## Wireframes
 
-For wireframes I have used [Balsamiq](https://balsamiq.com/)
+For wireframes, I have used [Balsamiq](https://balsamiq.com/)
 
-Please view my [Wireframes](https://browser-aquamarine-carp-v2i7swjo.ws-eu03.gitpod.io/workspace/easy-cocktail-recipes/assets/wireframes/easy-cocktail-recipe%28wireframes%29.pdf)
+Please view my wireframes for desktop, tablet and mobile view:
+[Wireframes](/assets/wireframes/easy-cocktail-recipe(wireframes).pdf)
 
 
 ##### back to [content](#table-of-content)
@@ -182,20 +197,42 @@ Please view my [Wireframes](https://browser-aquamarine-carp-v2i7swjo.ws-eu03.git
 
 ### Features implemented 
 
-- Logo is linked to the home page.
-- Dynamic navigation menu collapses on the mobile screen view.
-- Three initial messages will show up to the user on a scroll.
-- Recipe cards that get their input from an API.
-- Star recipe rating records the total rating.
-- Recipe card shows up as a main feature on the page once it is clicked on and the background fades.
-- The user can exit the recipe card in 3 ways, clicking on the x button, clicking on the main window, or pressing the Escape key on the keyboard.
-- The website has a responsive design based on the screen view.
-- Contact form uses the “POST” method to send information from the user to the owner powered by JSmail API
+- [All pages](../index.html):  
+   - Dynamic navigation menu collapses on the mobile screen view.
+   - Contain sticky navigation allows the user to access the menu at any time.
+   - The website has a responsive design based on the screen view.
+   - Minimalistic footer with social icons for the webpage.
+
+- [Recipes.html](../ricipes.html): 
+   - Recipe cards take their input from an API.
+   - Recipe card information is hidden to the user on document load. 
+   - Recipe card expand on click to show all the content to the user.
+   - Recipe card collapses when the user moves to a different recipe.
+   - The user can also exit the recipe card with one click.
+
+- [About.html](../about.html)
+   - The user is presented with About the blog paragraph.
+   - The user is also shown two pictures of the site owners.
+   - The user can click on each name and more bio information is available.
+   - Bio information for each person has links to the cocktail bars where they use to work.
+   - Bio information also social icons links for each person. 
+   - The user is also provided with a button to collapse the bio information for each person.
+
+
+- [Contact.html](../contact.html)
+   - Contact form is powered by mailJS.
+   - Contact form uses the “POST” method to send information from the user.
+   - When the submit button is pressed the button text content is "Sending ... ".
+   - Once the user sends the message an alert window is displayed letting the user know the content has been sent.
+   - If the message is not sent an alert window will be displayed letting the user know something has gone wrong. 
+   - The user also receives an automatic reply from mailJS.
 
 ### Features Left to Implements
 
-- Subscription form to the blog
-- Print Button to the recipe card
+- Subscription form to the blog's newsletter 
+- Recipe cards information could appear in the modal on click 
+- Star rating for each recipe 
+- Sharing social media icons for each recipe 
 
 ##### back to [content](#table-of-content)
 
@@ -212,28 +249,28 @@ Please view my [Wireframes](https://browser-aquamarine-carp-v2i7swjo.ws-eu03.git
 ### Frameworks Libraries and Programs Used 
 
 1. [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
- - mainly for responsive grid system and used components to assist styling of the elements.
-also used Java Script components for responsive navigation bar and toggler class to create a humburger button on the mobile device. 
-Bootstrap css library has been used to help with additional styling on the webpage.
+ - Mainly for responsive grid layout and used components to assist styling of the elements. 
+Some Bootstrap css library has been used to help with additional styling on the webpage like automatic margins and recipe card layout. 
 
 
 2. [CSS tricks](https://css-tricks.com/perfect-full-page-background-image/) 
-- used to create a full background image which will be recognised by all 
+- Used to create a full background image that will is recognised by all 
 browsers.
 
 3. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Montseratt and Releway' fonts into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Akava and Prata' fonts into the style.css file which is used on all pages throughout the project.
 
 4. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
-5. [jQuery](https://api.jquery.com/)    
+5. [jQuery](https://api.jquery.com/)
+    - jQuery library has been used to target html elements and assign event listeners throughout JavaScript files.     
 
 6. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
 7. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
+    - GitHub is used to store the project's code after being pushed from Git.
 
 8. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
@@ -258,15 +295,19 @@ browsers.
 
 ##### back to [content](#table-of-content)
 
-## Logic Walkthrough
-
-##### back to [content](#table-of-content)
 
 ## Problems During Development 
+
+- index.htmt landing page was too on desktop and laptop devices and was not covering the whole screen size.
+  - had to set min and max height to section element
+- buttons to filter the recipe page 
+- email validation 
 
 ##### back to [content](#table-of-content)
 
 ## Testing
+
+You can find testing information in [TESTING.md]((TESTING.md))
 
 ##### back to [content](#table-of-content)
 
@@ -276,23 +317,23 @@ browsers.
 
 The project was deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/marina601/iFitness)
+1. Log in to GitHub and locate the [marina601/easy-cocktial-recipes Repository](https://github.com/marina601/easy-cocktail-recipes)
 2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
     - Alternatively, click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "root" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://marina601.github.io/iFitness/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://marina601.github.io/easy-cocktail-recipes/) in the "GitHub Pages" section.
 
 ##### back to [content](#table-of-content)
 
 
 ### Forking to GitHub Respiratories
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub 
+By forking the GitHub Repository you can make a copy of the original repository on our GitHub 
 account to view and/or make changes without affecting the original repository by using the following step:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/marina601/iFitness)
+1. Log in to GitHub and locate the [marian601/easy-cocktail-recipes Respiratory](https://github.com/marina601/easy-cocktail-recipes)
 2. At the top of the Repository (not top of page) just above the "Settings" on the menu, locate the "Fork" button.
 3. You should now have a copy of the original repository in your GitHub account.
 
@@ -300,7 +341,7 @@ account to view and/or make changes without affecting the original repository by
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/marina601/iFitness)
+1. Log in to GitHub and locate the [marian601/easy-cocktail-recipes Repository](https://github.com/marina601/easy-cocktail-recipes)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -311,14 +352,50 @@ account to view and/or make changes without affecting the original repository by
 
 ## Credits
 
+### Content 
+
+- The main content of the website has been written by a developer
+
+- Recipe information has been provided by [TheCocktailDB API](https://www.thecocktaildb.com/api.php) 
+
+- Quote which appears on the index.html page has been taken from [The Oxfordsd](https://theoxfordsd.com/cocktail-quotes/)
+
+
+
 ### Code
 
-##### back to [content](#table-of-content)
+- My mentor Medale Oluwafemi has helped me to refactor the code in recipes.js and write html 
+elements dinamcally in JavaScript instead of repeating the same code and targetting html elements from the 
+recipes.html
+
+- Code to get contact form to to send the information has been taken from [emailJS](https://jsfiddle.net/api/post/library/pure/)
+and adopted to site purpose.
+
+- Responsive navbar has been created with help of tutorial from [Web Dev Simplified](https://www.youtube.com/watch?v=At4B7A4GOPg)
+
+- Fully responsive background image code has been taken from [CSS tricks](https://css-tricks.com/perfect-full-page-background-image/)
 
 ### Media
+
+- Background image and the images for site creators have been sorced from [Pixabay](https://pixabay.com/)
 
 ##### back to [content](#table-of-content)
  
 ### Acknowledgment
+
+- I would like to thank my mentor Medale Oluwafemi for helping to understand the concept of JavaScrips and guided me throug 
+reducing the lenght of the my code and creating dynamic element in JavaScript, also pointing me in the right direction with 
+UX design of the site
+
+- My fellow student Aukje Byllsa who took the time to review my project and give me some 
+helpful suggestions on what aspects could be improved.
+
+- Tutor support at Code Institute for their paitance and helping me with the login of JavaScript.
+
+##### back to [content](#table-of-content)
+
+#### Disclaimer
+
+The content of this Website is for educational purposes only.
 
 ##### back to [content](#table-of-content)
