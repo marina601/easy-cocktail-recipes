@@ -108,7 +108,7 @@ Considering the above user stories, I have decided upon the following UI Structu
 - A clear and simple landing page with a big hero image where the user will have a clear understanding of the website.
 - A simple navigation menu will outline the content of the blog.
 - Navigation is sticky throughout the site giving the user easy navigation options at any time.
-- The user is presented with a famous quote by Luis Bunuel on loading of the page, which tells the user what this blog is about.
+- The user is presented with a famous quote by Luis Bunuel loading of the page, which tells the user what this blog is about.
 - Three call-out statements will are displayed to explain to the user what to expect from the blog.
 
 ### Recipe Page:
@@ -282,7 +282,7 @@ browsers.
    - API used to get cocktail recipes into recipe cards 
 
 11. [Email-JS](https://www.emailjs.com/)
-   - API used to submit contact form and send automated emails to the user.
+   - API is used to submit a contact form and send automated emails to the user.
 
 12. [Grammarly](https://www.grammarly.com/)
     - Used to fix the thousands of grammar errors across the project.
@@ -299,7 +299,7 @@ browsers.
 ## Problems During Development 
 
 - index.htmt landing page was too on desktop and laptop devices and was not covering the whole screen size.
-  - had to set min and max height to section element
+  - had to set min and max-height to the section element
 - buttons to filter the recipe page 
 - email validation 
 
@@ -317,7 +317,7 @@ You can find testing information in [TESTING.md]((TESTING.md))
 
 The project was deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and locate the [marina601/easy-cocktial-recipes Repository](https://github.com/marina601/easy-cocktail-recipes)
+1. Log in to GitHub and locate the [marina601/easy-cocktail-recipes Repository](https://github.com/marina601/easy-cocktail-recipes)
 2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
     - Alternatively, click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
@@ -328,7 +328,7 @@ The project was deployed to GitHub Pages using the following steps:
 ##### back to [content](#table-of-content)
 
 
-### Forking to GitHub Respiratories
+### Forking to GitHub Respiratory
 
 By forking the GitHub Repository you can make a copy of the original repository on our GitHub 
 account to view and/or make changes without affecting the original repository by using the following step:
@@ -365,32 +365,32 @@ account to view and/or make changes without affecting the original repository by
 ### Code
 
 - My mentor Medale Oluwafemi has helped me to refactor the code in recipes.js and write html 
-elements dinamcally in JavaScript instead of repeating the same code and targetting html elements from the 
+elements dynamcally in JavaScript instead of repeating the same code and targetting html elements from the 
 recipes.html
 
-- Code to get contact form to to send the information has been taken from [emailJS](https://jsfiddle.net/api/post/library/pure/)
+- Code to get the contact form to send the information has been taken from [emailJS](https://jsfiddle.net/api/post/library/pure/)
 and adopted to site purpose.
 
-- Responsive navbar has been created with help of tutorial from [Web Dev Simplified](https://www.youtube.com/watch?v=At4B7A4GOPg)
+- Responsive navbar has been created with help of a tutorial from [Web Dev Simplified](https://www.youtube.com/watch?v=At4B7A4GOPg)
 
 - Fully responsive background image code has been taken from [CSS tricks](https://css-tricks.com/perfect-full-page-background-image/)
 
 ### Media
 
-- Background image and the images for site creators have been sorced from [Pixabay](https://pixabay.com/)
+- Background image and the images for site creators have been sourced from [Pixabay](https://pixabay.com/)
 
 ##### back to [content](#table-of-content)
  
 ### Acknowledgment
 
-- I would like to thank my mentor Medale Oluwafemi for helping to understand the concept of JavaScrips and guided me throug 
-reducing the lenght of the my code and creating dynamic element in JavaScript, also pointing me in the right direction with 
+- I would like to thank my mentor Medale Oluwafemi for helping to understand the concept of JavaScript and guided me through
+reducing the length of my code and creating dynamic elements in JavaScript, also pointing me in the right direction with 
 UX design of the site
 
 - My fellow student Aukje Byllsa who took the time to review my project and give me some 
 helpful suggestions on what aspects could be improved.
 
-- Tutor support at Code Institute for their paitance and helping me with the login of JavaScript.
+- Tutor support at Code Institute for their patience and helping me with the login of JavaScript.
 
 ##### back to [content](#table-of-content)
 
