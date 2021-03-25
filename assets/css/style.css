@@ -517,6 +517,17 @@ footer {
     padding: 10px;
 }
 
+.copy-rights{
+    margin: 1rem;
+}
+    
+span {
+    color: #d6cdd2;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
 
 
 /*******Media Queries*****/
