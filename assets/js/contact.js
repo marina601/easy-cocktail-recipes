@@ -1,20 +1,17 @@
 //jshint esversion: 6
 // Sending the form 
-
+// identifying submit button and contact form variables 
 const btn = document.getElementById('submit');
 const contactForm = document.getElementById('contact-form');
-// identifying submit button 
-const message = document.getElementById("enquire").value.trim();
-const emailV = document.getElementById("from_email").value.trim();
-
+//Setting variables for serviceID and templateID
+const serviceID = 'default_service';
+const templateID = 'template_rh5u5i9';
+ 
+//Code was taken from emailJS to set up the initial function
 contactForm.addEventListener('submit', function(event) {
    event.preventDefault(); //preventing default submit 
 
-  
-   btn.value = 'Sending...'; //displayin new message when sending 
-
-   const serviceID = 'default_service';
-   const templateID = 'template_rh5u5i9';
+   btn.value = 'Sending...'; //displaying new button value when sending 
 
    emailjs.sendForm(serviceID, templateID, this) //sending the form
     .then(() => {
