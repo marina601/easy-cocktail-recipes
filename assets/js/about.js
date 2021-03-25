@@ -5,7 +5,7 @@ $(document).ready(function(){
 $(".img-bartender-1, #headingOlivia").on("click", function() {
     
 //on click expand the div 
-    $("#bio-1").height(1000);
+    $("#bio-1").css("height", "fit-content");
 // on click show the text content for Olivia
     $(".bio").show(450);
     $("#solialLinks1").show(470);
@@ -29,7 +29,7 @@ $("#closeO").on("click", function(){
 $(".img-bartender-2, #headingMartin").on("click", function() {
     
 //on click expand the div 
-   $("#bio-2").height(1000);
+   $("#bio-2").css("height", "fit-content");
 // on click show the text content for martin and button
    $(".bio-2").show(450);
    $("#socialLinks2").show(470);
