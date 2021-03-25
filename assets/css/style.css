@@ -14,7 +14,6 @@ body {
     font-size: 1.8rem;
     font-family: 'Prata', serif;
     color: #0d0709;
-   /* overflow: auto; */
 }
 
 .row {
@@ -40,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /**Main Heading Logo**/
 header {
-   /** background-color: #be6851;**/
     margin: 0;
     padding: 0;
     position: fixed;
@@ -50,10 +48,8 @@ header {
 
 h1 {
     text-align: center;
-   /** font-family: 'Akaya Telivigala', cursive; **/
     font-size: 4rem;
     padding: 10px 0px;
-   /** margin: 5px 0px; **/
     color:#0d0709;
     background-color: #be6851;
 }
@@ -89,14 +85,9 @@ h1 {
   padding: 12px;
   text-decoration: none;
   margin: 10px auto;
- /* font-family: 'Prata', serif; */
   font-size: 20px;
   font-weight: 700;
   margin: 5px;
-  transition: all 0.35 ease-in-out;
-    -moz-transition: all 0.35 ease-in-out;
-    -webkit-transition: all 0.35 ease-in-out;
-    -o-transition: all 0.35 ease-in-out;
 }
 
 .navItem a:hover,
@@ -106,10 +97,10 @@ h1 {
     background-color: #d6cdd2;
     border-radius: 10%;
 }
+
 .toggle-btn {
     position: relative;
     top: -5.2rem;
-   /* left: 20.3rem; */
     flex-direction: column;
     justify-content: space-between;
     width: 32px;
@@ -142,7 +133,6 @@ h1 {
    text-align: end;
    padding: 20px;
    margin: 5px;
-  /* background-color: rgba(176, 15, 22, 0.8); */
    background-color: rgba(13, 7, 9, 0.9); 
    border-radius: 5px;
    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
@@ -154,13 +144,7 @@ h1 {
 .recipe-page,
 .contact-form {
   background: url("../images/bar-hero-img.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
- /* width: 100%; */
- /* height: 100%; */
-
 }
 
 #main {
@@ -176,7 +160,6 @@ h1 {
 .call-out {
     background-color: #d6cdd2;
     width: 25%;
-   /* max-height: 380px; */
     margin: 30px auto;
     padding: 10px;
     border-radius: 10px;
@@ -192,10 +175,7 @@ h1 {
 }
 
 .call-out p {
-  /*color:  #0d0709;*/
   padding: 12px;
-/*  font-family: 'Prata', serif; */
- /* font-size: 18px; */
   font-weight: 600;
 }
 
@@ -211,6 +191,7 @@ h1 {
     border-radius: 10px;
     box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
 }
+
 .about-box h2 {
     color: #0d0709;
     font-size: 3.5rem;
@@ -218,9 +199,6 @@ h1 {
 
 .about-box p {
   padding: 12px;
- /* font-family: 'Prata', serif;
-  font-size: 20px;
-  color:  #0d0709; */
   font-weight: 500;
 }
 
@@ -231,17 +209,23 @@ h1 {
     text-decoration: none;
 }
 
+.bio-2 a:hover, 
+.bio a:hover {
+   color: #d6cdd2;
+   background-color: rgba(13, 7, 9, 0.4);
+}
+
 #bio-1,
 #bio-2 {
-    width: 350px;
-    height: fit-content;
+    max-height: fit-content;
     background-color: #be6851;
     display: inline-block;
     padding: 20px;
-    margin: 30px auto;
+    margin: 10px;
     align-content: center;
     border-radius: 10px;
-    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);
+    box-shadow:  15px 5px 8px rgba(0, 0, 0, 0.8);   
+    max-width: 440px;
 }
 
 
@@ -251,7 +235,7 @@ h1 {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin: 10px 35px;
+    margin: 10px 80px;
     cursor: pointer;
 }
 
@@ -280,13 +264,10 @@ h1 {
     margin: 0.5rem auto;
     text-align: center;
 }
+
 .socialLink {
     color: #d6cdd2;
     text-decoration: none;
-    transition: all 0.35 ease-in-out;
-    -moz-transition: all 0.35 ease-in-out;
-    -webkit-transition: all 0.35 ease-in-out;
-    -o-transition: all 0.35 ease-in-out;
 }
 
 
@@ -303,7 +284,6 @@ h1 {
 }
 
 .close-btn {
-    size: 20px;
     background-color:  rgba(13, 7, 9, 0.5);
     width: 50px;
     height: 50px;
@@ -313,10 +293,6 @@ h1 {
     margin-top: 4rem;
     position: relative;
     bottom: 50px;
-    transition: all 0.35 ease-in-out;
-    -moz-transition: all 0.35 ease-in-out;
-    -webkit-transition: all 0.35 ease-in-out;
-    -o-transition: all 0.35 ease-in-out;
 }
 
 .close-btn i {
@@ -396,10 +372,6 @@ input[type="submit"] {
     font-size: 35px;
     padding: 10px;
     color: #0d0709;
-    transition: all 0.35 ease-in-out;
-    -moz-transition: all 0.35 ease-in-out;
-    -webkit-transition: all 0.35 ease-in-out;
-    -o-transition: all 0.35 ease-in-out;
 }
 
 input[type="submit"]:hover {
@@ -504,10 +476,7 @@ footer {
 
 .social-icons li a {
     color: #e3d8ee;
-    transition: all 0.35 ease-in-out;
-    -moz-transition: all 0.35 ease-in-out;
-    -webkit-transition: all 0.35 ease-in-out;
-    -o-transition: all 0.35 ease-in-out;
+    transition:  0.5 ease-in-out;
 }
 
 .social-icons li a:hover {
@@ -555,6 +524,11 @@ span {
         text-align: center;
     }
 
+    #bio-1,
+    #bio-2 {
+        max-height: 1090px;
+    }
+
 }
 
 @media screen and (max-width: 991.98px) {
@@ -573,6 +547,17 @@ span {
 
     .quote h2 {
         font-size: 3.2rem;
+    }
+
+    #bio-1,
+    #bio-2 {
+         max-width: 330px;
+         max-height: 1090px;
+    }
+
+    .img-bartender-1,
+    .img-bartender-2 {
+        margin: 10px 30px;
     }
 }
 
