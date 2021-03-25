@@ -133,9 +133,11 @@ Considering the above user stories, I have decided upon the following UI Structu
 ### Common:
 
 -  Navigation menu is sticky and responsive.
--  Navigation will collapse on the mobile view 
+-  Navigation will collapse on the mobile view.
+- A favicon icon is added to the site to give it an authentic look.
 -  Hero-background image will remain the same throughout all the pages, to give consistency to the design and cocktail-bar feel. 
--  The footer will be minimal with only social media icons to the blog.
+-  The footer will be minimal with social media icons to the blog.
+-  All pages will contain copyrights to protect the owner in the footer.
 
 ##### back to [content](#table-of-content)
 
