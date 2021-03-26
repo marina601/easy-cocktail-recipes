@@ -295,6 +295,9 @@ browsers.
 14. [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
     - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project
 
+15. [Befunky](https://www.befunky.com/)
+    - Online platform used to resize and crop images 
+    
 ##### back to [content](#table-of-content)
 
 
