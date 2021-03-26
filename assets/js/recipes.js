@@ -48,6 +48,14 @@ function displayCocktail(data){
                     <p class="card-text">${cocktail.strInstructions}</p>
                     <p class="card-text"><strong>Glass Type : </strong>${cocktail.strGlass}</p>
                     <p class="card-text"><strong>Category : </strong>${cocktail.strAlcoholic}</p>
+                    <h4>Rate this recipe:</h4>
+                    <div class ="star-rating">
+                      <i class="fas fa-star" id="st1"></i>
+                      <i class="fas fa-star" id="st2"></i>
+                      <i class="fas fa-star" id="st3"></i>
+                      <i class="fas fa-star" id="st4"></i>
+                      <i class="fas fa-star" id="st5"></i>
+                    </div>
                   </div>
                 </div>
           </div>
@@ -62,23 +70,34 @@ function displayCocktail(data){
        for (let i = 0; i < card.length; i ++) {
          $(card[i]).click(function(){
            if($(this).children(".recipe").hasClass("hidden")){
-           $(this).children(".recipe").toggle();
+           $(this).children(".recipe").show();
          }
          });
   //Adding event listener on mouseleave 
          $(card[i]).mouseleave(function(){
-           $(this).children(".recipe").toggle();
+           $(this).children(".recipe").hide("medium");
          });
        } 
+ 
+    const stars = document.querySelectorAll(".fa-star")
+    for(let i = 0; i < stars.length; i++){ //loop through them
+    
+        $(stars[i]).click(function(){ // on click function 
+            $(this).css("color", "red"); 
+            $(this).nextAll().css("color", "black");
+            $(this).prevAll().css("color", "red");     
+            setTimeout(() => { alert('Thank you for rating this recipe') }, 1000)
+        });
+     
+        $(stars[i]).on("mouseenter", function(){  //on mouseenter function 
+            $(this).css("color", "yellow");
+            $(this).css("background", "black");
+        })
 
+        
+    }
 
-     /**  let card = document.querySelectorAll(".card-body");
-       for (let i = 0; i < card.length; i ++) {
-            $(card[i]).on("click", function(){ 
-             $(this).children(".hidden").toggle(); 
-            });
-       
-    }*/
+   
        
 }
 
