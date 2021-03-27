@@ -84,6 +84,7 @@ The following user stories have been identified:
 2. As a returning user, I want to navigate back to the recipe page for more cocktail recipes.
 3. As a returning user, I want to learn more about the blog.
 4. As a returning user, I want to learn more about the blog creator and check out their social media accounts.
+5. As a returning user, I want to be able to rate the recipes.
 
 
 ### Frequent user:
@@ -116,6 +117,8 @@ Considering the above user stories, I have decided upon the following UI Structu
 - Cocktail recipes are displayed on the page.
 - Once the user clicks on the name of the cocktail the information will expand.
 - Once the user leaves a particular recipe, the information will collapse.
+- The user will is able to rate the recipe pressing on the star rating.
+- The user will be given feedback via alert once the recipe has been rated.
  
 ### About Page:
 
@@ -192,6 +195,26 @@ For wireframes, I have used [Balsamiq](https://balsamiq.com/)
 Please view my wireframes for desktop, tablet and mobile view:
 [Wireframes](/assets/wireframes/easy-cocktail-recipe(wireframes).pdf)
 
+- Landing Page: 
+![Desktop-view](/assets/wireframes/landing-page-desktop.png)
+![IPad-view](/assets/wireframes/landing-page-ipad.png)
+![Mobile-view](/assets/wireframes/landing-page-mobile.png)
+
+- About Page: 
+![Desktop-view](/assets/wireframes/about-desktop.png)
+![Mobile-view](/assets/wireframes/about-mobile.png)
+
+- Recipe Page:
+![Desktop-view](/assets/wireframes/recipe-desktop.png)
+![IPad-view](/assets/wireframes/recipe-ipad.png)
+![Mobile-view](/assets/wireframes/recipe -mobile.png)
+
+- Contact Page: 
+![Contact-page](/assets/wireframes/contact-page.png)
+
+
+
+
 
 ##### back to [content](#table-of-content)
 
@@ -204,6 +227,7 @@ Please view my wireframes for desktop, tablet and mobile view:
    - Contain sticky navigation allows the user to access the menu at any time.
    - The website has a responsive design based on the screen view.
    - Minimalistic footer with social icons for the webpage.
+   - Custom 404.html page has been added 
 
 - [Recipes.html](../ricipes.html): 
    - Recipe cards take their input from an API.
@@ -233,7 +257,6 @@ Please view my wireframes for desktop, tablet and mobile view:
 
 - Subscription form to the blog's newsletter 
 - Recipe cards information could appear in the modal on click 
-- Star rating for each recipe 
 - Sharing social media icons for each recipe 
 
 ##### back to [content](#table-of-content)
