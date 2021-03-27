@@ -147,7 +147,8 @@ h1 {
   background-size: cover;
 }
 
-#main {
+#main,
+.error-page {
     min-height: 90vh;
     max-height: fit-content;
 }
@@ -386,7 +387,6 @@ input[type="submit"]:hover {
 }
 
 .recipe-page h2 {
-  /*  font-family: 'Akaya Telivigala', cursive; */
     font-size: 40px;
     padding: 5px;
     margin: 3px auto;
@@ -449,6 +449,49 @@ input[type="submit"]:hover {
 
 }
 
+/***404.html***/
+
+.error-page{
+  background: url("../images/404-background-img.jpg") no-repeat center center fixed; 
+  background-size: cover;
+ /* height: 80vh;*/
+}
+
+.error-page h2 {
+    color: #0d0709;
+    margin-top: 15rem;
+    font-size: 5rem;
+    padding: 0.5rem;
+}
+
+.error-page h3 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.home-btn {
+    width: 200px;
+    height: 80px;
+    margin: 5rem auto;
+    padding: 0.2rem;
+    border: 3px solid #0d0709;
+    border-radius: 8%;
+    background-color: #be6851;
+}
+
+.home-btn a {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 35px;
+    padding: 10px;
+    color: #0d0709;
+    text-decoration: none;
+}
+
+
+.home-btn a:hover {
+    color: #d6cdd2;
+}
 
 /*****Footer*****/
 
