@@ -451,15 +451,23 @@ input[type="submit"]:hover {
 
 /***404.html***/
 
+.error-page {
+    height: 80vh;
+}
+
 .error-page{
   background: url("../images/404-background-img.jpg") no-repeat center center fixed; 
   background-size: cover;
- /* height: 80vh;*/
+}
+
+.error-page i {
+    color: #0d0709;
+    margin: 1rem;
 }
 
 .error-page h2 {
     color: #0d0709;
-    margin-top: 15rem;
+    margin: 15rem 1rem 2rem 1rem;
     font-size: 5rem;
     padding: 0.5rem;
 }
@@ -470,10 +478,16 @@ input[type="submit"]:hover {
     margin: 1rem;
 }
 
+.link-div {
+   margin: auto;
+   display: flex;
+   justify-content: center;
+}
+
 .home-btn {
     width: 200px;
     height: 80px;
-    margin: 5rem auto;
+    margin: 1rem;
     padding: 0.2rem;
     border: 3px solid #0d0709;
     border-radius: 8%;
@@ -582,6 +596,14 @@ span {
         max-height: 1090px;
     }
 
+    .error-page h2 {
+        font-size: 3.8rem;
+    }
+
+    .link-div {
+        margin-top: 5rem;
+    }
+
 }
 
 @media screen and (max-width: 991.98px) {
@@ -612,6 +634,12 @@ span {
     .img-bartender-2 {
         margin: 10px 30px;
     }
+
+    .link-div {
+        margin-top: 10rem;
+    }
+
+  
 }
 
 
@@ -675,4 +703,7 @@ span {
         font-size: 2.5rem;
         text-align: center;
     }
+
+ 
+
 }
