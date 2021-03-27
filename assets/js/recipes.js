@@ -25,7 +25,7 @@ function getCocktail(){
 }
 //Code has been refactored with help of my mentor Medale Oluwfemi
 function displayCocktail(data){
-  let cocktailElems = ''
+  let cocktailElems = '';
   data.drinks.forEach(cocktail => {
     cocktailElems += `
           <div class="col-12 col-md-6 col-lg-4">
@@ -65,7 +65,7 @@ function displayCocktail(data){
                 </div>
           </div>
       </div>
-    `
+    `;
   });
   $('#cocktail-list').empty().append(cocktailElems);
   
@@ -78,25 +78,26 @@ function displayCocktail(data){
            $(this).children(".recipe").show();
          }
          });
+        
   //Adding event listener on mouseleave to collapse the card-body
          $(card[i]).mouseleave(function(){
            $(this).children(".recipe").hide("medium");
          });
        } 
  // Adding event listener for star rating 
-    const stars = document.querySelectorAll(".fa-star")
+    const stars = document.querySelectorAll(".fa-star");
     for(let i = 0; i < stars.length; i++){ //loop through all the stars
     
         $(stars[i]).click(function(){ // on click function change color 
             $(this).css("color", "#be6851"); 
             $(this).nextAll().css("color", "#0d0709");
             $(this).prevAll().css("color", "#be6851");     
-            setTimeout(() => { alert('Thank you for rating this recipe') }, 1000) //timeout function to display the message 
+            setTimeout(() => { alert('Thank you for rating this recipe'); }, 1000); //timeout function to display the message 
         });
         //Event listener on mouseenter change the color of the stars 
         $(stars[i]).on("mouseenter", function(){  
             $(this).css("color", "yellow");
-        })
+        });
 
         
     }
