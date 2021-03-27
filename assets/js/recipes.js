@@ -49,12 +49,17 @@ function displayCocktail(data){
                     <p class="card-text"><strong>Glass Type : </strong>${cocktail.strGlass}</p>
                     <p class="card-text"><strong>Category : </strong>${cocktail.strAlcoholic}</p>
                     <h4>Rate this recipe:</h4>
-                    <div class ="star-rating">
-                      <i class="fas fa-star" id="st1"></i>
-                      <i class="fas fa-star" id="st2"></i>
-                      <i class="fas fa-star" id="st3"></i>
-                      <i class="fas fa-star" id="st4"></i>
-                      <i class="fas fa-star" id="st5"></i>
+                    <div class ="star-rating card-title">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <span class="sr-only">Star</span>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <span class="sr-only">Star</span>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <span class="sr-only">Star</span>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <span class="sr-only">Star</span>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <span class="sr-only">Star</span>
                     </div>
                   </div>
                 </div>
@@ -65,7 +70,7 @@ function displayCocktail(data){
   $('#cocktail-list').empty().append(cocktailElems);
   
 
-  //Adding event listener on click 
+  //Adding event listener on click to expand the card-body
    let card = document.querySelectorAll(".card-body");
        for (let i = 0; i < card.length; i ++) {
          $(card[i]).click(function(){
@@ -73,25 +78,24 @@ function displayCocktail(data){
            $(this).children(".recipe").show();
          }
          });
-  //Adding event listener on mouseleave 
+  //Adding event listener on mouseleave to collapse the card-body
          $(card[i]).mouseleave(function(){
            $(this).children(".recipe").hide("medium");
          });
        } 
- 
+ // Adding event listener for star rating 
     const stars = document.querySelectorAll(".fa-star")
-    for(let i = 0; i < stars.length; i++){ //loop through them
+    for(let i = 0; i < stars.length; i++){ //loop through all the stars
     
-        $(stars[i]).click(function(){ // on click function 
-            $(this).css("color", "red"); 
-            $(this).nextAll().css("color", "black");
-            $(this).prevAll().css("color", "red");     
-            setTimeout(() => { alert('Thank you for rating this recipe') }, 1000)
+        $(stars[i]).click(function(){ // on click function change color 
+            $(this).css("color", "#be6851"); 
+            $(this).nextAll().css("color", "#0d0709");
+            $(this).prevAll().css("color", "#be6851");     
+            setTimeout(() => { alert('Thank you for rating this recipe') }, 1000) //timeout function to display the message 
         });
-     
-        $(stars[i]).on("mouseenter", function(){  //on mouseenter function 
+        //Event listener on mouseenter change the color of the stars 
+        $(stars[i]).on("mouseenter", function(){  
             $(this).css("color", "yellow");
-            $(this).css("background", "black");
         })
 
         
