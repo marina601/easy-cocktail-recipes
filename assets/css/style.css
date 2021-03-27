@@ -418,7 +418,7 @@ input[type="submit"]:hover {
 }
 
 .card-body h4 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 5px;
     margin: 3px auto;
     color: #0d0709;
@@ -440,14 +440,12 @@ input[type="submit"]:hover {
 }
 
 .recipe i {
-    font-size: 2.5rem;
-    padding: 0.5rem;
+    font-size: 2.1rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
     border: 2px solid black;
-    color: grey;
+    color: rgba(13, 7, 9, 0.4);
     position: relative;
-    top: 20px;
-    left: 40px;
-   
 
 }
 
