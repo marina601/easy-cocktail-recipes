@@ -451,9 +451,7 @@ input[type="submit"]:hover {
 
 /***404.html***/
 
-.error-page {
-    height: 80vh;
-}
+
 
 .error-page{
   background: url("../images/404-background-img.jpg") no-repeat center center fixed; 
@@ -611,6 +609,8 @@ span {
     .link-div {
         margin-top: 5rem;
     }
+
+
 
 }
 
