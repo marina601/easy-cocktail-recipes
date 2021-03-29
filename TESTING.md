@@ -16,7 +16,7 @@
       - [**Footer**](#footer)
    - [**Bugs**](#bugs)
 
-## Testing
+TESTING.md
 
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 - I have also used JSHints for JavaScript and jQuery code.
@@ -25,7 +25,7 @@
   -- The file passed with no major issues, the only issue was resolved was regarding transition value.
 
 - [W3C Markup Validation]( https://validator.w3.org/)
-   -- HTML code pass validation without major errors, type attribute has been removed from all <script> elements.
+   -- HTML code pass validation without major errors, type attribute has been removed from all script elements.
     
 - [JSHints](https://jshint.com/)
    -- Recipes Page has presented the only error where some missing semicolons had to be added 
@@ -40,6 +40,9 @@
   - On landing of the home page the user is greeted with a hero image of the barman making cocktails
   - The user is greeted with a heading on top of the page which clearly defines the subject of the website
   - The user is greeted with a quote on the right hand side of the page defining the theme of the website.
+  - The background image chosed for the site, was designed to give an impression to the use of entering in the 
+  trendy bar, seeing the barman mixing drinks. With dark background and black and white image makes all other features 
+  stand out. 
   - The user is presented with a clear navigation which tells the user what pages the user can access.
   - The navigation is responsive on mobile devices. 
   - The navigation is sticky throughout the site giving the user accessability to access any page at any given time.
@@ -147,10 +150,39 @@ on the mobile devices and expand view on the medium and large screen views.
     
  ![Tablet-view](/assets/wireframes/tablet-navigation.png)
  ![Desktop-view-hover](/assets/wireframes/desktop-nav-hover.png)
- ![Mobile-viw](/assets/wireframes/mobile-navigation.png)
- ![Mobile-nav-collapses](/assets/wireframes/Mobile-nav-collapse.png)
- ![Mobile-nav-click](/assets/wireframes/mobile-view-onclick.png)
+ ![Mobile-viw](/assets/wireframes/mobile-navigation.png) |![Mobile-nav-collapses](/assets/wireframes/Mobile-nav-collapse.png) | ![Mobile-nav-click](/assets/wireframes/mobile-view-onclick.png)
+
+2. Quote 
+   1. Starting from the desktop view the quote has bootstrap margin to the right. Featuring the barman in the background image. 
+   2. View the page in the tablet view the quote still has a margin to the right but now appears at the top of the page, still featuring a 
+   background image of the barman at the bottom. 
+   3. Chance the screen size to mobile view, the quote appears on the top of the page after the navliks. 
+   The quote is full width with a border around. The barman appears below the quote.
+   4. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers.  
+
+3. Call-out 
+    1. Starting from the desktop view three call out section are displayed in line. 
+    2. Reducing the size to tablet view there is only 2 call-outs displayed inline and the third 
+    is wraped under the the first two call-outs and displayed in the middle. 
+    3. Reducing the size of the screen to mobile view: all call outs take full width of the screen and displayed in individual 
+    column.
+    4. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
+
  
+4. Call-to-action-button 
+     1. Clicking on the call to action button to check the link which is linked to recipe.html page. 
+     2. Once the button is hovered the background color and font color changes.
+     3. Shadow property has been used on call to action button to make it stand out and catch the 
+     attention of the user.
+
+
+[Add some images here ]
+
+5. Footer 
+    1. Hover over each social media icon and confirm colour and size transitions expected. 
+    2. Click on each icon to confirm it opens a separate tab for it's link.
+    3. Reduce and expand width of window to verify that the footer is responsive and looks good on all device widths.
+
  ## Bugs 
 
  ### Navigation 
