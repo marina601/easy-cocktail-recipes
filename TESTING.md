@@ -50,6 +50,7 @@
 
 2. As a first-time user, I want to view a selection of cocktail recipes available.
   - When the user is landing on the recipe page the user is presented with all the cocktail recipes in the collapse view. 
+  - Showing Recipe Image and Recipe Title.
 
 3. As a first-time user, I want to be able to see the ingredients and method for each cocktail.
   - The user can view the recipes by clicking on the recipe name.
@@ -86,14 +87,73 @@
    - The user can close the information simply by clicking on the button at the bottom of the bio information. 
 
 
-
 ### Frequent user:
 1. As a frequent-user, I want to be able to contact the blog creators and ask a question.
+- A frequent-user is able to to go to Contac page and submit any quesion or queries they might have by completeing 
+information required in the form.
+- Once the form has been submited the user will be presented with an alert to let them know the message has been sent. 
+- The user will also recieve an automated reply straight in their inbox telling them the message has been recieved and 
+somebody from the team will be in touch with them shortly.
+
 2. As a frequent-user, I want to follow the blog on social media.
+- Socila Icons are presented at the bottom of each page which lead to the different social media accounts of the blog. 
+
+### Note: 
+Going through the use stories I have realized the user journey throughout the site is not clearly marked out. Therefore, 
+I have added call to action buttons on every page providing a user with a clear direction what the next step should be. 
+The website has a natural flow now taking the user from the HOME page > RECIPE page > ABOUT page > CONTACT page. 
+
+The user can choose two options navigating the website either by following call to action buttons or by choosing their desired 
+page from the sticky menu.
 
 ### Business Goals:
 
 1. As a business owner, I want to build an interactive website for viewers to explore popular recipes.
-2. As a business owner, I want to increase the site traffic and get more views.
+- The website has been designed with user experience in mind.
+- The website has a responsive design on all devices. 
+- The website has clear call to action buttons at the bottom of each page to lead the user through 
+the journey.
+- The website has easy to access navigation bar, which is displayed with site logo and collapse navigation links 
+on the mobile devices and expand view on the medium and large screen views. 
+
 3. As a business owner, I want to build my social network following.
+-The website contain social media buttons at the bottom of each page which user can click and follow the blog.
+
 3. As a business owner, I want to interact with users on a personal level.
+- The website provides feedback to the user on interaction: 
+   - Recipe rating provides feedback 
+   - Contact form provides feedback on submit using users name in the alert from the input box. 
+   - When the user recieves automated reply it includes users name to create a personal touch. 
+   - User is presented with overview information in the recipe page and about page, if the user decides to 
+   explore the information further, further information is presented at the click of the button. 
+- The website has a custom 404 page which leads the users to home page on click of the button.
+
+### Manual (logical) testing of all elements and functionality on every page.
+
+#### Home Page:
+
+1. Navigation bar:
+    1. Starting at the "Home" page from the desktop. 
+    2. Changed the screen size from desktop to tablet - the navigation did not collapse as expected on the tablet view.
+    3. Hover over the links which change the font color and background color.
+    3. Changed the screen size to the mobile view - the burger button has appeared and the navigation bar did collapse. 
+    4. When pressing on the burger icon the menu drops down. 
+    5. When pressing on the links the background color and font color change to tell the user they have clicked on the link. 
+    6. When pressing on the burger icon and the menu is at he expand view the menu collapses. 
+    7. Go to the bottom of the page to make sure the navigation bar is sticky.
+    8. When clicking on all the links they do lead to the correct pages. 
+    9. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
+    10. Flip the tablet and mobile devices to check responsiveness.
+    
+ ![Tablet-view](/assets/wireframes/tablet-navigation.png)
+ ![Desktop-view-hover](/assets/wireframes/desktop-nav-hover.png)
+ ![Mobile-viw](/assets/wireframes/mobile-navigation.png)
+ ![Mobile-nav-collapses](/assets/wireframes/Mobile-nav-collapse.png)
+ ![Mobile-nav-click](/assets/wireframes/mobile-view-onclick.png)
+ 
+ ## Bugs 
+
+ ### Navigation 
+
+-- When flipping the mobile phone device found that header height was expanding over the navigation bar. 
+-- Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
