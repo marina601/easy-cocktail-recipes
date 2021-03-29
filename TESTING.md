@@ -133,6 +133,18 @@ on the mobile devices and expand view on the medium and large screen views.
 
 ### Manual (logical) testing of all elements and functionality on every page.
 
+-- The site has been tested on the following devices:
+
+
+| Pages    |<strong>Laptop</strong>|<strong>Ipad</strong>|<strong>IphoneX</strong> | <strong>Nokia</strong> |
+|----------|:---------------------:|--------------------:|------------------------:|-----------------------:|
+| Home     |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Recipe   |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|       
+| About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
+    
+
+
 #### Home Page:
 
 1. Navigation bar:
@@ -176,12 +188,13 @@ on the mobile devices and expand view on the medium and large screen views.
      attention of the user.
 
 
-[Add some images here ]
+![Tablet Call Outs](/assets/wireframes/tablet-call-outs.png)
 
 5. Footer 
-    1. Hover over each social media icon and confirm colour and size transitions expected. 
-    2. Click on each icon to confirm it opens a separate tab for it's link.
-    3. Reduce and expand width of window to verify that the footer is responsive and looks good on all device widths.
+    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    2. Click on each icon, each link leads to a separate tab.
+    3. The foote is responsive on all widow view sizes.
+    
 
  ## Bugs 
 
