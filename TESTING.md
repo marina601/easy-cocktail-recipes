@@ -194,7 +194,74 @@ on the mobile devices and expand view on the medium and large screen views.
     1. Hovered over each social media icon, which showed good transitions and change of background colour.
     2. Click on each icon, each link leads to a separate tab.
     3. The foote is responsive on all widow view sizes.
+
+#### Recipe Page: 
+
+
+#### About Page: 
+
+1. Navigation bar: 
+    1. Repeated verification steps done for navbar on Home page.
+    2. Navbar code is identical on all html pages.
+
+2. About intro section 
+    1. Starting at the desktop view a full width section appears on loading of the page.
+    2. Reduce the screen size to the tablet view, the responsive design works without overlaping the width of the screen. 
+    3. The sectio is written in the clear and easy to read way and stands out from the background. 
+    4. Reduce the screen size to the mobile view, as expected, the section is responsive.
+    5. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
+
+3. Individual Bios 
+    1. Starting at the desktop view, 2 columns appear side by side in the collapse view with only pictures and names of the site owners.
+    2. Hover over each picture to check the alt information is appearing, all responded well for each image.
+    3. Reduce the screen view to tablet view, the bio divs still displayed next to each other as planned. 
+    4. Reduce the screen view to mobile size, each bio div is displayed in the single column one on top of each other. 
+
+4. Olivia Newman 
+    1. Click on the image of Olivia and only her bio expands. 
+    2. Click on the name Olivia Newman and only her bio expands. 
+    3. Hover over the links to the places where she use to work, the background and font color changes. 
+    4. Click on each link to verify the links lead to external pages. 
+    5. Hover over the social icons, all of the icons changed color on hover. 
+    6. Click on each icon to ensure the links open in external tabs, all working and linking well. 
+    7. Hover over the button in the end of the bio, the button changed background colour. 
+    8. Click on the button and the div has collapses, the information slides up quickly. 
+    9. Follow the steps from 1-8 on the tablet and mobile devices.
+    10. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers.
+
+5. Martin Huntsman
+    1. Click on the image of Martin and only his bio expands. 
+    2. Click on the name Martin Huntsman and only his bio expands. 
+    3. Hover over the links to the places where she use to work, the background and font color changes. 
+    4. Click on each link to verify the links lead to external pages. 
+    5. Hover over the social icons, all of the icons changed color on hover. 
+    6. Click on each icon to ensure the links open in external tabs, all working and linking well. 
+    7. Hover over the button in the end of the bio, the button changed background colour. 
+    8. Click on the button and the div has collapses, the information slides up quickly. 
+    9. Follow the steps from 1-8 on the tablet and mobile devices.
+    10. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers.
+
+6. Call to action button 
+    1. Repeated verification steps done for call to action on Home page.
+    2. The link leads to the contact.html page.
+
+7. Footer 
+    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    2. Click on each icon, each link leads to a separate tab.
+    3. The foote is responsive on all widow view sizes.
+    4. The footer code is identical on each every page.
     
+![images]
+![images]
+![images]
+![images]
+![images]
+
+
+
+
+
+#### Contact Page: 
 
  ## Bugs 
 
@@ -202,3 +269,9 @@ on the mobile devices and expand view on the medium and large screen views.
 
 -- When flipping the mobile phone device found that header height was expanding over the navigation bar. 
 -- Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
+
+### About Page (bio )
+
+-- Each bio div has been set initially to expand only on click of the image, however taking the consideration UX design, 
+the title of each div has a posibility to to expand on click as well. Therefore, no matter the preference of the user which elements they would 
+like to click, the div will expand.
