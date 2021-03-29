@@ -180,6 +180,38 @@ h1 {
   font-weight: 600;
 }
 
+.action {
+    display: flex;
+    justify-content: center;
+}
+
+.action-btn {
+    padding: 10px;
+    background-color: #be6851;
+    border: 2px solid #0d0709;
+    max-width: 90%;
+    height: 70px;
+    margin: 3px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.action-btn a {
+    color: #0d0709;
+    font-size: 18px;
+    font-weight: 600;  
+    padding: 5px;
+    text-decoration: none;  
+}
+
+.action-btn a:hover {
+    color: #d6cdd2;
+}
+
+.action-btn:hover {
+   background-color: #0d0709;
+}
+
 /*******About*****/
 
 
