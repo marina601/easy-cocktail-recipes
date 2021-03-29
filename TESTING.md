@@ -211,6 +211,9 @@ on the mobile devices and expand view on the medium and large screen views.
     4. Reduce the screen size to the mobile view, as expected, the section is responsive.
     5. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
 
+![About Page Tablet View](/assets/wireframes/bio-page.png) | ![About Page Tablet View](/assets/wireframes/bio-page-footer.png)
+![About Page](/assets/wireframes/about-page.png)
+
 3. Individual Bios 
     1. Starting at the desktop view, 2 columns appear side by side in the collapse view with only pictures and names of the site owners.
     2. Hover over each picture to check the alt information is appearing, all responded well for each image.
@@ -248,20 +251,67 @@ on the mobile devices and expand view on the medium and large screen views.
 7. Footer 
     1. Hovered over each social media icon, which showed good transitions and change of background colour.
     2. Click on each icon, each link leads to a separate tab.
-    3. The foote is responsive on all widow view sizes.
+    3. The footer is responsive on all widow view sizes.
     4. The footer code is identical on each every page.
     
-![images]
-![images]
-![images]
-![images]
-![images]
-
-
+![About page-mobile](/assets/wireframes/about-page-mobile-footer.png) | ![About page](/assets/wireframes/about-page-mobile.png)
 
 
 
 #### Contact Page: 
+
+1. Navigation bar: 
+    1. Repeated verification steps done for navbar on Home page.
+    2. Navbar code is identical on all html pages.
+
+2. Introduction: 
+    1. Start on the desktop view. 
+    2. A single row is presented to the user explaing why they might want to get in touch. 
+    3. Resize the screen to the tablet view. 
+    4. As above a single row is presented to the user, which is responsive on all devices. 
+    5. Resize the screen to the mobile view, as expected the introductory section is still responsive and does not overflow.
+
+3. Contact Form 
+    1. Start at the desktop screen view. 
+    2. All the inputs are clearly labeled and asking the user to provide relavant information. 
+    3. Tried to submit and empty form, the message poped up asking to enter the name. 
+    4. Entered the name and tried to submit the form, a message poped up asking to fill in the empty field. 
+    5. Enterd the name and email address, tried to submit the form again. The message poped up asking to fill 
+    in the empty field for textera element. 
+    6. Filled in all the required information and pressed submit. 
+    7. The Submit button changed text to "Submiting" 
+    8. An alert poped up displaying the following message "Thank you [user-name]. Your message has been sent! We will be in touch soon!"
+    9. Within seconds recieved an email notifying the owner of the site of the enquire submited with user name and email address, aslo with the text which 
+    was entered. 
+    10. Once pressed "OK" on aler pop up the form has been reset.
+    11. The user gets an autormated email ensuring them the message has been recieved and the somebody will be in touch with them shortly.
+    12. If the email address is not valid, the owner gets notifyed and emailJS is trying to resend the automated reply for 24hrs. 
+    13. If something should go wrong with emailJS the user will be notifyed via alert. 
+    14. Repeted the same steps for tablet and mobile view, the result was satifactory. 
+    
+![images of required input fields]
+![Images of the alert]
+
+
+4. Submit Button: 
+    1. Start at the desktop view, and hover over the button which changed background color and fornt colour.
+    2. Pressing submit when all the information required is filled in, the button changes background colour, 
+    font colour and the text element displayed "Sending..."
+    3. Once the form has been reset the button went back to its original view. 
+    4. Repeted the same steps for tablet and mobile view, the result was satifactory. 
+
+![Images of the submit button]
+![Images of sending transition]
+
+5.Footer: 
+    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    2. Click on each icon, each link leads to a separate tab.
+    3. The footer is responsive on all widow view sizes.
+    4. The footer code is identical on each every page.
+    
+
+
+#### 404.html Page:
 
  ## Bugs 
 
@@ -275,3 +325,16 @@ on the mobile devices and expand view on the medium and large screen views.
 -- Each bio div has been set initially to expand only on click of the image, however taking the consideration UX design, 
 the title of each div has a posibility to to expand on click as well. Therefore, no matter the preference of the user which elements they would 
 like to click, the div will expand.
+
+-- During the testing the images were distorted, used online tool to resize the images to the equal size. 
+-- The bio divs sometimes display a bug, when clicking on the Olivia the both divs will expand and no information 
+displayed on Martins bio div.
+-- However when pressing on the Martin divs only his information will be displayed as desired. 
+-- Clicking on the Olivia's div again after closing Martin's div only Olivia div is displayed. 
+
+### Contact Page: 
+
+-- Initially the form has was not reseting on submit, therefore had to add reset functionality in the 
+js file. 
+
+-- I ensured all the input fields were field in using HTML5 required attribute. 
