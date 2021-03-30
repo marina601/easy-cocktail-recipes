@@ -1,20 +1,25 @@
 # Easy Cocktail Recipes - Testing details
 
-[Main README.md file](/README.md)
+[Main README.md file](README.md)
 
 [View website in GitHub Pages](https://marina601.github.io/easy-cocktail-recipes/)
 
+# Table of Content
+
 [**Testing**](#testing)
-   - [**Testing User Stories**](#testing-user-stories)
+   - [**Validation Results**](#validation-results)
+   - [**Testing User Stories**](#user-stories-testing)
    - [**Further Testing**](#further-testing)
-      - [**Home Page**](#navigation-testing)
-      - [**Recipe Page**](#social-links)
-      - [**About Page**](#video)
-      - [**Contact Page**](#sign-up-form)
-      - [**Custom 404 Page**](#services)
+      - [**Device Compatability Table**](#device-compatability-table)
+      - [**Home Page**](#home-page)
+      - [**Recipe Page**](#recipe-page)
+      - [**About Page**](#about-page)
+      - [**Contact Page**](#contact-page)
+      - [**Custom 404 Page**](#404.html-page)
+   - [**Google Lighthouse Testing**] (#google-lighthouse-testing)
    - [**Bugs**](#bugs)
 
-TESTING.md
+## Validation Results
 
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 - I have also used JSHints for JavaScript and jQuery code.
@@ -28,7 +33,9 @@ TESTING.md
 - [JSHints](https://jshint.com/)
    -- Recipes Page has presented the only error where some missing semicolons had to be added 
 
-### User stories testing:
+##### back to [content](#table-of-content)
+
+## User stories testing
 
 ### Note: 
 Going through the use stories I have realized the user journey throughout the site is not clearly marked out. Therefore, 
@@ -137,11 +144,13 @@ on the mobile devices and expand view on the medium and large screen views.
    explore the information further, further information is presented at the click of the button. 
 - The website has a custom 404 page which leads the users to home page on click of the button.
 
-### Further Testing
+##### back to [content](#table-of-content)
 
-#### Manual (logical) testing of all elements and functionality on every page.
+## Further Testing
 
--- The site has been tested on the following devices:
+### Manual (logical) testing of all elements and functionality on every page.
+
+### Device compatability table
 
 
 | Pages    |<strong>Laptop</strong>|<strong>Ipad</strong>|<strong>IphoneX</strong> | <strong>Nokia</strong> |
@@ -151,9 +160,9 @@ on the mobile devices and expand view on the medium and large screen views.
 | About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
 | Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
     
+##### back to [content](#table-of-content)
 
-
-#### Home Page:
+### Home Page
 
 1. Navigation bar:
     1. Starting at the "Home" page from the desktop. 
@@ -203,7 +212,9 @@ on the mobile devices and expand view on the medium and large screen views.
     2. Click on each icon, each link leads to a separate tab.
     3. The footer is responsive on all window view sizes.
 
-#### Recipe Page: 
+##### back to [content](#table-of-content)
+
+### Recipe Page 
 
 1. Navigation bar: 
     1. Repeated verification steps done for navbar on Home page.
@@ -248,7 +259,9 @@ on the mobile devices and expand view on the medium and large screen views.
     3. The footer is responsive on all window view sizes.
     4. The footer code is identical in all html pages.
 
-#### About Page: 
+##### back to [content](#table-of-content)
+
+### About Page 
 
 1. Navigation bar: 
     1. Repeated verification steps done for navbar on Home page.
@@ -306,9 +319,9 @@ on the mobile devices and expand view on the medium and large screen views.
     
 ![About page-mobile](/assets/wireframes/about-page-mobile-footer.png) | ![About page](/assets/wireframes/about-page-mobile.png)
 
+##### back to [content](#table-of-content)
 
-
-#### Contact Page: 
+#### Contact Page 
 
 1. Navigation bar: 
     1. Repeated verification steps done for navbar on Home page.
@@ -359,9 +372,9 @@ on the mobile devices and expand view on the medium and large screen views.
     3. The footer is responsive on all widow view sizes.
     4. The footer code is identical on each every page.
     
+##### back to [content](#table-of-content)
 
-
-#### 404.html Page:
+### 404.html Page
 
 1. Starting at the desktop view, typed some rundom characters after the url and custom 404 page has appeared.
 2. Hover over the button which leads to the home page and color has changed. 
@@ -371,17 +384,56 @@ on the mobile devices and expand view on the medium and large screen views.
 
 ![Responsive 404.html](/assets/wireframes/404.html-responsive.png)
 
+##### back to [content](#table-of-content)
+
+## Google Lighthouse Testing
+
+- To get an acurate report all the pages have been viewed using incognito window.
+
+### Home Page: 
+ 
+-- Remove all extra code from the external libraries to increase performance.
+
+![Home Page Lighthouse Report](/assets/wireframes/home-lighthouse-report.jpg)
+
+### Recipe Page: 
+
+-- Added image fluid class to reduce the image size 
+-- Generally the performance issues found due to the large amount of data imported from the API 
+
+![Recipe Page Lighthouse Report](/assets/wireframes/recipe-page-lighthouse.png)
+
+### About Page:
+
+-- Fix the rel attributes instead of rel="external" used rel="noreferrer".
+-- Minimized the links to external resorces like bootstrap and jquery library to improve performance.
+
+![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
+
+### Contact Page: 
+
+-- Minimized the links to external resorces like bootstrap and jquery library to improve performance.
+
+![Contac Page Lighthouse Report](/assets/wireframes/contact-page-lighthouse.jpg)
+
+
  ## Bugs 
 
- ### Navigation 
+ ### Navigation:
 
 -- When flipping the mobile phone device found that header height was expanding over the navigation bar. 
 -- Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
 
-### Recipe Page
 
 
-### About Page (bio )
+### Recipe Page:
+
+-- I came across recipe rating bug, which was rating either all the recipe cards on click. 
+- Solved it by looping over the stars and using prev and next jQuery method to target is sibilings. 
+
+
+
+### About Page:
 
 -- Each bio div has been set initially to expand only on click of the image, however taking the consideration UX design, 
 the title of each div has a posibility to to expand on click as well. Therefore, no matter the preference of the user which elements they would 
@@ -392,6 +444,13 @@ like to click, the div will expand.
 displayed on Martins bio div.
 -- However when pressing on the Martin divs only his information will be displayed as desired. 
 -- Clicking on the Olivia's div again after closing Martin's div only Olivia div is displayed. 
+
+#### Lighthouse report 
+
+-- Fix the rel attributes instead of rel="external" used rel="noreferrer".
+-- Minimized the links to external resorces like bootstrap and jquery library to improve performance.
+
+![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
 
 ### Contact Page: 
 
@@ -404,3 +463,6 @@ js file.
 
 -- Whilst testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
 height of the page using hv value. 
+
+
+##### back to [content](#table-of-content)
