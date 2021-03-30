@@ -16,7 +16,8 @@
       - [**About Page**](#about-page)
       - [**Contact Page**](#contact-page)
       - [**Custom 404 Page**](#404.html-page)
-   - [**Google Lighthouse Testing**] (#google-lighthouse-testing)
+   - [**Google Lighthouse Testing**](#google-lighthouse-testing)
+   - [**Cross Browser Compatability Table**](#cross-browser-compatability-table)
    - [**Bugs**](#bugs)
 
 ## Validation Results
@@ -416,6 +417,16 @@ on the mobile devices and expand view on the medium and large screen views.
 
 ![Contac Page Lighthouse Report](/assets/wireframes/contact-page-lighthouse.jpg)
 
+### Cross Browser Compatability Table 
+
+| Pages    |       <strong>Crome</strong>     |       <strong>Edge</strong>     |     <strong>ISO</strong>        |
+|----------|:--------------------------------:|--------------------------------:|--------------------------------:|
+| Home     |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Recipe   |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|      
+| About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
+
+- Browser compatability test has been successful and all browsers tested displayed the information correctly.
 
  ## Bugs 
 
