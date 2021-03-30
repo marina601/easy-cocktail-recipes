@@ -10,14 +10,14 @@
    - [**Validation Results**](#validation-results)
    - [**Testing User Stories**](#user-stories-testing)
    - [**Further Testing**](#further-testing)
-      - [**Device Compatability Table**](#device-compatability-table)
+      - [**Device Compatibility Table**](#device-compatibility-table)
       - [**Home Page**](#home-page)
       - [**Recipe Page**](#recipe-page)
       - [**About Page**](#about-page)
       - [**Contact Page**](#contact-page)
       - [**Custom 404 Page**](#404.html-page)
    - [**Google Lighthouse Testing**](#google-lighthouse-testing)
-   - [**Cross Browser Compatability Table**](#cross-browser-compatability-table)
+   - [**Cross Browser Compatibility Table**](#cross-browser-compatibility-table)
    - [**Bugs**](#bugs)
 
 ## Validation Results
@@ -90,36 +90,36 @@ page from the sticky menu.
    - A returning user can click through recipe cards and check out all the ingredients and methods.
 
 2. As a returning user, I want to be able to rate the recipes.
-   - As returning user, is able to rate the recipe in the bottom of the recipe card by clicking on the star rating.
+   - As returning user, can rate the recipe at the bottom of the recipe card by clicking on the star rating.
    - The user will be given feedback with an alert displaying at the top of the page to thank them for rating the recipe. 
 
 3. As a returning user, I want to learn more about the blog.
    - The returning user can access the about page by clicking on the sticky navigation menu or call to action 
    button at the bottom of the recipe page.
    - At the bottom of the About page the user can see a call to action button to submit a contact form.
-   - The user will presented with a short about section which tells them how and why the blog was created. 
+   - The user is presented with a short about section which tells them how and why the blog was created. 
    - The user is presented with the images and names of the blog creators.
    
    
 4. As a returning user, I want to learn more about the blog creator and check out their social media accounts.
-   - To learn more about the creators of the blog the user is able to click on the image or the name of the blog creators.
-   - The bio information will be displayed telling the user where they use to work with links directing the user to the 
-      places where the each individual use to work opening in the separate tab.
-   - The user will be presented with individual hobbies.
-   - The user can check out individual social media accounts (Pintrest, Instagram and LinkIn).
+   - To learn more about the creators of the blog the user can click on the image or the name of the blog creators.
+   - The bio-information is displayed telling the user where they use to work with links directing the user to the 
+      places where each person use to work opening in the separate tab.
+   - The user is presented with individual hobbies.
+   - The user can check out individual social media accounts (Pinterest, Instagram and LinkedIn).
    - The user can close the information simply by clicking on the button at the bottom of the bio information. 
 
 
 ### Frequent user:
 1. As a frequent-user, I want to be able to contact the blog creators and ask a question.
-- A frequent-user is able to to go to Contac page and submit any quesion or queries they might have by completeing 
+- A frequent-user can go to the Contac page and submit any questions or queries they might have by completing 
 information required in the form.
-- Once the form has been submited the user will be presented with an alert to let them know the message has been sent. 
-- The user will also recieve an automated reply straight in their inbox telling them the message has been recieved and 
+- Once the form has been submitted the user will be presented with an alert to let them know the message has been sent. 
+- The user will also receive an automated reply straight in their inbox telling them the message has been received and 
 somebody from the team will be in touch with them shortly.
 
 2. As a frequent-user, I want to follow the blog on social media.
-- Socila Icons are presented at the bottom of each page which lead to the different social media accounts of the blog. 
+- Social Icons are presented at the bottom of each page which leads to the different social media accounts of the blog. 
 
 
 
@@ -128,22 +128,21 @@ somebody from the team will be in touch with them shortly.
 1. As a business owner, I want to build an interactive website for viewers to explore popular recipes.
 - The website has been designed with user experience in mind.
 - The website has a responsive design on all devices. 
-- The website has clear call to action buttons at the bottom of each page to lead the user through 
-the journey.
-- The website has easy to access navigation bar, which is displayed with site logo and collapse navigation links 
-on the mobile devices and expand view on the medium and large screen views. 
+- The website has clear call-to-action buttons at the bottom of each page to lead the user through the journey.
+- The website has easy to access navigation bar, which is displayed with the site logo and collapses navigation links on
+ mobile devices, and expands the view on the medium and large screen views. 
 
 3. As a business owner, I want to build my social network following.
--The website contain social media buttons at the bottom of each page which user can click and follow the blog.
+-The website contains social media buttons at the bottom of each page which users can click and follow the blog.
 
 3. As a business owner, I want to interact with users on a personal level.
 - The website provides feedback to the user on interaction: 
    - Recipe rating provides feedback 
-   - Contact form provides feedback on submit using users name in the alert from the input box. 
-   - When the user recieves automated reply it includes users name to create a personal touch. 
-   - User is presented with overview information in the recipe page and about page, if the user decides to 
+   - Contact form provides feedback on submit using the user's name in the alert from the input box. 
+   - When the user receives an automated reply it includes ther user's name to create a personal touch. 
+   - User is presented with overview information on the recipe page and about page if the user decides to 
    explore the information further, further information is presented at the click of the button. 
-- The website has a custom 404 page which leads the users to home page on click of the button.
+- The website has a custom 404 page which leads the users to the home page with a click of the button.
 
 ##### back to [content](#table-of-content)
 
@@ -151,7 +150,7 @@ on the mobile devices and expand view on the medium and large screen views.
 
 ### Manual (logical) testing of all elements and functionality on every page.
 
-### Device compatability table
+### Device compatibility table
 
 
 | Pages    |<strong>Laptop</strong>|<strong>Ipad</strong>|<strong>IphoneX</strong> | <strong>Nokia</strong> |
@@ -172,10 +171,10 @@ on the mobile devices and expand view on the medium and large screen views.
     3. Changed the screen size to the mobile view - the burger button has appeared and the navigation bar did collapse. 
     4. When pressing on the burger icon the menu drops down. 
     5. When pressing on the links the background color and font color change to tell the user they have clicked on the link. 
-    6. When pressing on the burger icon and the menu is at he expand view the menu collapses. 
+    6. When pressing on the burger icon and the menu is at the expanded view the menu collapses. 
     7. Go to the bottom of the page to make sure the navigation bar is sticky.
     8. When clicking on all the links they do lead to the correct pages. 
-    9. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
+    9. Repeated the verification of functionality and responsiveness using Google Chrome and Edge browsers. 
     10. Flip the tablet and mobile devices to check responsiveness.
     
  ![Tablet-view](/assets/wireframes/tablet-navigation.png)
@@ -183,33 +182,33 @@ on the mobile devices and expand view on the medium and large screen views.
  ![Mobile-viw](/assets/wireframes/mobile-navigation.png) |![Mobile-nav-collapses](/assets/wireframes/Mobile-nav-collapse.png) | ![Mobile-nav-click](/assets/wireframes/mobile-view-onclick.png)
 
 2. Quote 
-   1. Starting from the desktop view the quote has bootstrap margin to the right. Featuring the barman in the background image. 
+   1. Starting from the desktop view the quote has a Bootstrap margin to the right. Featuring the barman in the background image. 
    2. View the page in the tablet view the quote still has a margin to the right but now appears at the top of the page, still featuring a 
    background image of the barman at the bottom. 
-   3. Chance the screen size to mobile view, the quote appears on the top of the page after the navliks. 
-   The quote is full width with a border around. The barman appears below the quote.
-   4. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers.  
+   3. Chance the screen size to mobile view, the quote appears on the top of the page after the nav liks. 
+   The quote is full width with a border around it. The barman appears below the quote.
+   4. Repeated the verification of functionality and responsiveness using Google Chrome and Edge browsers.  
 
 3. Call-out 
-    1. Starting from the desktop view three call out section are displayed in line. 
+    1. Starting from the desktop view three call-out section are displayed inline. 
     2. Reducing the size to tablet view there is only 2 call-outs displayed inline and the third 
-    is wraped under the the first two call-outs and displayed in the middle. 
-    3. Reducing the size of the screen to mobile view: all call outs take full width of the screen and displayed in individual 
+    is wrapped under the first two call-outs and displayed in the middle. 
+    3. Reducing the size of the screen to mobile view: all call outs take the full width of the screen and displayed in individual 
     column.
-    4. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
+    4. Repeated the verification of functionality and responsiveness using Google Chrome and Edge browsers. 
 
  
 4. Call-to-action-button 
-     1. Clicking on the call to action button to check the link which is linked to recipe.html page. 
-     2. Once the button is hovered the background color and font color changes.
-     3. Shadow property has been used on call to action button to make it stand out and catch the 
+     1. Clicking on the call to action button to check the link which is linked to the recipe.html page. 
+     2. Once the button has hovered the background color and font color changes.
+     3. Shadow property has been used on the call to action button to make it stand out and catch the
      attention of the user.
 
 
 ![Tablet Call Outs](/assets/wireframes/tablet-call-outs.png)
 
 5. Footer 
-    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    1. Hovered over each social media icon, which showed good transitions and a change of background colour.
     2. Click on each icon, each link leads to a separate tab.
     3. The footer is responsive on all window view sizes.
 
@@ -218,28 +217,28 @@ on the mobile devices and expand view on the medium and large screen views.
 ### Recipe Page 
 
 1. Navigation bar: 
-    1. Repeated verification steps done for navbar on Home page.
-    2. Navbar code is identical on all html pages.
+    1. Repeated verification steps done for navbar on the Home page.
+    2. Navbar code is identical on all HTML pages.
 
 2. Recipe Cards: 
-    1. Starting with a desktop view, the cocktail recipes displayed with 3 cocktails in each row, in the collapse view. 
-    2. The only information displayed on landing of the page is images of the cocktails and their name. 
-    3. Hover over the name of the cocktail and pointer is displayed showing the user to click on the name. 
-    4. Once the user clicks on the recipe title, the ingredients, method, category of each recipe is displayed. 
-    5. At the bottom of the recipe card the user is asked to rate the recipe with empty star rating. 
-    6. Hover over the stars and the colour of the stars are changing colour. 
+    1. Starting with a desktop view, the cocktail recipes are displayed with 3 cocktails in each row, in the collapsed view. 
+    2. The only information displayed on the landing page is images of the cocktails and their name. 
+    3. Hover over the name of the cocktail and the pointer is displayed showing the user to click on the name. 
+    4. Once the user clicks on the recipe title, the ingredients, method, category of each recipe are displayed. 
+    5. At the bottom of the recipe card the user is asked to rate the recipe with an empty star rating. 
+    6. Hover over the stars and the colour of the stars is changing colour. 
     7. Once the user clicks on the star, all previous stars change color to orange and all the next stars change color to black to show 
     the empty stars which have not been rated. 
     8. If the user changes its mind and rates the same recipe again, the stars change colour as expected. 
     9. Once the recipe has been rated the alert is displayed with the following message "Thank you for rating this recipe".
-    10. Onmouse leave the recipe collapses to its original view. 
+    10. On mouse leave the recipe collapses to its original view. 
     12. Reduce the screen size to tablet view, the recipe cards displayed in the collapsed view, 2 recipe cards in the row. 
-    13. Steps 2-9 have been repited and the results were satifactory and the same as desktop view. 
-    14. When the user opens another recipe card the previous one closes so the view is able to view one recipe card at the time. 
+    13. Steps 2-9 have been repeated and the results were satisfactory and the same as desktop view. 
+    14. When the user opens another recipe card the previous one closes so the viewer can view one recipe card at a time. 
     15. The user is also able to click on the recipe card to collapse the view 
-    16. Reduce the screen view to mobile size, the recipe cards displayed in the collapse view, 1 recipe card in a row. 
-    17. Steps 2-9 have been repited and provided the same results as desktop. 
-    18. When the user opens another recipe card the previous one closes so the view is able to view one recipe card at the time.
+    16. Reduce the screen view to mobile size, the recipe cards displayed in the collapsed view, 1 recipe card in a row. 
+    17. Steps 2-9 have been repeated and provided the same results as the desktop. 
+    18. When the user opens another recipe card the previous one closes so the viewer can view one recipe card at a time.
     19. The user is also able to click on the recipe card to collapse the view 
 
 ![Recipe-mobile](/assets/wireframes/recipe-expanded.png) | ![Recipe-feedback](/assets/wireframes/rating-feedback.jpg)
@@ -248,75 +247,75 @@ on the mobile devices and expand view on the medium and large screen views.
 ![Recipe Expanded at Tablet View](/assets/wireframes/Recipe-tablet-view.png)    
 
 3. Call to action button
-    1. Clicking on the call to action button to check the link which is linked to about.html page. 
-    2. Once the button is hovered the background color and font color changes.
-    3. Shadow property has been used on call to action button to make it stand out and catch the 
-     attention of the user.
-    4. Repeated the same steps on tablet, mobile and desktop devices with satisfactiory results.
+    1. Clicking on the call to action button to check the link which is linked to the about.html page. 
+    2. Once the button is has hovered the background color and font color changes.
+    3. Shadow property has been used on the call to action button to make it stand out and catch the 
+    attention of the user.
+    4. Repeated the same steps on a tablet, mobile, and desktop devices with satisfactory results.
 
 4. Footer 
-    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    1. Hovered over each social media icon, which showed good transitions and a change of background colour.
     2. Click on each icon, each link leads to a separate tab.
     3. The footer is responsive on all window view sizes.
-    4. The footer code is identical in all html pages.
+    4. The footer code is identical on all HTML pages.
 
 ##### back to [content](#table-of-content)
 
 ### About Page 
 
 1. Navigation bar: 
-    1. Repeated verification steps done for navbar on Home page.
-    2. Navbar code is identical on all html pages.
+    1. Repeated verification steps done for navbar on the Home page.
+    2. Navbar code is identical on all HTML pages.
 
-2. About intro section 
-    1. Starting at the desktop view a full width section appears on loading of the page.
-    2. Reduce the screen size to the tablet view, the responsive design works without overlaping the width of the screen. 
-    3. The sectio is written in the clear and easy to read way and stands out from the background. 
+2. About the intro section 
+    1. Starting at the desktop view a full-width section appears on loading of the page.
+    2. Reduce the screen size to the tablet view, the responsive design works without overlapping the width of the screen. 
+    3. The section is written in a clear and easy-to-read way and stands out from the background. 
     4. Reduce the screen size to the mobile view, as expected, the section is responsive.
-    5. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers. 
+    5. Repeated the verification of functionality and responsiveness using Google Chrome and Edge browsers. 
 
 ![About Page Tablet View](/assets/wireframes/bio-page.png) | ![About Page Tablet View](/assets/wireframes/bio-page-footer.png)
 ![About Page](/assets/wireframes/about-page.png)
 
 3. Individual Bios 
-    1. Starting at the desktop view, 2 columns appear side by side in the collapse view with only pictures and names of the site owners.
+    1. Starting at the desktop view, 2 columns appear side by side in the collapsed view with only pictures and names of the site owners.
     2. Hover over each picture to check the alt information is appearing, all responded well for each image.
     3. Reduce the screen view to tablet view, the bio divs still displayed next to each other as planned. 
-    4. Reduce the screen view to mobile size, each bio div is displayed in the single column one on top of each other. 
+    4. Reduce the screen view to mobile size, each bio div is displayed in a single column one on top of each other. 
 
 4. Olivia Newman 
     1. Click on the image of Olivia and only her bio expands. 
     2. Click on the name Olivia Newman and only her bio expands. 
-    3. Hover over the links to the places where she use to work, the background and font color changes. 
+    3. Hover over the links to the places where she used to work, the background, and font color changes. 
     4. Click on each link to verify the links lead to external pages. 
     5. Hover over the social icons, all of the icons changed color on hover. 
     6. Click on each icon to ensure the links open in external tabs, all working and linking well. 
-    7. Hover over the button in the end of the bio, the button changed background colour. 
-    8. Click on the button and the div has collapses, the information slides up quickly. 
+    7. Hover over the button at the end of the bio, the button changed the background colour. 
+    8. Click on the button and the div has collapsed, the information slides up quickly. 
     9. Follow the steps from 1-8 on the tablet and mobile devices.
-    10. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers.
+    10. Repeated the verification of functionality and responsiveness using Google Chrome and Edge browsers.
 
 5. Martin Huntsman
     1. Click on the image of Martin and only his bio expands. 
     2. Click on the name Martin Huntsman and only his bio expands. 
-    3. Hover over the links to the places where she use to work, the background and font color changes. 
+    3. Hover over the links to the places where he used to work, the background, and font color changes. 
     4. Click on each link to verify the links lead to external pages. 
     5. Hover over the social icons, all of the icons changed color on hover. 
     6. Click on each icon to ensure the links open in external tabs, all working and linking well. 
-    7. Hover over the button in the end of the bio, the button changed background colour. 
-    8. Click on the button and the div has collapses, the information slides up quickly. 
+    7. Hover over the button at the end of the bio, the button changed the background colour. 
+    8. Click on the button and the div has collapsed, the information slides up quickly. 
     9. Follow the steps from 1-8 on the tablet and mobile devices.
-    10. Repeted the verification of functionality and responsiveness using Google Crome and Edge browsers.
+    10. Repetead the verification of functionality and responsiveness using Google Chrome and Edge browsers.
 
 6. Call to action button 
-    1. Repeated verification steps done for call to action on Home page.
+    1. Repeated verification steps are done for the call to action button on the Home page.
     2. The link leads to the contact.html page.
 
 7. Footer 
-    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    1. Hovered over each social media icon, which showed good transitions and a change of background colour.
     2. Click on each icon, each link leads to a separate tab.
     3. The footer is responsive on all widow view sizes.
-    4. The footer code is identical on each every page.
+    4. The footer code is identical on every page.
     
 ![About page-mobile](/assets/wireframes/about-page-mobile-footer.png) | ![About page](/assets/wireframes/about-page-mobile.png)
 
@@ -325,63 +324,63 @@ on the mobile devices and expand view on the medium and large screen views.
 #### Contact Page 
 
 1. Navigation bar: 
-    1. Repeated verification steps done for navbar on Home page.
-    2. Navbar code is identical on all html pages.
+    1. Repeated verification steps done for navbar on the Home page.
+    2. Navbar code is identical on all HTML pages.
 
 2. Introduction: 
     1. Start on the desktop view. 
-    2. A single row is presented to the user explaing why they might want to get in touch. 
+    2. A single row is presented to the user explaining why they might want to get in touch. 
     3. Resize the screen to the tablet view. 
     4. As above a single row is presented to the user, which is responsive on all devices. 
     5. Resize the screen to the mobile view, as expected the introductory section is still responsive and does not overflow.
 
 3. Contact Form 
     1. Start at the desktop screen view. 
-    2. All the inputs are clearly labeled and asking the user to provide relavant information. 
-    3. Tried to submit and empty form, the message poped up asking to enter the name. 
-    4. Entered the name and tried to submit the form, a message poped up asking to fill in the empty field. 
-    5. Enterd the name and email address, tried to submit the form again. The message poped up asking to fill 
+    2. All the inputs are clearly labeled and asking the user to provide relevant information. 
+    3. Tried to submit an empty form, the message popped up asking to enter the name. 
+    4. Entered the name and tried to submit the form, a message popped up asking to fill in the empty field. 
+    5. Entered the name and email address, tried to submit the form again. The message popped up asking to fill 
     in the empty field for textera element. 
     6. Filled in all the required information and pressed submit. 
-    7. The Submit button changed text to "Submiting" 
-    8. An alert poped up displaying the following message "Thank you [user-name]. Your message has been sent! We will be in touch soon!"
-    9. Within seconds recieved an email notifying the owner of the site of the enquire submited with user name and email address, aslo with the text which 
+    7. The Submit button changed the text to "Submitting...". 
+    8. An alert popped up displaying the following message "Thank you [user-name]. Your message has been sent! We will be in touch soon!"
+    9. Within seconds, the owner received an email notifying them of the site of the enquire, with a user name and email address, also with the text which 
     was entered. 
-    10. Once pressed "OK" on aler pop up the form has been reset.
-    11. The user gets an autormated email ensuring them the message has been recieved and the somebody will be in touch with them shortly.
-    12. If the email address is not valid, the owner gets notifyed and emailJS is trying to resend the automated reply for 24hrs. 
-    13. If something should go wrong with emailJS the user will be notifyed via alert. 
-    14. Repeted the same steps for tablet and mobile view, the result was satifactory. 
+    10. Once pressed "OK" on alert, the form has been reset.
+    11. The user gets an automated email ensuring them the message has been received and somebody will be in touch with them shortly.
+    12. If the email address is not valid, the owner gets notified and emailJS is trying to resend the automated reply for 24hrs. 
+    13. If something should go wrong with emailJS the user will be notified via an alert. 
+    14. Repeated the same steps for tablet and mobile view, the result was satisfactory. 
     
 ![Contact Form Ipad](/assets/wireframes/contact-form-ipad.png)
 ![Contact Form Mobile](/assets/wireframes/contact-form-mobile.png)
 
 
 4. Submit Button: 
-    1. Start at the desktop view, and hover over the button which changed background color and fornt colour.
-    2. Pressing submit when all the information required is filled in, the button changes background colour, 
+    1. Start at the desktop view, and hover over the button which changed background color and font colour.
+    2. Pressing submit when all the information required is filled in, the button changes the background colour, 
     font colour and the text element displayed "Sending..."
     3. Once the form has been reset the button went back to its original view. 
-    4. Repeted the same steps for tablet and mobile view, the result was satifactory. 
+    4. Repeated the same steps for tablet and mobile view, the result was satisfactory. 
 
 ![Images of the submit button](/assets/wireframes/contact-form-sending.png)
 
 
 5.Footer: 
-    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    1. Hovered over each social media icon, which showed good transitions and a change of background colour.
     2. Click on each icon, each link leads to a separate tab.
     3. The footer is responsive on all widow view sizes.
-    4. The footer code is identical on each every page.
+    4. The footer code is identical on every page.
     
 ##### back to [content](#table-of-content)
 
 ### 404.html Page
 
-1. Starting at the desktop view, typed some rundom characters after the url and custom 404 page has appeared.
+1. Starting at the desktop view, typed some random characters after the URL and custom 404 page is displayed.
 2. Hover over the button which leads to the home page and color has changed. 
 3. Clicked on the button and the link has diverted the user to the home page. 
-4. Relpeated the following steps for tablet and mobile view. 
-5. The result were satisfactiory across the different size devices and browsers. 
+4. Repeated the following steps for tablet and mobile view. 
+5. The result was satisfactory across the different size devices and browsers. 
 
 ![Responsive 404.html](/assets/wireframes/404.html-responsive.png)
 
@@ -389,7 +388,7 @@ on the mobile devices and expand view on the medium and large screen views.
 
 ## Google Lighthouse Testing
 
-- To get an acurate report all the pages have been viewed using incognito window.
+- To get an accurate report all the pages have been viewed using an incognito window.
 
 ### Home Page: 
  
@@ -400,33 +399,33 @@ on the mobile devices and expand view on the medium and large screen views.
 ### Recipe Page: 
 
 -- Added image fluid class to reduce the image size 
--- Generally the performance issues found due to the large amount of data imported from the API 
+-- Generally, the performance issues found due to the large amount of data imported from the API 
 
 ![Recipe Page Lighthouse Report](/assets/wireframes/recipe-page-lighthouse.png)
 
 ### About Page:
 
 -- Fix the rel attributes instead of rel="external" used rel="noreferrer".
--- Minimized the links to external resorces like bootstrap and jquery library to improve performance.
+-- Minimized the links to external resources like bootstrap and jquery library to improve performance.
 
 ![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
 
 ### Contact Page: 
 
--- Minimized the links to external resorces like bootstrap and jquery library to improve performance.
+-- Minimized the links to external resources like bootstrap and jquery library to improve performance.
 
 ![Contac Page Lighthouse Report](/assets/wireframes/contact-page-lighthouse.jpg)
 
-### Cross Browser Compatability Table 
+### Cross Browser Compatibility Table 
 
-| Pages    |       <strong>Crome</strong>     |       <strong>Edge</strong>     |     <strong>ISO</strong>        |
+| Pages    | <strong>Google Chrome</strong>   |       <strong>Edge</strong>     |     <strong>ISO</strong>        |
 |----------|:--------------------------------:|--------------------------------:|--------------------------------:|
 | Home     |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
 | Recipe   |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|      
 | About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
 | Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
 
-- Browser compatability test has been successful and all browsers tested displayed the information correctly.
+- Browser compatibility test has been successful and all browsers tested displayed the information correctly.
 
  ## Bugs 
 
@@ -439,40 +438,39 @@ on the mobile devices and expand view on the medium and large screen views.
 
 ### Recipe Page:
 
--- I came across recipe rating bug, which was rating either all the recipe cards on click. 
-- Solved it by looping over the stars and using prev and next jQuery method to target is sibilings. 
+-- I came across a recipe rating bug, which was rating either all the recipe cards on click. 
+- Solved it by looping over the stars and using prev and the next jQuery method to target is siblings. 
 
 
 
 ### About Page:
 
--- Each bio div has been set initially to expand only on click of the image, however taking the consideration UX design, 
-the title of each div has a posibility to to expand on click as well. Therefore, no matter the preference of the user which elements they would 
-like to click, the div will expand.
-
--- During the testing the images were distorted, used online tool to resize the images to the equal size. 
--- The bio divs sometimes display a bug, when clicking on the Olivia the both divs will expand and no information 
-displayed on Martins bio div.
--- However when pressing on the Martin divs only his information will be displayed as desired. 
--- Clicking on the Olivia's div again after closing Martin's div only Olivia div is displayed. 
+-- Each bio div has been set initially to expand only by a click of the image, however taking the into consideration UX design, 
+the title of each div has been added to click funct to expand on click as well. Therefore, no matter the preference of the user which elements they 
+would prefer to click, the div will expand.
+-- During the testing, the images were distorted, used an online tool to resize the images to an equal size. 
+-- The bio divs sometimes display a bug, when clicking on the Olivia both divs will expand, and no information 
+displayed on Martin's bio div.
+-- However, when pressing on the Martin divs only his information will be displayed as desired. 
+-- Clicking on Olivia's div again after closing Martin's div only Olivia div is displayed. 
 
 #### Lighthouse report 
 
 -- Fix the rel attributes instead of rel="external" used rel="noreferrer".
--- Minimized the links to external resorces like bootstrap and jquery library to improve performance.
+-- Minimized the links to external resources like bootstrap and jquery library to improve performance.
 
 ![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
 
 ### Contact Page: 
 
--- Initially the form has was not reseting on submit, therefore had to add reset functionality in the 
+-- Initially, the form has was not resetting on submit, therefore had to add reset functionality in the 
 js file. 
 
 -- I ensured all the input fields were field in using HTML5 required attribute. 
 
 ### 404 Page:
 
--- Whilst testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
+-- Whilst, testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
 height of the page using hv value. 
 
 
