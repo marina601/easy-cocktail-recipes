@@ -7,13 +7,11 @@
 [**Testing**](#testing)
    - [**Testing User Stories**](#testing-user-stories)
    - [**Further Testing**](#further-testing)
-      - [**Navigation Testing**](#navigation-testing)
-      - [**Social Links**](#social-links)
-      - [**Video**](#video)
-      - [**Sign Up Form**](#sign-up-form)
-      - [**Services**](#services)
-      - [**Team**](#team)
-      - [**Footer**](#footer)
+      - [**Home Page**](#navigation-testing)
+      - [**Recipe Page**](#social-links)
+      - [**About Page**](#video)
+      - [**Contact Page**](#sign-up-form)
+      - [**Custom 404 Page**](#services)
    - [**Bugs**](#bugs)
 
 TESTING.md
@@ -31,6 +29,14 @@ TESTING.md
    -- Recipes Page has presented the only error where some missing semicolons had to be added 
 
 ### User stories testing:
+
+### Note: 
+Going through the use stories I have realized the user journey throughout the site is not clearly marked out. Therefore, 
+I have added call to action buttons on every page providing a user with a clear direction what the next step should be. 
+The website has a natural flow now taking the user from the HOME page > RECIPE page > ABOUT page > CONTACT page. 
+
+The user can choose two options navigating the website either by following call to action buttons or by choosing their desired 
+page from the sticky menu.
 
 ### Testing user stories from UX section of README.md
 
@@ -50,10 +56,13 @@ TESTING.md
      -- 1st - Greeting message 
      -- 2nd - What tools the user will need to execute the recipes 
      -- 3rd - Call to action point tells the user what to do when they go to the recipe page 
+  - The user is guided to the next page via a call to action button in the third call out or the user can 
+  simply choose which page to view via navigation bar.
 
 2. As a first-time user, I want to view a selection of cocktail recipes available.
   - When the user is landing on the recipe page the user is presented with all the cocktail recipes in the collapse view. 
   - Showing Recipe Image and Recipe Title.
+  - Call to action button located at the bottom of the page leading the user to learn more about he blog creators.
 
 3. As a first-time user, I want to be able to see the ingredients and method for each cocktail.
   - The user can view the recipes by clicking on the recipe name.
@@ -77,9 +86,12 @@ TESTING.md
    - The user will be given feedback with an alert displaying at the top of the page to thank them for rating the recipe. 
 
 3. As a returning user, I want to learn more about the blog.
-   - The returning user can access the about page by clicking on the sticky navigation menu.
+   - The returning user can access the about page by clicking on the sticky navigation menu or call to action 
+   button at the bottom of the recipe page.
+   - At the bottom of the About page the user can see a call to action button to submit a contact form.
    - The user will presented with a short about section which tells them how and why the blog was created. 
    - The user is presented with the images and names of the blog creators.
+   
    
 4. As a returning user, I want to learn more about the blog creator and check out their social media accounts.
    - To learn more about the creators of the blog the user is able to click on the image or the name of the blog creators.
@@ -101,13 +113,7 @@ somebody from the team will be in touch with them shortly.
 2. As a frequent-user, I want to follow the blog on social media.
 - Socila Icons are presented at the bottom of each page which lead to the different social media accounts of the blog. 
 
-### Note: 
-Going through the use stories I have realized the user journey throughout the site is not clearly marked out. Therefore, 
-I have added call to action buttons on every page providing a user with a clear direction what the next step should be. 
-The website has a natural flow now taking the user from the HOME page > RECIPE page > ABOUT page > CONTACT page. 
 
-The user can choose two options navigating the website either by following call to action buttons or by choosing their desired 
-page from the sticky menu.
 
 ### Business Goals:
 
@@ -131,7 +137,9 @@ on the mobile devices and expand view on the medium and large screen views.
    explore the information further, further information is presented at the click of the button. 
 - The website has a custom 404 page which leads the users to home page on click of the button.
 
-### Manual (logical) testing of all elements and functionality on every page.
+### Further Testing
+
+#### Manual (logical) testing of all elements and functionality on every page.
 
 -- The site has been tested on the following devices:
 
@@ -193,10 +201,52 @@ on the mobile devices and expand view on the medium and large screen views.
 5. Footer 
     1. Hovered over each social media icon, which showed good transitions and change of background colour.
     2. Click on each icon, each link leads to a separate tab.
-    3. The foote is responsive on all widow view sizes.
+    3. The footer is responsive on all window view sizes.
 
 #### Recipe Page: 
 
+1. Navigation bar: 
+    1. Repeated verification steps done for navbar on Home page.
+    2. Navbar code is identical on all html pages.
+
+2. Recipe Cards: 
+    1. Starting with a desktop view, the cocktail recipes displayed with 3 cocktails in each row, in the collapse view. 
+    2. The only information displayed on landing of the page is images of the cocktails and their name. 
+    3. Hover over the name of the cocktail and pointer is displayed showing the user to click on the name. 
+    4. Once the user clicks on the recipe title, the ingredients, method, category of each recipe is displayed. 
+    5. At the bottom of the recipe card the user is asked to rate the recipe with empty star rating. 
+    6. Hover over the stars and the colour of the stars are changing colour. 
+    7. Once the user clicks on the star, all previous stars change color to orange and all the next stars change color to black to show 
+    the empty stars which have not been rated. 
+    8. If the user changes its mind and rates the same recipe again, the stars change colour as expected. 
+    9. Once the recipe has been rated the alert is displayed with the following message "Thank you for rating this recipe".
+    10. Onmouse leave the recipe collapses to its original view. 
+    12. Reduce the screen size to tablet view, the recipe cards displayed in the collapsed view, 2 recipe cards in the row. 
+    13. Steps 2-9 have been repited and the results were satifactory and the same as desktop view. 
+    14. When the user opens another recipe card the previous one closes so the view is able to view one recipe card at the time. 
+    15. The user is also able to click on the recipe card to collapse the view 
+    16. Reduce the screen view to mobile size, the recipe cards displayed in the collapse view, 1 recipe card in a row. 
+    17. Steps 2-9 have been repited and provided the same results as desktop. 
+    18. When the user opens another recipe card the previous one closes so the view is able to view one recipe card at the time.
+    19. The user is also able to click on the recipe card to collapse the view 
+
+![Recipe-mobile](/assets/wireframes/recipe-expanded.png) | ![Recipe-feedback](/assets/wireframes/rating-feedback.jpg)
+
+![Recipe Tablet Layout](/assets/wireframes/recipe-ipad-view.png)
+![Recipe Expanded at Tablet View](/assets/wireframes/Recipe-tablet-view.png)    
+
+3. Call to action button
+    1. Clicking on the call to action button to check the link which is linked to about.html page. 
+    2. Once the button is hovered the background color and font color changes.
+    3. Shadow property has been used on call to action button to make it stand out and catch the 
+     attention of the user.
+    4. Repeated the same steps on tablet, mobile and desktop devices with satisfactiory results.
+
+4. Footer 
+    1. Hovered over each social media icon, which showed good transitions and change of background colour.
+    2. Click on each icon, each link leads to a separate tab.
+    3. The footer is responsive on all window view sizes.
+    4. The footer code is identical in all html pages.
 
 #### About Page: 
 
@@ -289,8 +339,8 @@ on the mobile devices and expand view on the medium and large screen views.
     13. If something should go wrong with emailJS the user will be notifyed via alert. 
     14. Repeted the same steps for tablet and mobile view, the result was satifactory. 
     
-![images of required input fields]
-![Images of the alert]
+![Contact Form Ipad](/assets/wireframes/contact-form-ipad.png)
+![Contact Form Mobile](/assets/wireframes/contact-form-mobile.png)
 
 
 4. Submit Button: 
@@ -300,8 +350,8 @@ on the mobile devices and expand view on the medium and large screen views.
     3. Once the form has been reset the button went back to its original view. 
     4. Repeted the same steps for tablet and mobile view, the result was satifactory. 
 
-![Images of the submit button]
-![Images of sending transition]
+![Images of the submit button](/assets/wireframes/contact-form-sending.png)
+
 
 5.Footer: 
     1. Hovered over each social media icon, which showed good transitions and change of background colour.
@@ -313,12 +363,23 @@ on the mobile devices and expand view on the medium and large screen views.
 
 #### 404.html Page:
 
+1. Starting at the desktop view, typed some rundom characters after the url and custom 404 page has appeared.
+2. Hover over the button which leads to the home page and color has changed. 
+3. Clicked on the button and the link has diverted the user to the home page. 
+4. Relpeated the following steps for tablet and mobile view. 
+5. The result were satisfactiory across the different size devices and browsers. 
+
+![Responsive 404.html](/assets/wireframes/404.html-responsive.png)
+
  ## Bugs 
 
  ### Navigation 
 
 -- When flipping the mobile phone device found that header height was expanding over the navigation bar. 
 -- Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
+
+### Recipe Page
+
 
 ### About Page (bio )
 
@@ -338,3 +399,8 @@ displayed on Martins bio div.
 js file. 
 
 -- I ensured all the input fields were field in using HTML5 required attribute. 
+
+### 404 Page:
+
+-- Whilst testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
+height of the page using hv value. 
