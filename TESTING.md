@@ -26,7 +26,7 @@
 - I have also used JSHints for JavaScript and jQuery code.
 
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
-  -- The file passed with no major issues, the only issue was resolved was regarding transition value.
+  -- The file passed with no major issues, the only issue that was resolved was regarding transition value.
 
 - [W3C Markup Validation]( https://validator.w3.org/)
    -- HTML code pass validation without major errors, type attribute has been removed from all script elements.
@@ -39,8 +39,8 @@
 ## User stories testing
 
 ### Note: 
-Going through the use stories I have realized the user journey throughout the site is not clearly marked out. Therefore, 
-I have added call to action buttons on every page providing a user with a clear direction what the next step should be. 
+Going through the user stories I have realized the user journey throughout the site is not marked out. Therefore, 
+I have added a call to action button on every page providing a user with a clear direction on what the next step should be. 
 The website has a natural flow now taking the user from the HOME page > RECIPE page > ABOUT page > CONTACT page. 
 
 The user can choose two options navigating the website either by following call to action buttons or by choosing their desired 
@@ -51,42 +51,42 @@ page from the sticky menu.
 ### First Time User:
 
 1. As a first-time user, I want to understand what this site is about and what to expect.
-  - On landing of the home page the user is greeted with a hero image of the barman making cocktails
+  - On the landing of the home page the user is greeted with a hero image of the barman making cocktails
   - The user is greeted with a heading on top of the page which clearly defines the subject of the website
-  - The user is greeted with a quote on the right hand side of the page defining the theme of the website.
-  - The background image chosed for the site, was designed to give an impression to the use of entering in the 
-  trendy bar, seeing the barman mixing drinks. With dark background and black and white image makes all other features 
+  - The user is greeted with a quote on the right-hand side of the page defining the theme of the website.
+  - The background image chosen for the site, was designed to give an impression to the use of entering trendy bar,
+   seeing the barman mixing drinks. A dark background and black and white image makes all other features 
   stand out. 
-  - The user is presented with a clear navigation which tells the user what pages the user can access.
+  - The user is presented with clear navigation which tells the user what pages the user can access.
   - The navigation is responsive on mobile devices. 
-  - The navigation is sticky throughout the site giving the user accessability to access any page at any given time.
-  - The user is greeted with three call to action messages: 
+  - The navigation is sticky throughout the site giving the user accessibility to access any page at any given time.
+  - The user is greeted with three call-out messages: 
      -- 1st - Greeting message 
      -- 2nd - What tools the user will need to execute the recipes 
      -- 3rd - Call to action point tells the user what to do when they go to the recipe page 
   - The user is guided to the next page via a call to action button in the third call out or the user can 
-  simply choose which page to view via navigation bar.
+  simply choose which page to view via the navigation bar.
 
 2. As a first-time user, I want to view a selection of cocktail recipes available.
-  - When the user is landing on the recipe page the user is presented with all the cocktail recipes in the collapse view. 
+  - When the user is landing on the recipe page the user is presented with all the cocktail recipes in the collapsed view. 
   - Showing Recipe Image and Recipe Title.
-  - Call to action button located at the bottom of the page leading the user to learn more about he blog creators.
+  - Call to action button is located at the bottom of the page leading the user to learn more about the blog creators.
 
 3. As a first-time user, I want to be able to see the ingredients and method for each cocktail.
   - The user can view the recipes by clicking on the recipe name.
-  - Once the recipe card is open the it displays the ingredients, method, category and possibility to rate the recipe.
+  - Once the recipe card is open it displays the ingredients, method, category, and possibility to rate the recipe.
   - Once the user leaves the recipe card, it collapses. Letting the user move on to the different recipe. 
    
 4. As a first-time user, I want to check out the social media links of the blog.
-  - Socila links are available in the footer of the page, which is consitant throughout the site.
-  - The user is able to click on the social icons in the footer, the new page will open, given the user an easy access 
-  to go back to the site. 
+  - Social links are available in the footer of the page, which is consistent throughout the site.
+  - The user can click on the social icons in the footer, the new page will open, given the user easy access to 
+ go back to the site. 
 
 ### Returning user:
 
 1. As a returning user, I want to make a cocktail and follow the instructions.
    - As a returning user, the user is familiar with the layout of the site and can easily navigate to the recipe page.
-   - A returning user is able to click on the desired recipe and open the instructions.
+   - A returning user can click on the desired recipe and open the instructions.
    - A returning user can click through recipe cards and check out all the ingredients and methods.
 
 2. As a returning user, I want to be able to rate the recipes.
