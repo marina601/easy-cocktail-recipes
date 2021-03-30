@@ -30,7 +30,7 @@ function displayCocktail(data){
     cocktailElems += `
           <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
-            <img src="${cocktail.strDrinkThumb}" class="card-img-top" alt="${cocktail.strDrinkThumb}">
+            <img src="${cocktail.strDrinkThumb}" class="card-img-top img-fluid" alt="${cocktail.strDrinkThumb}">
                 <div class="card-body">
                 <h3 class="card-title">${cocktail.strDrink}</h3>
                   <div class="recipe hidden">
