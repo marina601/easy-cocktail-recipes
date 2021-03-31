@@ -30,16 +30,7 @@ This website will enable adults to create simple cocktail recipes for special oc
    - [**Problems During Development**](#problems-during-development)   
 
 4 [**Testing**](#testing)
-   - [**Testing User Stories**](#testing-user-stories)
-   - [**Further Testing**](#further-testing)
-      - [**Navigation Testing**](#navigation-testing)
-      - [**Social Links**](#social-links)
-      - [**Video**](#video)
-      - [**Sign Up Form**](#sign-up-form)
-      - [**Services**](#services)
-      - [**Team**](#team)
-      - [**Footer**](#footer)
-   - [**Bugs**](#bugs)
+   - [TESTING.md file](TESTING.md)
 
 5 [**Deployment**](#deployment)
   - [**GitHub Pages**](#github-pages)
@@ -209,12 +200,12 @@ Please view my wireframes for desktop, tablet and mobile view:
 ![IPad-view](/assets/wireframes/recipe-ipad.png)
 ![Mobile-view](/assets/wireframes/recipe -mobile.png)
 
+- During the development I was not able to sorce hint and tips from the 
+API used, therefore this section was left out.
+- Also the layout  structure for recipe cards has changed, whilst the information provided to the user stayed the same. 
+
 - Contact Page: 
 ![Contact-page](/assets/wireframes/contact-page.png)
-
-
-
-
 
 ##### back to [content](#table-of-content)
 
@@ -222,21 +213,21 @@ Please view my wireframes for desktop, tablet and mobile view:
 
 ### Features implemented 
 
-- [All pages](../index.html):  
+- [All pages](index.html):  
    - Dynamic navigation menu collapses on the mobile screen view.
    - Contain sticky navigation allows the user to access the menu at any time.
    - The website has a responsive design based on the screen view.
    - Minimalistic footer with social icons for the webpage.
    - Custom 404.html page has been added 
 
-- [Recipes.html](../ricipes.html): 
+- [Recipes.html](recipes.html): 
    - Recipe cards take their input from an API.
    - Recipe card information is hidden to the user on document load. 
    - Recipe card expand on click to show all the content to the user.
    - Recipe card collapses when the user moves to a different recipe.
    - The user can also exit the recipe card with one click.
 
-- [About.html](../about.html)
+- [About.html](about.html)
    - The user is presented with About the blog paragraph.
    - The user is also shown two pictures of the site owners.
    - The user can click on each name and more bio information is available.
@@ -245,7 +236,7 @@ Please view my wireframes for desktop, tablet and mobile view:
    - The user is also provided with a button to collapse the bio information for each person.
 
 
-- [Contact.html](../contact.html)
+- [Contact.html](contact.html)
    - Contact form is powered by mailJS.
    - Contact form uses the “POST” method to send information from the user.
    - When the submit button is pressed the button text content is "Sending ... ".
