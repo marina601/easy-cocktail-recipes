@@ -1,6 +1,7 @@
 //jshint esversion: 6
 
 //Navigation code to collapse the menu on mobile view
+const $ = window.$;
 
 $(document).ready(function(){
   
