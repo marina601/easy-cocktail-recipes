@@ -680,6 +680,14 @@ span {
         margin: 10px 30px;
     }
 
+    .closeO {
+        margin-top: 3rem;
+    }
+
+    .closeM {
+        margin-top: 5rem;
+    }
+
     /*.link-div {
         margin-top: 10rem;
     } */
