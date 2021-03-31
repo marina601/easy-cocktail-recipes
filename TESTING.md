@@ -460,13 +460,8 @@ would prefer to click, the div will expand.
 displayed on Martin's bio div.
 - However, when pressing on the Martin divs only his information will be displayed as desired. 
 - Clicking on Olivia's div again after closing Martin's div only Olivia div is displayed. 
+- This issue occured only on the desktop and tablet devices, fix the error with if else statement in JavaScript file.
 
-#### Lighthouse report 
-
-- Fix the rel attributes instead of rel="external" used rel="noreferrer".
-- Minimized the links to external resources like bootstrap and jquery library to improve performance.
-
-![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
 
 ### Contact Page: 
 
