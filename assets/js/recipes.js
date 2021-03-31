@@ -1,6 +1,8 @@
 //jshint esversion: 6
+const $ = window.$;
 $(document).ready(function(){
 const URL = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
+
 
 function getCocktail(){
   fetch(URL)
