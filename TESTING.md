@@ -26,17 +26,20 @@
 - I have also used JSHints for JavaScript and jQuery code.
 
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
-  -- The file passed with no major issues, the only issue that was resolved was regarding transition value.
+  - The file passed with no major issues, the only issue that was resolved was regarding transition value.
 
 - [W3C Markup Validation]( https://validator.w3.org/)
-   -- HTML code pass validation without major errors, type attribute has been removed from all script elements.
+   - HTML code pass validation without major errors, type attribute has been removed from all script elements.
     
 - [JSHints](https://jshint.com/)
-   -- Recipes Page has presented the error where some missing semicolons had to be added.
-   -- jshint warning: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
-   -- Solved the error by adding const $ = window.$ to jquery files.
-   -- Contact page: jshint displaying a warning: "emailjs" one undefined variable.
-   -- Could not declare a variable for emailjs due to this variable is taken from the emailJS instalation code.
+   - Recipes Page has presented the error where some missing semicolons had to be added.
+   - jshint warning: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
+   - Solved the error by adding const $ = window.$ to jquery files.
+   - Which resulted in braking the jQueery code in the main deployed version of the website. 
+   - Has removed a declared variable and used /*globals $:false */ this instead. 
+   -jQuery was able to read this and display the code without errors.
+   - Contact page: jshint displaying a warning: "emailjs" one undefined variable.
+   - Could not declare a variable for emailjs due to this variable is taken from the emailJS instalation code.
 
 ##### back to [content](#table-of-content)
 
@@ -65,9 +68,9 @@ page from the sticky menu.
   - The navigation is responsive on mobile devices. 
   - The navigation is sticky throughout the site giving the user accessibility to access any page at any given time.
   - The user is greeted with three call-out messages: 
-     -- 1st - Greeting message 
-     -- 2nd - What tools the user will need to execute the recipes 
-     -- 3rd - Call to action point tells the user what to do when they go to the recipe page 
+     - 1st - Greeting message 
+     - 2nd - What tools the user will need to execute the recipes 
+     - 3rd - Call to action point tells the user what to do when they go to the recipe page 
   - The user is guided to the next page via a call to action button in the third call out or the user can 
   simply choose which page to view via the navigation bar.
 
@@ -396,27 +399,27 @@ somebody from the team will be in touch with them shortly.
 
 ### Home Page: 
  
--- Remove all extra code from the external libraries to increase performance.
+- Remove all extra code from the external libraries to increase performance.
 
 ![Home Page Lighthouse Report](/assets/wireframes/home-lighthouse-report.jpg)
 
 ### Recipe Page: 
 
--- Added image fluid class to reduce the image size 
--- Generally, the performance issues found due to the large amount of data imported from the API 
+- Added image fluid class to reduce the image size 
+- Generally, the performance issues found due to the large amount of data imported from the API 
 
 ![Recipe Page Lighthouse Report](/assets/wireframes/recipe-page-lighthouse.png)
 
 ### About Page:
 
--- Fix the rel attributes instead of rel="external" used rel="noreferrer".
--- Minimized the links to external resources like bootstrap and jquery library to improve performance.
+- Fix the rel attributes instead of rel="external" used rel="noreferrer".
+- Minimized the links to external resources like bootstrap and jquery library to improve performance.
 
 ![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
 
 ### Contact Page: 
 
--- Minimized the links to external resources like bootstrap and jquery library to improve performance.
+- Minimized the links to external resources like bootstrap and jquery library to improve performance.
 
 ![Contac Page Lighthouse Report](/assets/wireframes/contact-page-lighthouse.jpg)
 
@@ -435,46 +438,46 @@ somebody from the team will be in touch with them shortly.
 
  ### Navigation:
 
--- When flipping the mobile phone device found that header height was expanding over the navigation bar. 
--- Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
+- When flipping the mobile phone device found that header height was expanding over the navigation bar. 
+- Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
 
 
 
 ### Recipe Page:
 
--- I came across a recipe rating bug, which was rating either all the recipe cards on click. 
+- I came across a recipe rating bug, which was rating either all the recipe cards on click. 
 - Solved it by looping over the stars and using prev and the next jQuery method to target is siblings. 
 
 
 
 ### About Page:
 
--- Each bio div has been set initially to expand only by a click of the image, however taking the into consideration UX design, 
+- Each bio div has been set initially to expand only by a click of the image, however taking the into consideration UX design, 
 the title of each div has been added to click funct to expand on click as well. Therefore, no matter the preference of the user which elements they 
 would prefer to click, the div will expand.
--- During the testing, the images were distorted, used an online tool to resize the images to an equal size. 
--- The bio divs sometimes display a bug, when clicking on the Olivia both divs will expand, and no information 
+- During the testing, the images were distorted, used an online tool to resize the images to an equal size. 
+- The bio divs sometimes display a bug, when clicking on the Olivia both divs will expand, and no information 
 displayed on Martin's bio div.
--- However, when pressing on the Martin divs only his information will be displayed as desired. 
--- Clicking on Olivia's div again after closing Martin's div only Olivia div is displayed. 
+- However, when pressing on the Martin divs only his information will be displayed as desired. 
+- Clicking on Olivia's div again after closing Martin's div only Olivia div is displayed. 
 
 #### Lighthouse report 
 
--- Fix the rel attributes instead of rel="external" used rel="noreferrer".
--- Minimized the links to external resources like bootstrap and jquery library to improve performance.
+- Fix the rel attributes instead of rel="external" used rel="noreferrer".
+- Minimized the links to external resources like bootstrap and jquery library to improve performance.
 
 ![About Page Lighthouse Report](/assets/wireframes/about-lighthouse-report.png)
 
 ### Contact Page: 
 
--- Initially, the form has was not resetting on submit, therefore had to add reset functionality in the 
+- Initially, the form has was not resetting on submit, therefore had to add reset functionality in the 
 js file. 
 
--- I ensured all the input fields were field in using HTML5 required attribute. 
+- I ensured all the input fields were field in using HTML5 required attribute. 
 
 ### 404 Page:
 
--- Whilst, testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
+- Whilst, testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
 height of the page using hv value. 
 
 
