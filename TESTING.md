@@ -35,6 +35,8 @@
    -- Recipes Page has presented the error where some missing semicolons had to be added.
    -- jshint warning: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
    -- Solved the error by adding const $ = window.$ to jquery files.
+   -- Contact page: jshint displaying a warning: "emailjs" one undefined variable.
+   -- Could not declare a variable for emailjs due to this variable is taken from the emailJS instalation code.
 
 ##### back to [content](#table-of-content)
 
