@@ -32,7 +32,9 @@
    -- HTML code pass validation without major errors, type attribute has been removed from all script elements.
     
 - [JSHints](https://jshint.com/)
-   -- Recipes Page has presented the only error where some missing semicolons had to be added 
+   -- Recipes Page has presented the error where some missing semicolons had to be added.
+   -- jshint warning: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
+   -- Solved the error by adding const $ = window.$ to jquery files.
 
 ##### back to [content](#table-of-content)
 
