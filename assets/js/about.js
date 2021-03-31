@@ -1,5 +1,6 @@
 //jshint esversion: 6
-const $ = window.$;
+/*globals $:false */
+
 $(document).ready(function(){
     //About Page:
 

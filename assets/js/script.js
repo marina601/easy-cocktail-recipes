@@ -1,8 +1,8 @@
 //jshint esversion: 6
+/*globals $:false */
+
 
 //Navigation code to collapse the menu on mobile view
-const $ = window.$;
-
 $(document).ready(function(){
   
 $(".toggle-btn").click(function() {

@@ -1,5 +1,6 @@
 //jshint esversion: 6
-const $ = window.$;
+/*globals $:false */
+
 $(document).ready(function(){
 const URL = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
 
