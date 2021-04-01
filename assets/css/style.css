@@ -526,7 +526,6 @@ input[type="submit"]:hover {
     border: 3px solid #0d0709;
     border-radius: 8%;
     background-color: #be6851;
-    transition: all 0.5 ease-in-out;
 
 }
 
@@ -580,7 +579,6 @@ footer {
 
 .social-icons li a {
     color: #e3d8ee;
-    transition:  0.5 ease-in-out;
 }
 
 .social-icons li a:hover {
