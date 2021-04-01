@@ -1,36 +1,29 @@
 //jshint esversion: 6
 /*globals $:false */
-
-$(document).ready(function(){
+let allCockTail = {};
 const URL = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
 
 
-function getCocktail(){
-  fetch(URL)
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
-      // Examine the text in the response
-      response.json().then(function(data) {
-        console.log(data);
-        displayCocktail(data);
-        //created a function with data as perimeter
-      });
+$(document).ready(function () {
+
+    getCocktail();
+
+});
+function byCategory(category) {
+    if (category === "All") {
+        displayCocktail(allCockTail);
+    } else {
+        const data = allCockTail.drinks.filter(drink => drink.strAlcoholic === category)
+        displayCocktail({ drinks: data });
     }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
+
 }
+
 //Code has been refactored with help of my mentor Medale Oluwfemi
-function displayCocktail(data){
-  let cocktailElems = '';
-  data.drinks.forEach(cocktail => {
-    cocktailElems += `
+function displayCocktail(data) {
+    let cocktailElems = '';
+    data.drinks.forEach(cocktail => {
+        cocktailElems += `
           <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
             <img src="${cocktail.strDrinkThumb}" class="card-img-top img-fluid" alt="${cocktail.strDrinkThumb}">
@@ -69,46 +62,65 @@ function displayCocktail(data){
           </div>
       </div>
     `;
-  });
-  $('#cocktail-list').empty().append(cocktailElems);
-  
+    });
+    $('#cocktail-list').empty().append(cocktailElems);
 
-  //Adding event listener on click to expand the card-body
-   let card = document.querySelectorAll(".card-body");
-       for (let i = 0; i < card.length; i ++) {
-         $(card[i]).click(function(){
-           if($(this).children(".recipe").hasClass("hidden")){
-           $(this).children(".recipe").show();
-         }
-         });
-        
-  //Adding event listener on mouseleave to collapse the card-body
-         $(card[i]).mouseleave(function(){
-           $(this).children(".recipe").hide("medium");
-         });
-       } 
- // Adding event listener for star rating 
+
+    //Adding event listener on click to expand the card-body
+    let card = document.querySelectorAll(".card-body");
+    for (let i = 0; i < card.length; i++) {
+        $(card[i]).click(function () {
+            if ($(this).children(".recipe").hasClass("hidden")) {
+                $(this).children(".recipe").show();
+            }
+        });
+
+        //Adding event listener on mouseleave to collapse the card-body
+        $(card[i]).mouseleave(function () {
+            $(this).children(".recipe").hide("medium");
+        });
+    }
+    // Adding event listener for star rating 
     const stars = document.querySelectorAll(".fa-star");
-    for(let i = 0; i < stars.length; i++){ //loop through all the stars
-    
-        $(stars[i]).click(function(){ // on click function change color 
-            $(this).css("color", "#be6851"); 
+    for (let i = 0; i < stars.length; i++) { //loop through all the stars
+
+        $(stars[i]).click(function () { // on click function change color 
+            $(this).css("color", "#be6851");
             $(this).nextAll().css("color", "#0d0709");
-            $(this).prevAll().css("color", "#be6851");     
+            $(this).prevAll().css("color", "#be6851");
             setTimeout(() => { alert('Thank you for rating this recipe'); }, 1000); //timeout function to display the message 
         });
         //Event listener on mouseenter change the color of the stars 
-        $(stars[i]).on("mouseenter", function(){  
+        $(stars[i]).on("mouseenter", function () {
             $(this).css("color", "yellow");
         });
 
-        
+
     }
 
-   
-       
+
+
 }
 
-getCocktail();
-
-});
+function getCocktail() {
+    fetch(URL)
+        .then(
+            function (response) {
+                if (response.status !== 200) {
+                    console.log('Looks like there was a problem. Status Code: ' +
+                        response.status);
+                    return;
+                }
+                // Examine the text in the response
+                response.json().then(function (data) {
+                    console.log(data);
+                    allCockTail = data;
+                    displayCocktail(data);
+                    //created a function with data as perimeter
+                });
+            }
+        )
+        .catch(function (err) {
+            console.log('Fetch Error :-S', err);
+        });
+}
