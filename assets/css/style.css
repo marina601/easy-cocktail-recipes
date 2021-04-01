@@ -194,22 +194,28 @@ h1 {
     margin: 3px;
     border-radius: 10px;
     filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.5));
+    color: #0d0709;
+    font-size: 18px;
+    font-weight: 600;  
+    padding: 5px;
+    text-decoration: none; 
 }
 
-.action-btn a {
+/*.action-btn a {
     color: #0d0709;
     font-size: 18px;
     font-weight: 600;  
     padding: 5px;
     text-decoration: none;  
-}
+}*/
 
-.action-btn a:hover {
+/*.action-btn a:hover {
     color: #d6cdd2;
-}
+}*/
 
 .action-btn:hover {
    background-color: #0d0709;
+   color: #d6cdd2;
 }
 
 .call-to-action {
