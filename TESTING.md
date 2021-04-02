@@ -28,18 +28,24 @@
 - [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
   - The file passed with no major issues, the only issue that was resolved was regarding transition value.
 
-- [W3C Markup Validation]( https://validator.w3.org/)
+- [W3C Markup Validation](https://validator.w3.org/)
    - HTML code pass validation without major errors, type attribute has been removed from all script elements.
     
-- [JSHints](https://jshint.com/)
-   - Recipes Page has presented the error where some missing semicolons had to be added.
-   - jshint warning: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
-   - Solved the error by adding const $ = window.$ to jquery files.
-   - Which resulted in braking the jQueery code in the main deployed version of the website. 
-   - Has removed a declared variable and used /*globals $:false */ this instead. 
-   -jQuery was able to read this and display the code without errors.
-   - Contact page: jshint displaying a warning: "emailjs" one undefined variable.
-   - Could not declare a variable for emailjs due to this variable is taken from the emailJS instalation code.
+- [JSHint](https://jshint.com/)
+   ### recipes.js 
+      - has presented the error where some missing semicolons had to be added.
+      - byCategory function error: unused varaible, however I am calling this function in HTML file once the 
+             filter buttons are clicked. 
+      - jshint warning: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
+           - Solved the error by adding const $ = window.$ to jquery files.
+      - Which resulted in braking the jQueery code in the main deployed version of the website. 
+      - Has removed a declared variable and used /*globals $:false */ this instead. 
+      -JSHints was able to read this and display the code without errors.
+   ### contact.js
+      - JShint displaying a warning: "emailjs" one undefined variable.
+      - Could not declare a variable for emailjs due to this variable is taken from the emailJS instalation code.
+
+   #### All other pages have passed without errors.
 
 ##### back to [content](#table-of-content)
 
@@ -77,12 +83,15 @@ page from the sticky menu.
 2. As a first-time user, I want to view a selection of cocktail recipes available.
   - When the user is landing on the recipe page the user is presented with all the cocktail recipes in the collapsed view. 
   - Showing Recipe Image and Recipe Title.
+  - The user can choose to view all the recipes by scrolliing down on the page or by clicking the category buttons.
+  - By clicking each button the user can choose to view Alcoholic, Non Alcoholick or All recipes. 
   - Call to action button is located at the bottom of the page leading the user to learn more about the blog creators.
 
 3. As a first-time user, I want to be able to see the ingredients and method for each cocktail.
   - The user can view the recipes by clicking on the recipe name.
   - Once the recipe card is open it displays the ingredients, method, category, and possibility to rate the recipe.
   - Once the user leaves the recipe card, it collapses. Letting the user move on to the different recipe. 
+  - The user is also presented with option to click on the button at the bottom of the recipe card to close the recipe card. 
    
 4. As a first-time user, I want to check out the social media links of the blog.
   - Social links are available in the footer of the page, which is consistent throughout the site.
@@ -94,7 +103,11 @@ page from the sticky menu.
 1. As a returning user, I want to make a cocktail and follow the instructions.
    - As a returning user, the user is familiar with the layout of the site and can easily navigate to the recipe page.
    - A returning user can click on the desired recipe and open the instructions.
+   - A returning user can choose the cocktails by category at the top of the page. 
    - A returning user can click through recipe cards and check out all the ingredients and methods.
+   - Once the user leaves the recipe on the desktop and tablet devices the recipe automatically collapses. 
+   - Once the use opens another recipe card the previous recipe card also collapses. 
+   - A returning user can choose to close recipe card on click of the button at the bottom of the recipe card.
 
 2. As a returning user, I want to be able to rate the recipes.
    - As returning user, can rate the recipe at the bottom of the recipe card by clicking on the star rating.
@@ -133,9 +146,11 @@ somebody from the team will be in touch with them shortly.
 ### Business Goals:
 
 1. As a business owner, I want to build an interactive website for viewers to explore popular recipes.
-- The website has been designed with user experience in mind.
+- The website has been designed with user experience in mind and mobile first approach.
 - The website has a responsive design on all devices. 
 - The website has clear call-to-action buttons at the bottom of each page to lead the user through the journey.
+- The recipe page has been designed to give an easy access to recipe information and let the user choose by category 
+which recipe they would like to view. 
 - The website has easy to access navigation bar, which is displayed with the site logo and collapses navigation links on
  mobile devices, and expands the view on the medium and large screen views. 
 
@@ -200,7 +215,7 @@ somebody from the team will be in touch with them shortly.
     1. Starting from the desktop view three call-out section are displayed inline. 
     2. Reducing the size to tablet view there is only 2 call-outs displayed inline and the third 
     is wrapped under the first two call-outs and displayed in the middle. 
-    3. Reducing the size of the screen to mobile view: all call outs take the full width of the screen and displayed in individual 
+    3. Reducing the size of the screen to mobile view: all call-outs take the full width of the screen and displayed in individual 
     column.
     4. Repeated the verification of functionality and responsiveness using Google Chrome and Edge browsers. 
 
@@ -229,24 +244,33 @@ somebody from the team will be in touch with them shortly.
 
 2. Recipe Cards: 
     1. Starting with a desktop view, the cocktail recipes are displayed with 3 cocktails in each row, in the collapsed view. 
-    2. The only information displayed on the landing page is images of the cocktails and their name. 
-    3. Hover over the name of the cocktail and the pointer is displayed showing the user to click on the name. 
-    4. Once the user clicks on the recipe title, the ingredients, method, category of each recipe are displayed. 
-    5. At the bottom of the recipe card the user is asked to rate the recipe with an empty star rating. 
-    6. Hover over the stars and the colour of the stars is changing colour. 
-    7. Once the user clicks on the star, all previous stars change color to orange and all the next stars change color to black to show 
+    2. Underneath the page title the are 3 buttons which lets the user view the recipes by category.
+    3. Hover over the buttons and font colour and background colour changes. 
+    4. Once clicked on "Alcoholic" button, all recipes under the Alcoholic category are displayed. 
+    5. Once clicked on the "Non Alcoholic" button, all recipes under the Non Alcoholic category are displayed. 
+    6. Once clicked on the "All" button, all recipes are displayed.
+    7. The only information displayed on the landing page is images of the cocktails and their name. 
+    8. Hove over the images and alt information with cocktail name is displayed inputed from the API data. 
+    9. Hover over the name of the cocktail and the pointer is displayed showing the user to click on the name. 
+    10. Once the user clicks on the recipe title, the ingredients, method, category of each recipe are displayed. 
+    11. At the bottom of the recipe card the user is asked to rate the recipe with an empty star rating. 
+    12. Hover over the stars and the colour of the stars is changing colour. 
+    13. Once the user clicks on the star, all previous stars change color to orange and all the next stars change color to black to show 
     the empty stars which have not been rated. 
-    8. If the user changes its mind and rates the same recipe again, the stars change colour as expected. 
-    9. Once the recipe has been rated the alert is displayed with the following message "Thank you for rating this recipe".
-    10. On mouse leave the recipe collapses to its original view. 
-    12. Reduce the screen size to tablet view, the recipe cards displayed in the collapsed view, 2 recipe cards in the row. 
-    13. Steps 2-9 have been repeated and the results were satisfactory and the same as desktop view. 
-    14. When the user opens another recipe card the previous one closes so the viewer can view one recipe card at a time. 
-    15. The user is also able to click on the recipe card to collapse the view 
-    16. Reduce the screen view to mobile size, the recipe cards displayed in the collapsed view, 1 recipe card in a row. 
-    17. Steps 2-9 have been repeated and provided the same results as the desktop. 
-    18. When the user opens another recipe card the previous one closes so the viewer can view one recipe card at a time.
-    19. The user is also able to click on the recipe card to collapse the view 
+    14. If the user changes its mind and rates the same recipe again, the stars change colour as expected. 
+    15. Once the recipe has been rated the alert is displayed with the following message "Thank you for rating this recipe".
+    16. Recipe rating is not tracked and this information does not get reported. 
+    17. A button at the bottom of the recipe card, once hovered changes colour as expected.
+    18. Once clicked on the button the recipe card goes back to the collapsed view. 
+    19. On mouse leave the recipe collapses to its original view. 
+    20. Reduce the screen size to tablet view, the recipe cards displayed in the collapsed view, 2 recipe cards in the row. 
+    21. Steps 2-18 have been repeated and the results were satisfactory and the same as desktop view. 
+    22. When the user opens another recipe card the previous one closes so the viewer can view one recipe card at a time. 
+    23. The user is also able to click on the recipe card to collapse the view 
+    24. Reduce the screen view to mobile size, the recipe cards displayed in the collapsed view, 1 recipe card in a row. 
+    25. Steps 2-18 have been repeated and provided the same results as the desktop. 
+    26. When the user opens another recipe card the previous one closes so the viewer can view one recipe card at a time.
+    27. The user is also able to click on the recipe card to collapse the view 
 
 ![Recipe-mobile](/assets/wireframes/recipe-expanded.png) | ![Recipe-feedback](/assets/wireframes/rating-feedback.jpg)
 
@@ -350,14 +374,19 @@ somebody from the team will be in touch with them shortly.
     in the empty field for textera element. 
     6. Filled in all the required information and pressed submit. 
     7. The Submit button changed the text to "Submitting...". 
-    8. An alert popped up displaying the following message "Thank you [user-name]. Your message has been sent! We will be in touch soon!"
-    9. Within seconds, the owner received an email notifying them of the site of the enquire, with a user name and email address, also with the text which 
+    8. Tried pressing on the button again, the button has been displayed with time-out function to prevent the user 
+    from submiting the form again.
+    9. An alert popped up displaying the following message "Thank you [user-name]. Your message has been sent! We will be in touch soon!"
+    10. Within seconds, the owner received an email notifying them of the site of the enquire, with a user name and email address, also with the text which 
     was entered. 
-    10. Once pressed "OK" on alert, the form has been reset.
-    11. The user gets an automated email ensuring them the message has been received and somebody will be in touch with them shortly.
-    12. If the email address is not valid, the owner gets notified and emailJS is trying to resend the automated reply for 24hrs. 
-    13. If something should go wrong with emailJS the user will be notified via an alert. 
-    14. Repeated the same steps for tablet and mobile view, the result was satisfactory. 
+    11. Once pressed "OK" on alert, the form has been reset.
+    12. The user gets an automated email ensuring them the message has been received and somebody will be in touch with them shortly.
+    13. If the email address is not valid, the owner gets notified and emailJS is trying to resend the automated reply for 24hrs. 
+    14. If something should go wrong with emailJS the user will be notified via an alert. 
+    15. Repeated the same steps for tablet and mobile view, the result was satisfactory. 
+    16. If something should go wrong the user will be notified via alert.
+    17. Submit button is displayed is case of an error.
+
     
 ![Contact Form Ipad](/assets/wireframes/contact-form-ipad.png)
 ![Contact Form Mobile](/assets/wireframes/contact-form-mobile.png)
@@ -427,7 +456,7 @@ somebody from the team will be in touch with them shortly.
 
 | Pages    | <strong>Google Chrome</strong>   |       <strong>Edge</strong>     |     <strong>ISO</strong>        |
 |----------|:--------------------------------:|--------------------------------:|--------------------------------:|
-| Home     |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Home     | :-1 |- [x] |- [x] |
 | Recipe   |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|      
 | About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
 | Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
@@ -441,12 +470,22 @@ somebody from the team will be in touch with them shortly.
 - When flipping the mobile phone device found that header height was expanding over the navigation bar. 
 - Fix the height of the header with responsive 10vh height to avoid this issue and overflow. 
 
+### index.html Page:
 
+- Landing page was too small on desktop and laptop devices and was not covering the whole screen size.
+    - Had to set min and max-height to the section element.
 
 ### Recipe Page:
 
-- I came across a recipe rating bug, which was rating either all the recipe cards on click. 
+- I came across a recipe rating bug, which was rating all the recipe cards on click. 
 - Solved it by looping over the stars and using prev and the next jQuery method to target is siblings. 
+- One features I wanted to implement during my devlopment and spend over a week trying to solve it was filter buttons for recipe categories. 
+- After spending many hours with tutor support I just could not come to the solution and have tried so many loops, 
+itarating through the buttons and lopping through the data, that I was left very confused. 
+- I have learned so much by tryind different methods and achiving different results with my code, in the end I was able to display a sertain category 
+on click of the button but not displaying the data on document load.  
+- I have resulted asking my mentor Medale Oluwfemi for help, who showed me a filter method and I was able to get the desired result. 
+
 
 
 
@@ -461,14 +500,18 @@ displayed on Martin's bio div.
 - However, when pressing on the Martin divs only his information will be displayed as desired. 
 - Clicking on Olivia's div again after closing Martin's div only Olivia div is displayed. 
 - This issue occured only on the desktop and tablet devices, fix the error with if else statement in JavaScript file.
+- Also, wanted to have only one function which would hold two parameters (image and title), however when testing the side, the when 
+clicking on the image the div would not expand and I had to use two separate function to achieve desired result. 
 
 
 ### Contact Page: 
 
 - Initially, the form has was not resetting on submit, therefore had to add reset functionality in the 
 js file. 
-
 - I ensured all the input fields were field in using HTML5 required attribute. 
+- I have also implemented a timedelay funcnction for submit button which is temporarily disabled once the form is submited,
+to prevent the user from submiting the information again until the form is reset. 
+
 
 ### 404 Page:
 
