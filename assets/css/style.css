@@ -684,9 +684,11 @@ span {
         margin-top: 5rem;
     }
 
-    /*.link-div {
-        margin-top: 10rem;
-    } */
+    .filter-btn {
+        width: 140px;
+        padding: 2px;
+       
+    }
 
   
 }
