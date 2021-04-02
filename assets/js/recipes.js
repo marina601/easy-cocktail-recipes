@@ -1,23 +1,70 @@
 //jshint esversion: 6
 /*globals $:false */
-let allCockTail = {};
-const URL = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
-
+// declaring variables 
+let allCocktail = {};
+const url = "https://thecocktaildb.com/api/json/v1/1/search.php?f=m";
 
 $(document).ready(function () {
 
     getCocktail();
 
 });
+
+/**
+ * call the API using Fetch @getCocktail function
+ * checking for response and then return data 
+ * line 28 examining the response and passing data through json 
+ * line 30 assign data to @allCocktail
+ * line 31 calling the function @displayCocktail
+ * line 35 if an error is displayed console.log error status 
+ */
+function getCocktail() {
+    fetch(url)
+        .then(
+            function (response) {
+                if (response.status !== 200) {
+                    console.log('Looks like there was a problem. Status Code: ' +
+                        response.status);
+                    return;
+                }
+                response.json().then(function (data) {
+                    allCocktail = data;
+                    displayCocktail(data);
+                });
+            }
+        )
+        .catch(function (err) {
+            console.log('Fetch Error :-S', err);
+        });
+}
+
+/**
+ * byCategory function on click of the filter buttons 
+ * if else statement to check the category 
+ * display the cocktail data using filter method 
+ * once the button is clicked. 
+ * the function is called in html file.
+ */
+
 function byCategory(category) {
     if (category === "All") {
-        displayCocktail(allCockTail);
+        displayCocktail(allCocktail);
     } else {
-        const data = allCockTail.drinks.filter(drink => drink.strAlcoholic === category)
+        const data = allCocktail.drinks.filter(drink => drink.strAlcoholic === category);
         displayCocktail({ drinks: data });
     }
 
 }
+
+byCategory();
+
+/**
+ * displayCocktail function on click of the filter buttons 
+ * if else statement to check the category 
+ * display the cocktail data using filter method 
+ * once the button is clicked. 
+ * the function is called in html file.
+ */
 
 //Code has been refactored with help of my mentor Medale Oluwfemi
 function displayCocktail(data) {
@@ -26,7 +73,7 @@ function displayCocktail(data) {
         cocktailElems += `
           <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
-            <img src="${cocktail.strDrinkThumb}" class="card-img-top img-fluid" alt="${cocktail.strDrinkThumb}">
+            <img src="${cocktail.strDrinkThumb}" class="card-img-top img-fluid" alt="${cocktail.strDrink}">
                 <div class="card-body">
                 <h3 class="card-title">${cocktail.strDrink}</h3>
                   <div class="recipe hidden">
@@ -57,6 +104,9 @@ function displayCocktail(data) {
                       <i class="fas fa-star" aria-hidden="true"></i>
                       <span class="sr-only">Star</span>
                     </div>
+                    <button class="close-btn"><i class="fas fa-angle-double-up" aria-hidden="true"></i>
+                         <span class="sr-only">Button to close current section</span>
+                    </button>
                   </div>
                 </div>
           </div>
@@ -67,7 +117,12 @@ function displayCocktail(data) {
 
 
     //Adding event listener on click to expand the card-body
-    let card = document.querySelectorAll(".card-body");
+
+    const card = document.querySelectorAll(".card-body");
+    const closeDiv = document.querySelectorAll(".close-btn");
+    const stars = document.querySelectorAll(".fa-star");
+
+    //Adding event listener on click to expand the card-body
     for (let i = 0; i < card.length; i++) {
         $(card[i]).click(function () {
             if ($(this).children(".recipe").hasClass("hidden")) {
@@ -77,11 +132,25 @@ function displayCocktail(data) {
 
         //Adding event listener on mouseleave to collapse the card-body
         $(card[i]).mouseleave(function () {
-            $(this).children(".recipe").hide("medium");
+            $(this).children(".recipe").hide("slow");
         });
     }
+
+    // function to clos the div on click of the button collapse the recipe card 
+    function collapseRecipe() {
+        for (let x = 0; x < closeDiv.length; x++) {
+            console.log($(closeDiv[x]).parent());
+            $(closeDiv[x]).click(function () {
+                $(this).prevUntil(card).hide();
+                $(this).hide();
+            });
+        }
+
+    }
+
+    collapseRecipe();
     // Adding event listener for star rating 
-    const stars = document.querySelectorAll(".fa-star");
+
     for (let i = 0; i < stars.length; i++) { //loop through all the stars
 
         $(stars[i]).click(function () { // on click function change color 
@@ -100,27 +169,8 @@ function displayCocktail(data) {
 
 
 
+
+
 }
 
-function getCocktail() {
-    fetch(URL)
-        .then(
-            function (response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                        response.status);
-                    return;
-                }
-                // Examine the text in the response
-                response.json().then(function (data) {
-                    console.log(data);
-                    allCockTail = data;
-                    displayCocktail(data);
-                    //created a function with data as perimeter
-                });
-            }
-        )
-        .catch(function (err) {
-            console.log('Fetch Error :-S', err);
-        });
-}
+
