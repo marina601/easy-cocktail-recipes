@@ -1,14 +1,14 @@
 //jshint esversion: 6
 /*globals $:false */
+//declaring variable
+const navBtn = document.querySelector(".toggle-btn");
 
-
-//Navigation code to collapse the menu on mobile view
-$(document).ready(function(){
-  
-$(".toggle-btn").click(function() {
-    $(".navItem").addClass("active").toggle("slow");
-});
-//toggle button to display menu items at mobile screen view 
-
-
+$(document).ready(function () {
+    /**
+    * function on click of the navBtn add class "active"
+    * toggle method used expand and collapse the menu  
+    */
+    $(navBtn).click(function () {
+        $(".navItem").addClass("active").toggle("slow");
+    });
 });
