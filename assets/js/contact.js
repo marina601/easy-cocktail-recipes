@@ -3,38 +3,61 @@
 // declaring variables
 const btn = document.getElementById('submit');
 const contactForm = document.getElementById('contact-form');
-const userName = document.getElementById('from_name'); //getting the username from input field
+const userName = document.getElementById('from_name');
+
 // declaring variables for serviceID and templateID
 const serviceID = 'default_service';
 const templateID = 'template_rh5u5i9';
 
+/**
+ * function which integrates emailJS service  
+ * this code has been used from emailJS documents 
+ * https://dashboard.emailjs.com/admin/integration
+ */
+
 (function () {
-    // https://dashboard.emailjs.com/admin/integration
-    //integrating the emailJS 
+
     emailjs.init('user_okiyBXoCAcvQ9Zao8GHSK');
 })();
 
-//Code was taken from emailJS to set up the initial function
+/**
+ * To set up intial stracture of this function the code was used from emailJS documentation 
+ * on submit add event listener 
+ * prevent default submit 
+ * button value changes once the button is pressed 
+ * disabling the button after submit to prevent the user from submitting the form again
+ */
+
 window.onload = function () {
     contactForm.addEventListener('submit', function (event) {
-        event.preventDefault(); //preventing default submit 
-        btn.value = 'Sending...'; //displaying new button value when sending 
+        event.preventDefault();
+        btn.value = 'Sending...';
+        btn.disabled = true;
 
-        emailjs.sendForm(serviceID, templateID, this) //sending the form
+        /**
+         * Submitting the form 
+         * Submit button value changed to submit once the form is sent 
+         * Alert letting the user know the message has been sent
+         * Reset the form 
+         * Incase of an error 
+         * Submit button value is disabled 
+         * Alert shows letting the user know the message has not been sent 
+         */
+
+        emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 btn.value = 'Submit';
                 alert(`Thank you ${userName.value}. Your message has been sent! We will be in touch soon!`);
-                //alert shows to the user when the message has been sent 
-                //btn.disabled = true;
-                contactForm.reset(); //reset the form on submit 
-                
+                contactForm.reset();
+
             }, (err) => {
-                //error message for the user when the email is not sent 
+
                 btn.value = 'Submit';
+                btn.disabled = true;
                 alert(alert(JSON.stringify(err)`Sorry ${userName.value} something went wrong`));
             });
-
-        return false;  // To stop from loading a new page
+        // To stop from loading a new page
+        return false;
     });
 
 };
