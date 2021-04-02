@@ -58,7 +58,6 @@ function byCategory(category) {
 
 }
 
-byCategory();
 
 /**
  * displayCocktail function 
@@ -157,7 +156,6 @@ function displayCocktail(data) {
      */
     function collapseRecipe() {
         for (let x = 0; x < closeDiv.length; x++) {
-            console.log($(closeDiv[x]).parent());
             $(closeDiv[x]).click(function () {
                 $(this).prevUntil(card).hide();
                 $(this).hide();
