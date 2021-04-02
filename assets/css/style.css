@@ -470,7 +470,7 @@ input[type="submit"]:hover {
    margin: 3px;
 }
 
-.recipe i {
+.fa-star {
     font-size: 2.1rem;
     padding: 0.2rem;
     margin: 0.2rem;
@@ -478,6 +478,16 @@ input[type="submit"]:hover {
     color: rgba(13, 7, 9, 0.4);
     position: relative;
 
+}
+
+.filter-div {
+    padding: 20px;
+    margin: 10px;
+}
+
+.filter-btn {
+    display: inline-block;
+    width: 18rem;
 }
 
 /***404.html***/
@@ -634,8 +644,6 @@ span {
     .link-div {
         margin-top: 5rem;
     }
-
-
 
 }
 
