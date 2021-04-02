@@ -19,7 +19,12 @@ $(document).ready(function () {
             let eachName = fullName[i];
             let singleImg = img[i];
 
-            $(eachName, singleImg).on("click", function () {
+            $(eachName).on("click", function () {
+                $(this).nextAll().show(200);
+                $(this).parent(bioDivs).css("height", "fit-content");
+            });
+
+             $(singleImg).on("click", function () {
                 $(this).nextAll().show(200);
                 $(this).parent(bioDivs).css("height", "fit-content");
             });
