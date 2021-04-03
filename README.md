@@ -24,6 +24,9 @@ This website will enable adults to create simple cocktail recipes for special oc
 
 2 [**Features**](#features)
 
+   - [**Features Implemented**](#features-implemented)
+   - [**Features Left to Implement**](#features-left-to-implement)
+
 3 [**Technology Used**](#technology-used)
    - [**Languages Used**](#language-used)
    - [**Frameworks Libraries and Programs Used**](#frameworks-libraries-and-programs-used) 
@@ -33,7 +36,7 @@ This website will enable adults to create simple cocktail recipes for special oc
 
 5 [**Deployment**](#deployment)
   - [**GitHub Pages**](#github-pages)
-  - [**Forking to GitHub Respiratories**](#forking-to-github-respiratories)
+  - [**Forking to GitHub Respiratory**](#forking-to-github-respiratory)
   - [**Making a local clone**](#making-a-local-clone)
 
 6 [**Credits**](#credits)
@@ -105,14 +108,14 @@ Considering the above user stories, I have decided upon the following UI Structu
 ### Recipe Page:
 
 - Cocktail recipes are displayed on the page.
-- The user has a chose to view the recipes by category by clicking on one of three different buttons at the top of the page.
+- The user has a choice to view the recipes by category by clicking on one of three different buttons at the top of the page.
 - Once the user picks its desired category, cocktail recipes under this category are displayed. 
-- The user also has an option to view all the cocktail recipse by clicking on the button "All".
+- The user also has an option to view all the cocktail recipes by clicking on the button "All".
 - Once the user clicks on the name of the cocktail the information will expand.
 - The user is able to click on the button at the bottom of the recipe card to collapse the recipe card view.
 - Once the user leaves a particular recipe, the information will collapse automatically, as well.
-- The user is able to click on the image of the recipe card again to collapse the view, as well.
-- The user is able to rate the recipe by pressing on the star rating.
+- The user can click on the image of the recipe card again to collapse the view, as well.
+- The user can rate the recipe by pressing on the star rating.
 - The user will be given feedback via alert once the recipe has been rated.
  
 ### About Page:
@@ -120,8 +123,8 @@ Considering the above user stories, I have decided upon the following UI Structu
 - A brief introduction about how the site has been created.
 - Pictures of the two site owners are displayed with their names.
 - Once the user clicks on the image or the name of the site owners more information is displayed, which includes their social media accounts.
-- The user is presented with links to the bars where the owners use to work, which open in the separate tabs. 
-- The use is also able to check out each owners social media accounts by clicking on social links button in the end of the 
+- The user is presented with links to the bars where the owners use to work, which open in separate tabs. 
+- The use is also able to check out the owner's social media accounts by clicking on the social links button at the end of the 
 bio div (social media buttons lead to the main page of the social media site, as the characters are fictional and for education purposes only).
 - At the bottom of the bio-information there is a button and on click, the information slides up.
 
@@ -129,10 +132,10 @@ bio div (social media buttons lead to the main page of the social media site, as
 
 - Contact form is available for users to submit their queries. 
 - Once the contact form has been submitted, an alert will be displayed, thanking the user for getting in touch.
-- Once the contact form is submited, the user will not be able to submit a form again, as submit button has been temporalily disabled. 
+- Once the contact form is submitted, the user will not be able to submit a form again, as submit button has been temporarily disabled. 
 - Once all the information is sent, the form is reset to its original view.
 - An automated email will be sent to the user once the contact form has been submitted.
-- The owner of the site also recieves an automated email with all the information which has been submitted and user details. 
+- The owner of the site also receives an automated email with all the information which has been submitted and user details. 
 
 ### Common:
 
@@ -142,10 +145,10 @@ bio div (social media buttons lead to the main page of the social media site, as
 -  Hero-background image will remain the same throughout all the pages, to give consistency to the design and cocktail-bar feel. 
 -  The footer will be minimal with social media icons to the blog.
 -  All pages will contain copyrights to protect the owner in the footer.
--  In order to give some consistency to the user, if the information (like recipe cards and site owners bio-info) is in the collapse view. 
+-  To give some consistency to the user, if the information (like recipe cards and site owners bio-info) is in the collapsed view. 
 -  The user will be able to view the information on click.
--  To collapse the information the user has a few options, the most common one is a click of the button in the end of the information. 
--  Thoughout the site the use will have call to action buttons in the end of the page which will lead them to the next 
+-  To collapse the information the user has a few options, the most common one is a click of the button at the end of the information. 
+-  Throughout the site, the user has call-to-action buttons at the end of the page which will lead them to the next 
 logical step, without the need to click on the navigation menu. 
 
 ##### back to [content](#table-of-content)
@@ -185,6 +188,9 @@ The colour palette has been picked from [colorpalettes.net](https://colorpalette
 - Barman image 
 [paolodepascale](https://pixabay.com/photos/bartender-mixologist-bar-cocktail-5130099/)
 
+- 404 Background Image 
+[minka2507](https://pixabay.com/photos/wine-glass-empty-drinking-cup-2651654/)
+
 - All the cocktail images are provided by API
 [TheCocktailDB](https://www.thecocktaildb.com/api.php)
 
@@ -206,8 +212,8 @@ Please view my wireframes for desktop, tablet and mobile view:
 ![IPad-view](/assets/wireframes/landing-page-ipad.png)
 ![Mobile-view](/assets/wireframes/landing-page-mobile.png)
 
-- During the development of the project I have added a quote to the landing page to unable the user 
-understand on landing of the page, what the site is about. 
+- During the development of the project I have added a quote to the landing page to enable the user 
+understand on the landing of the page, what the site is about. 
 
 - About Page: 
 ![Desktop-view](/assets/wireframes/about-desktop.png)
@@ -216,13 +222,13 @@ understand on landing of the page, what the site is about.
 - Recipe Page:
 ![Desktop-view](/assets/wireframes/recipe-desktop.png)
 ![IPad-view](/assets/wireframes/recipe-ipad.png)
-![Mobile-view](/assets/wireframes/recipe -mobile.png)
+![Mobile-view](/assets/wireframes/recipe-mobile.png)
 
-- During the development I was not able to sorce hint and tips from the 
+- During the development I was not able to source hint and tips from the 
 API used, therefore this section was left out.
 - Also the layout  structure for recipe cards has changed, whilst the information provided to the user stayed the same. 
-- The recipe rating does work, however at this moment in time this information is not recorded. 
-- Looking throught the information available to me via API, I have chosen to implemented filter buttons, 
+- The recipe rating does work, however, at this moment in time, this information is not recorded. 
+- Looking through the information available to me via API, I have chosen to implement filter buttons, 
 which filter recipes by category.
 
 - Contact Page: 
@@ -232,7 +238,7 @@ which filter recipes by category.
 
 ## Features 
 
-### Features implemented 
+### Features Implemented
 
 - [All pages](index.html):  
    - Dynamic navigation menu collapses on the mobile screen view.
@@ -240,8 +246,8 @@ which filter recipes by category.
    - The website has a responsive design based on the screen view.
    - Minimalistic footer with social icons for the webpage.
    - Custom 404.html page has been added 
-   - All pages have call to action buttons (except from contact.html) to give the user easy access to the 
-   next page, without the need to choose from navigation menu.
+   - All pages have call-to-action buttons (except contact.html) to give the user easy access to the 
+   next page, without the need to choose from the navigation menu.
 
 - [Recipes.html](recipes.html): 
    - Recipe cards take their input from an API.
@@ -249,11 +255,11 @@ which filter recipes by category.
    - Three filter buttons are displayed after the title of the page, giving the user an option to view the 
    recipes by category.
    - Recipe card expand on click to show all the content to the user.
-   - The user can close the recipe button by clicking on the button in the end of the page. 
+   - The user can close the recipe button by clicking at the button in the end of the page. 
    - Recipe card collapses when the user moves to a different recipe.
    - The user can also exit the recipe card with one click on the recipe image.
-   - The user is able to rate a recipe inside the recipe card. 
-   - The user is given feedback once the recipe is rated via alert.
+   - The user can rate a recipe inside the recipe card. 
+   - The user is given feedback once the recipe is rated via an alert.
 
 - [About.html](about.html)
    - The user is presented with About the blog paragraph.
@@ -268,18 +274,21 @@ which filter recipes by category.
    - Contact form is powered by mailJS.
    - Contact form uses the “POST” method to send information from the user.
    - When the submit button is pressed the button text value is "Sending ... ".
-   - The submit button is temporalily disabled to prevent the user from clicking it again during sending. 
+   - The submit button is temporarily disabled to prevent the user from clicking it again during sending. 
    - Once the user sends the form, an alert window is displayed letting the user know the content has been sent.
    - If the message is not sent an alert window will be displayed letting the user know something has gone wrong. 
-   - In case of an error the submit button is disables. 
+   - In case of an error the submit button is disabled. 
    - The user also receives an automatic reply from mailJS.
-   - The site owner recieves an eamil from emailJS with all the information submitted from the user. 
+   - The site owner receives an email from emailJS with all the information submitted from the user. 
 
-### Features Left to Implements
+##### back to [content](#table-of-content)
+
+### Features Left to Implement
 
 - Subscription form to the blog's newsletter 
 - Recipe cards information could appear in the modal on click 
 - Sharing social media icons for each recipe 
+- Function recipe rating, which stores the user rating.
 
 ##### back to [content](#table-of-content)
 
@@ -297,13 +306,12 @@ which filter recipes by category.
 
 1. [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
  - Mainly for responsive grid layout. 
- - Recipe card layout format and classes have been used from Bootstrap library.
- - Bootstrap classes have been used to assist with automated margins and layout of elemetns.
+ - Recipe card layout has been imported from Bootstrap library and cutomized to to site needs.
+ - Bootstrap classes have been used to assist with automated margins and layout of elements.
 
 
 2. [CSS tricks](https://css-tricks.com/perfect-full-page-background-image/) 
-- Used to create a full background image that will is recognised by all 
-browsers.
+- Used to create a full background image for main site and 404.html page.
 
 3. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Akava and Prata' fonts into the style.css file which is used on all pages throughout the project.
@@ -361,7 +369,7 @@ The project was deployed to GitHub Pages using the following steps:
 
 1. Log in to GitHub and locate the [marina601/easy-cocktail-recipes Repository](https://github.com/marina601/easy-cocktail-recipes)
 2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
-    - Alternatively, click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+    - Alternatively, click [Here](https://raw.githubusercontent.com/) for a GIT demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "root" and select "Master Branch".
 5. The page will automatically refresh.
@@ -400,18 +408,18 @@ account to view and/or make changes without affecting the original repository by
 - Recipe information has been provided by [TheCocktailDB API](https://www.thecocktaildb.com/api.php) 
 - Quote which appears on the index.html page has been taken from [The Oxfordsd](https://theoxfordsd.com/cocktail-quotes/)
 
-
+##### back to [content](#table-of-content)
 
 ### Code
 
 - My mentor Medale Oluwafemi has helped me to refactor the code in recipes.js getCocktail function,  and write html 
-elements dynamcally in JavaScript instead of repeating the same code and targetting html elements from the 
+elements dynamically in JavaScript instead of repeating the same code and targetting html elements from the 
 recipes.html, which I have done initially. 
 
-- Also my mentor has introduced me to filter method in JavaScript recipes.js to filter through the data by category, and display 
- the information desired on click of the button and on loading of the page. I have tried to solve this issue in many different ways 
- and have recived unexpected result, working through this issue with my mentor has helped me to understand and learn the logic of 
- programming.
+- Also my mentor has introduced me to the filter method in JavaScript recipes.js to filter through the data by category and display 
+ the information desired on click of the button and loading of the page. I have tried to solve this issue in many different ways 
+ and have received unexpected result, working through this issue with my mentor has helped me to understand and learn the logic of 
+ programming language.
 
 - Initial code to get the contact form to send the information has been taken from [emailJS](https://jsfiddle.net/api/post/library/pure/)
 and modified to fit the site purpose.
@@ -422,20 +430,22 @@ and modified to fit the site purpose.
 
 ### Media
 
-- Background image and the images for site creators have been sourced from [Pixabay](https://pixabay.com/)
+- Background image and the images for about and 404 pages have been sourced from [Pixabay](https://pixabay.com/)
 
 ##### back to [content](#table-of-content)
  
 ### Acknowledgment
 
-- I would like to thank my mentor Medale Oluwafemi for helping to understand the concept of JavaScript and guided me through the loginc of JavaScript and 
+- I would like to thank my mentor Medale Oluwafemi for helping to understand the concept of JavaScript and guided me through the logic of JavaScript and 
 reducing the length of my code and creating dynamic elements in JavaScript, also pointing me in the right direction with 
 UX design of the site.
 
 - My fellow student Aukje Byllsa who took the time to review my project and give me some 
 helpful suggestions on what aspects could be improved.
 
-- Tutor support at Code Institute for their patience and helping me with the logic of JavaScript and problems found along the way.
+- Slack community @Code Institute for reviewing my project and helping me throughout the development.
+
+- Tutor support at @Code Institute for their patience and helping me with the logic of JavaScript and problems found along the way.
 
 ##### back to [content](#table-of-content)
 
