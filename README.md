@@ -7,8 +7,9 @@
 I have created this site as part of my Milestone 2 project for Code Institute, 
 focusing on Interactive Frontend Website development and design.
 
-This blog is for adults, where they can browse through popular cocktail recipes and re-create them at home with minimal
-effort. 
+This blog is for adults, where the user can easily make the popular cocktail recipes at home using the 
+instructions in the recipe card and entertain their friends and family.
+
 Due to the pandemic and the hospitality industry having one of the worst effects, people have missed going out and socializing. 
 This website will enable adults to create simple cocktail recipes for special occasions or weekends for their friends and family to enjoy!
 
@@ -421,8 +422,8 @@ recipes.html, which I have done initially.
  and have received unexpected result, working through this issue with my mentor has helped me to understand and learn the logic of 
  programming language.
 
-- Initial code to get the contact form to send the information has been taken from [emailJS](https://jsfiddle.net/api/post/library/pure/)
-and modified to fit the site purpose.
+- The initial code used to get the contact form to send the information has been taken from [emailJS](https://jsfiddle.net/api/post/library/pure/)
+API documentation and modified to fit the site purpose.
 
 - Responsive navbar has been created with help of a tutorial from [Web Dev Simplified](https://www.youtube.com/watch?v=At4B7A4GOPg)
 
