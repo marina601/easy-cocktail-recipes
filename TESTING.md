@@ -180,10 +180,11 @@ which recipe they would like to view.
 
 | Pages    |<strong>Laptop</strong>|<strong>Ipad</strong>|<strong>IphoneX</strong> | <strong>Nokia2.4</strong> | <strong>Sumsung</strong> |
 |----------|:---------------------:|--------------------:|------------------------:|-----------------------:|-----------------------:|
-| Home     |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|
-| Recipe   |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|       
-| About    |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|
-| Contact  |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|
+| Home     | &check; | &check;| &check;| &check;| &check;|
+| Recipe   | &check; | &check;| &check;| &check;| &check;|   
+| About    | &check; | &check;| &check;| &check;| &check;|
+| Contact  | &check; | &check;| &check;| &check;| &check;|
+| 404.html | &check; | &check;| &check;| &check;| &check;|
     
 ##### back to [content](#table-of-content)
 
@@ -457,12 +458,13 @@ which recipe they would like to view.
 
 ### Cross Browser Compatibility Table 
 
-| Pages    | <strong>Google Chrome</strong>   |       <strong>Edge</strong>     |     <strong>ISO</strong>        |
+| Pages    | <strong>Google Chrome</strong>   |       <strong>Edge</strong>     |     <strong>Safari</strong>     |
 |----------|:--------------------------------:|--------------------------------:|--------------------------------:|
-| Home     | :-1 |- [x] |- [x] |
-| Recipe   |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|      
-| About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
-| Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Home     |&check; | &check;| &check;| 
+| Recipe   |&check; | &check;| &check;|    
+| About    |&check; | &check;| &check;|
+| Contact  |&check; | &check;| &check;|
+| 404.html |&check; | &check;| &check;|
 
 - Browser compatibility test has been successful and all browsers tested displayed the information correctly.
 
