@@ -456,6 +456,8 @@ which recipe they would like to view.
 
 ![Contac Page Lighthouse Report](/assets/wireframes/contact-page-lighthouse.jpg)
 
+##### back to [content](#table-of-content)
+
 ### Cross Browser Compatibility Table 
 
 | Pages    | <strong>Google Chrome</strong>   |       <strong>Edge</strong>     |     <strong>Safari</strong>     |
@@ -467,6 +469,8 @@ which recipe they would like to view.
 | 404.html |&check; | &check;| &check;|
 
 - Browser compatibility test has been successful and all browsers tested displayed the information correctly.
+
+##### back to [content](#table-of-content)
 
  ## Bugs 
 
@@ -482,14 +486,20 @@ which recipe they would like to view.
 
 ### Recipe Page:
 
+#### Star Rating:
+
 - I came across a recipe rating bug, which was rating all the recipe cards on click. 
-- Solved it by looping over the stars and using prev and the next jQuery method to target is siblings. 
-- One feature, which I wanted to implement during my development and spend over a week trying to solve it was filter buttons for recipe categories. 
-- After spending many hours with tutor support I just could not come to the solution and have tried so many loops, 
-iterating through the buttons and lopping through the data, that I was left very confused. 
-- I have learned so much by trying different methods and achieving different results with my code, in the end, I was able to display a certain category 
-on click of the button but not displaying the data on document load.  
-- I have resulted asking my mentor Medale Oluwfemi for help, who showed me a filter method and I was able to get the desired result. 
+- Solved it by looping over the stars and using prev and the next jQuery method to target its siblings. 
+
+#### Category Buttons:
+
+- One feature, which I wanted to implement was the buttons for recipe categories. 
+- After spending many hours and learning so much by trying different methods and achieving different results in the external branch, I was still not 
+successful. 
+- The recipes were displaying only whilst the button was clicked, with a wrong category and the data was not 
+displaying initially on loading of the page.
+- It was only by spending time with my mentor Medale Oluwfemi, who has introduced me to the filter method, 
+I was able to achieve the desired result.
 
 
 
@@ -520,7 +530,7 @@ to prevent the user from submitting the information again until the form is rese
 
 ### 404 Page:
 
-- Whilst, testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
+- Whilst testing the page on the mobile view, the button which led to the home page was overflowing the footer, fixed the 
 height of the page using hv value. 
 
 
