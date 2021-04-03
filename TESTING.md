@@ -30,6 +30,9 @@
 
 - [W3C Markup Validation](https://validator.w3.org/)
    - HTML code pass validation without major errors, type attribute has been removed from all script elements.
+
+- [W3C Link Checker](https://validator.w3.org/checklink)
+   - All links have been checked and no errors have been detected.
     
 - [JSHint](https://jshint.com/)
    ### recipes.js 
@@ -175,12 +178,12 @@ which recipe they would like to view.
 ### Device compatibility table
 
 
-| Pages    |<strong>Laptop</strong>|<strong>Ipad</strong>|<strong>IphoneX</strong> | <strong>Nokia</strong> |
-|----------|:---------------------:|--------------------:|------------------------:|-----------------------:|
-| Home     |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
-| Recipe   |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|       
-| About    |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
-| Contact  |<input type="checkbox" checked /> |<input type="checkbox" checked />|<input type="checkbox" checked />|<input type="checkbox" checked />|
+| Pages    |<strong>Laptop</strong>|<strong>Ipad</strong>|<strong>IphoneX</strong> | <strong>Nokia2.4</strong> | <strong>Sumsung</strong> |
+|----------|:---------------------:|--------------------:|------------------------:|-----------------------:|-----------------------:|
+| Home     |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|
+| Recipe   |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|       
+| About    |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|
+| Contact  |<input type="checkbox" checked/> |<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|<input type="checkbox" checked/>|
     
 ##### back to [content](#table-of-content)
 
